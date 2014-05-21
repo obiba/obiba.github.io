@@ -26,16 +26,19 @@
 
 </head>
 
-<body style="background-color: #e7e7e7">
+<body>
 
 
 {% include themes/bootstrap/default-header.html %}
 
 {{ content }}
 
+{% include themes/bootstrap/default-footer.html %}
 
 {% include JB/analytics %}
 <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
 <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="{{ ASSET_PATH }}/resources/scripts/google-map.js"></script>
 </body>
 </html>

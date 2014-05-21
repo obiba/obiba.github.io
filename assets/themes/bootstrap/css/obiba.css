@@ -1,7 +1,21 @@
-.jumbotron {
+/* HACK to remove horizontal scroll when we don't need it */
+.row {
+    margin: 0;
+    padding: 0
+}
+
+.overview {
     margin: 0;
     padding: 10px 0 50px 0;
     background: #F8AF5F; /*Old browsers*/
+    margin-top: 50px;
+}
+
+.footer {
+    margin: 0;
+    padding: 10px 0 50px 0;
+    background-color: #222222; /*Old browsers*/
+    color: #adadad;
 }
 
 .obiba-navbar {
@@ -12,7 +26,13 @@ h1, h2, h3, h4, p, a {
     font-family: "Open Sans";
 }
 
-.obiba-promo h1, p {
+.obiba-promo h1 {
+    text-align: center;
+    line-height: 150%;
+    color: #2D2929;
+}
+
+.obiba-promo p {
     text-align: center;
     line-height: 150%;
     color: #2D2929;
@@ -27,13 +47,41 @@ h1, h2, h3, h4, p, a {
     line-height: 350%;
 }
 
-.obiba-softwares-summary {
+.obiba-home-section {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-p.obiba-softwares-summary {
+p.obiba-home-section {
     text-align: left;
 }
 
-/* HACK to remove horizonral scroll when we don't need it */
-.row { margin: 0; padding: 0 }
+.obiba-softwares-summary-item {
+    margin-top: 5%;
+}
+
+hr.obiba-softwares-summary-separator {
+    margin-top: 5px;
+    height: 1px;
+    background-color: #285e8e;
+}
+
+.obiba-partners {
+    background-color: #faebcc;
+}
+
+.obiba-img-responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+#map-container {
+    height: 180px;
+    width: 100%;
+}
+
+#map-outer {
+    height: 10%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
