@@ -1,0 +1,39 @@
+.jumbotron {
+    margin: 0;
+    padding: 10px 0 50px 0;
+    background: #F8AF5F; /*Old browsers*/
+}
+
+.obiba-navbar {
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, p, a {
+    font-family: "Open Sans";
+}
+
+.obiba-promo h1, p {
+    text-align: center;
+    line-height: 150%;
+    color: #2D2929;
+}
+
+.obiba-softwares-header h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #cc6633;
+    color: #e3e3e3;
+    line-height: 350%;
+}
+
+.obiba-softwares-summary {
+    margin-top: 50px;
+}
+
+p.obiba-softwares-summary {
+    text-align: left;
+}
+
+/* HACK to remove horizonral scroll when we don't need it */
+.row { margin: 0; padding: 0 }
