@@ -16,14 +16,49 @@
                     <a class="obiba-navbar obiba-logo" href="{{ HOME_PATH }}"><img
                             src="/assets/themes/bootstrap/img/obiba-logo-small.png"/></a>
                 </div>
-
                 <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
                     <ul class="nav navbar-nav">
                         {% assign pages_list = site.pages %}
                         {% assign group = 'navigation' %}
-                        {% include JB/pages_list %}
+                        {% for node in pages_list %}
+
+                        {% assign sections = node.sections %}
+                        {% if node.title != null %}
+                        {% if group == null or group == node.group %}
+
+                        <!-- TODO see if we care to show active menu item -->
+                        {% if page.url == node.url %}
+                        {% assign active = "" %}
+                        {% else %}
+                        {% assign active = "" %}
+
+                        {% endif %}
+
+                        {% if sections != null %}
+                        <li class="{{active}} dropdown"><a href="#" class="{{active}} dropdown-toggle" data-toggle="dropdown">{{node.title}}<b
+                                class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                {% for section in sections %}
+                                <li><a href="{{section[0]|normalize: node.url}}">{{section[1]}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% else %}
+                        <li class="{{active}}"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+                        {% endif %}
+                        {% endif %}
+                        {% endif %}
+
+                        {% endfor %}
                     </ul>
                 </div>
+                <!--<div class="collapse navbar-collapse navbar-ex1-collapse pull-right">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--{% assign pages_list = site.pages %}-->
+                        <!--{% assign group = 'navigation' %}-->
+                        <!--{% include JB/pages_list %}-->
+                    <!--</ul>-->
+                <!--</div>-->
             </div>
             <div class="col-xs-2"></div>
         </div>
