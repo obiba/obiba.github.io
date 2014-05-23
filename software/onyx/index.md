@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ONYX
+title: Onyx
 header: OBiBa Open Source Softwares
 sections:
    feature: Features
