@@ -41,8 +41,8 @@ h1, h2, h3, h4, p, a {
 }
 
 .obiba-home-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 50px;*/
     /*background-color: #E6E6E6;*/
 }
 
@@ -68,6 +68,7 @@ hr.obiba-softwares-summary-separator {
     margin: 5px;
     padding: 5px;
 }
+
 .obiba-sponsors {
     margin: 20px;
     padding: 20px;
@@ -80,12 +81,15 @@ img.obiba-img-responsive {
 }
 
 .obiba-img-item {
-    /*width: 100px;*/
-    /*min-height: 90px;*/
-    /*max-height: auto;*/
-    /*float: left;*/
     margin: 3px;
     padding: 3px;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.obiba-icon-item {
+    margin: 10px;
+    padding: 20px;
     display:table-cell;
     vertical-align: middle;
 }
