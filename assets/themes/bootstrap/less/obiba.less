@@ -22,46 +22,76 @@ h1, h2, h3, h4, p, a {
   font-family: "Open Sans";
 }
 
-.obiba-promo {
-  h1 {
+.obiba-promo-text {
     text-align: center;
     line-height: 150%;
     color: #ffffff;
+  }
+
+.obiba-promo {
+  h1 {
+    .obiba-promo-text;
   }
 
   p {
-    text-align: center;
-    line-height: 150%;
-    color: #ffffff;
+    .obiba-promo-text;
   }
 }
 
-.obiba-softwares-header h3 {
-  margin: 0;
-  padding: 0;
+.obiba-promo-icon {
   text-align: center;
+  margin-top: 40px;
+  vertical-align: middle;
+}
+
+.obiba-no-top-marin {
+  margin-top: 0;
+}
+
+.obiba-no-bottom-marin {
+  margin-bottom: 0;
+}
+
+.obiba-no-vertical-margin {
+  .obiba-no-top-marin;
+  .obiba-no-bottom-marin;
+}
+
+.obiba-header {
+  h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #e3e3e3;
+    line-height: 200%;
+  }
+}
+
+.obiba-softwares-header {
+  .obiba-header;
   background-color: #F05B40;
-  color: #e3e3e3;
-  line-height: 200%;
+}
+
+.obiba-page-header {
+  .obiba-header;
+  background-color: #02535E;
+}
+
+.obiba-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .obiba-home-section {
-  /*padding-top: 50px;*/
-  /*padding-bottom: 50px;*/
-  /*background-color: #E6E6E6;*/
+  .obiba-section;
+
+  p  {
+    text-align: left;
+  }
 }
 
-p.obiba-home-section {
-  text-align: left;
-}
-
-//TODO use bootstrap center-text
-//.centered {
-//  align: center;
-//}
-
-.obiba-softwares-summary-item {
-  margin-top: 5%;
+.obiba-top-margin {
+  margin-top: 50px;
 }
 
 hr.obiba-softwares-summary-separator {

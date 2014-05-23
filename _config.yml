@@ -28,9 +28,8 @@ author :
 production_url : http://username.github.io
 
 #
-# Github markdown
-kramdown:
-  input: GFM
+# Default markdown
+markdown: kramdown
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
