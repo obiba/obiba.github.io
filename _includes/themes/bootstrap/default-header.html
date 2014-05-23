@@ -31,12 +31,12 @@
                                                         class="caret"></b></a>
                                                     <ul class="dropdown-menu" role="menu">
                                                         {% for subitem in item[1].items %}
-                                                            <li><a href="{{subitem[0]|normalize: node.url}}">{{subitem[1]}}</a></li>
+                                                            <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
                                                         {% endfor %}
                                                     </ul>
                                                 </li>
                                             {% else %}
-                                                <li><a href="{{item[0]|normalize: node.url}}" class="active">{{item[1]}}</a></li>
+                                                <li><a href="{{item[0]}}" class="active">{{item[1]}}</a></li>
                                             {% endif %}
                                         {% endfor %}
                                     {% endif %}
