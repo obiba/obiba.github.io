@@ -14,7 +14,7 @@
   margin-top: 50px;
 }
 
-no.obiba-navbar {
+.obiba-navbar {
   margin-bottom: 0;
 }
 
@@ -44,6 +44,10 @@ h1, h2, h3, h4, p, a {
   vertical-align: middle;
 }
 
+.obiba-promo-icon-color {
+  color: #E7E8E9;
+}
+
 .obiba-no-top-marin {
   margin-top: 0;
 }
@@ -57,6 +61,10 @@ h1, h2, h3, h4, p, a {
   .obiba-no-bottom-marin;
 }
 
+.obiba-no-top-padding {
+  padding-top: 0;
+}
+
 .obiba-header {
   h3 {
     margin: 0;
@@ -67,13 +75,26 @@ h1, h2, h3, h4, p, a {
   }
 }
 
+.obiba-header-text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #e3e3e3;
+  line-height: 200%;
+}
+
 .obiba-softwares-header {
-  .obiba-header;
+  h3 {
+    .obiba-header-text;
+  }
   background-color: #F05B40;
 }
 
 .obiba-page-header {
-  .obiba-header;
+  h1 {
+    .obiba-header-text;
+    text-align: left;
+  }
   background-color: #02535E;
 }
 
@@ -90,14 +111,10 @@ h1, h2, h3, h4, p, a {
   }
 }
 
-.obiba-top-margin {
-  margin-top: 50px;
-}
-
-hr.obiba-softwares-summary-separator {
-  margin-top: 5px;
+hr.obiba-separator {
+  margin-top: 10px;
   height: 1px;
-  background-color: #285e8e;
+  background-color: #333333;
 }
 
 .obiba-partners {
@@ -149,7 +166,7 @@ img.obiba-img-responsive {
   margin-bottom: 20px;
 }
 
-ul.obiba-download-list {
+ul.obiba-no-style-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -157,6 +174,67 @@ ul.obiba-download-list {
 
 .obiba-small-right-margin {
   margin-right: 10px;
+}
+
+.obiba-small-left-margin {
+  margin-left: 10px;
+}
+
+.obiba-small-right-margin {
+  margin-right: 10px;
+}
+
+.obiba-small-top-margin {
+  margin-top: 10px;
+}
+
+.obiba-small-bottom-margin {
+  margin-bottom: 10px;
+}
+
+.obiba-top-margin {
+  margin-top: 20px;
+}
+
+.obiba-bottom-margin {
+  margin-bottom: 20px;
+}
+
+.obiba-large-top-margin {
+  margin-top: 50px;
+}
+
+.obiba-large-bottom-margin {
+  margin-bottom: 50px;
+}
+
+.obiba-small-horizontal-margin {
+  .obiba-small-left-margin;
+  .obiba-small-right-margin;
+}
+
+.obiba-small-vertical-margin {
+  .obiba-small-top-margin;
+  .obiba-small-bottom-margin;
+}
+
+.obiba-vertical-margin {
+  .obiba-top-margin;
+  .obiba-bottom-margin;
+}
+
+.obiba-vertical-margin {
+  .obiba-large-top-margin;
+  .obiba-large-bottom-margin;
+}
+
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px !important;
+}
+.carousel {
+  margin-top: 20px;
 }
 
 #map-container {
