@@ -1,0 +1,76 @@
+---
+layout: page
+title: Download
+---
+{% include JB/setup %}
+<div class="obiba-section">
+    <div class="container obiba-top-margin">
+        <div class="row">
+            <div class="col-xs-2 col-xs-offset-2">
+                <img src="{{ ASSET_PATH }}bootstrap/img/icon-onyx-small.png" class="obiba-img-responsive"
+                     alt="collect">
+            </div>
+            <div class="col-xs-6">
+                <h3 class="obiba-no-vertical-margin"><i class="fa fa-bullhorn "></i>&nbsp;&nbsp;Opal 2.0 Released<span
+                        class="pull-right">2014-03-21&nbsp;&nbsp;<i class="fa fa-calendar-o"></i></span></h3>
+                <hr>
+                <p>We are pleased to announce that Opal 2.0 is now available. Opal is OBiBa’s core database application
+                    for biobanks.</p>
+
+                <p>Opal 2.0 is a major release that introduces many features and bug fixes. This release also offers a
+                    complete rework of the web user interface.</p>
+
+                <p>The main new features are:</p>
+                <ul>
+                    <li>the concept of project has been added. A project extends what was previously known as datasource
+                        in Opal 1.x.
+                    </li>
+                    <li>edition of dictionaries is made easier,</li>
+                    <li>improved data exploration,</li>
+                    <li>improved management of identifiers mappings,</li>
+                    <li>improved user management,</li>
+                    <li>better integration with R,</li>
+                    <li>many other server improvements, including the support of MongoDB.</li>
+                </ul>
+                <p>See full release note <a
+                        href="http://wiki.obiba.org/display/CAG/2014/03/18/Opal+2.0+Released">here</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container obiba-top-margin">
+        <div class="row">
+            <div class="col-xs-2 col-xs-offset-2">
+                <img src="{{ ASSET_PATH }}bootstrap/img/icon-mica-small.png" class="obiba-img-responsive"
+                     alt="collect">
+            </div>
+            <div class="col-xs-6">
+                <h3 class="obiba-no-vertical-margin"><i class="fa fa-bullhorn "></i>&nbsp;&nbsp;Mica 8.2 Released<span
+                        class="pull-right">2014-03-21&nbsp;&nbsp;<i class="fa fa-calendar-o"></i></span></h3>
+                <hr>
+                <p>This release fixes bugs for longitudinal studies. You can learn more about the details<a
+                        href="http://jira.obiba.org/jira/secure/ReleaseNote.jspa?projectId=10170&amp;version=11481">here</a>.
+                </p>
+
+                <h4><i class="fa fa-exclamation-circle"></i> Important note before upgrading Mica</h4>
+
+                <p>Mica heavily uses <a href="http://drupal.org/project/features">Features</a> module to capture
+                    configuration data, such as entities, fields, variables, views, permissions, etc into code
+                    modules.</p>
+
+                <p>In many cases, these Features need to be slightly changed for the specific site you are
+                    developing.
+                    If you change the base Mica feature, it will be hard to upgrade to a newer version of Mica because
+                    your changes would be overwritten.</p>
+
+                <p>What you really want to do is just capture your changes to a site-specific "Override" feature and
+                    leave the original distribution untouched. To do so, use <a
+                            href="http://drupal.org/project/features_override">Features Override</a> module.
+
+                <p>Please, refer to documentation before upgrading Mica:
+                    <a href="http://wiki.obiba.org/display/MICADOC/Mica+Installation+Guide#MicaInstallationGuide-SavecustomizationsyoumadetoMica">Mica Installation Guide</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
