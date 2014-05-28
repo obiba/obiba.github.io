@@ -4,46 +4,7 @@ title: Download
 ---
 {% include JB/setup %}
 <div class="obiba-section">
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <i class="fa fa-certificate  fa-3x"></i>
-            </div>
-            <div class="col-xs-6">
-                <h3 class="obiba-no-vertical-margin">License Agreement</h3>
-                <hr class="obiba-separator">
-                <p>OBiBa software are open source and free of charge made available under the <a href="https://github.com/obiba">GPL3 license.</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <i class="fa fa-file-code-o fa-3x"></i>
-            </div>
-            <div class="col-xs-6">
-                <h3 class="obiba-no-vertical-margin">Source Code</h3>
-                <hr class="obiba-separator">
-                <p>The source code for the OBiBa software is available on <a href="https://github.com/obiba">Github</a>.</p>
-            </div>
-        </div>
-    </div>
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <i class="fa  fa-download fa-3x"></i>
-            </div>
-            <div class="col-xs-6">
-                <h3 class="obiba-no-vertical-margin">Download Instructions</h3>
-                <hr class="obiba-separator">
-                <p>Follow these links to download and install a specific OBiBa application</p>
-                <ul class="obiba-no-style-list">
-                    <li><a href="/node/150"><i class="fa fa-download  obiba-small-right-margin"></i></a>Onyx</li>
-                    <li><a href="/node/151"><i class="fa fa-download obiba-small-right-margin"></i></a>Opal</li>
-                    <li><a href="/node/176"><i class="fa fa-download obiba-small-right-margin"></i></a>Mica</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+{% include themes/bootstrap/section.html icon="fa-certificate" sectionTitle="License Agreement" sectionBody="themes/bootstrap/download/license.html" %}
+{% include themes/bootstrap/section.html icon="fa-file-code-o" sectionTitle="Source Code" sectionBody="themes/bootstrap/download/source-code.html" %}
+{% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Source Code" sectionBody="themes/bootstrap/download/downloads.html" %}
 </div>
-

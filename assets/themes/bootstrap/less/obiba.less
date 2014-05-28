@@ -173,10 +173,21 @@ img.obiba-img-responsive {
   margin-bottom: 20px;
 }
 
-ul.obiba-no-style-list {
+.obiba-no-style {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+ul.obiba-no-style-list {
+  .obiba-no-style;
+}
+
+ul.obiba-news-list {
+  .obiba-no-style;
+  li {
+    margin-top: 10px;
+  }
 }
 
 .obiba-small-right-margin {
