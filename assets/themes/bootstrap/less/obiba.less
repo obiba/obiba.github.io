@@ -1,6 +1,12 @@
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
-@import "normalize";
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px) {
+  h3 {
+    font-size: 14px;
+  }
+}
 
 /* HACK to remove horizontal scroll when we don't need it */
 .row {
