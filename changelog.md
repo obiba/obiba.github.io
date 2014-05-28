@@ -1,3 +1,8 @@
+---
+layout: default
+group: navigation
+---
+
 ## Changelog
 
 Public releases are all root nodes.  
