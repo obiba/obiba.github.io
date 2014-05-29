@@ -14,6 +14,19 @@
   padding: 0
 }
 
+/* centered columns styles */
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+
 .overview {
   margin: 0;
   padding: 10px 0 50px 0;
@@ -25,7 +38,7 @@
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, p, a, address {
   font-family: "Open Sans";
 }
 
@@ -94,7 +107,7 @@ h1, h2, h3, h4, p, a {
   h3 {
     .obiba-header-text;
   }
-  background-color: #F05B40;
+  background-color: #A04C47;
 }
 
 .obiba-page-header {
@@ -119,8 +132,9 @@ h1, h2, h3, h4, p, a {
 }
 
 hr.obiba-separator {
-  margin-top: 10px;
+  border: none;
   height: 1px;
+  margin-top: 10px;
   background-color: #333333;
 }
 
@@ -134,11 +148,21 @@ hr.obiba-separator {
   padding: 20px;
 }
 
-img.obiba-img-responsive {
+.obiba-image-responsive {
   height: auto;
   max-width: 100%;
   margin: auto;
 }
+
+img.obiba-img-responsive {
+  .obiba-image-responsive
+}
+
+img.obiba-img-responsive-padded {
+  .obiba-image-responsive;
+  padding: 1em;
+}
+
 
 .obiba-img-item {
   margin: 3px;
@@ -157,8 +181,6 @@ img.obiba-img-responsive {
 .obiba-image-holder {
   height: 150px;
   margin: 15px;
-  /*padding: 5px;*/
-  background-color: #285e8e;
 }
 
 .footer {
@@ -193,7 +215,6 @@ ul.obiba-job-list {
     content: '\f046';
     margin:0 10px 0 -25px;
   }
-
 }
 
 ul.obiba-news-list {

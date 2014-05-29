@@ -1,7 +1,16 @@
+{% if page.menu != null %}
+    {% assign count = site.data.news.summary %}
+{% else %}
+    {% assign count = 9999 %}
+{% endif %}
 <ul class="obiba-news-list">
-    {% for item in site.data.news %}
+    {% for item in site.data.news.data limit:{{count}}%}
     <li>
         <i class="fa fa-calendar-o"></i> {{item.date}} <a href="/pages/news/{{item.url}}">{{item.title}} <i class="fa fa-arrow-circle-right"></i></a>
     </li>
     {% endfor %}
 </ul>
+
+{% if count != 9999 %}
+    <p class="obiba-top-margin">A complete list of releases and events can be found <a href="/pages/news">here <i class="fa fa-arrow-circle-right"></i></a></p>
+{% endif %}

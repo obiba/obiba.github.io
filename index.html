@@ -6,7 +6,7 @@ group: navigation
 menu:
     /pages/about: About
     submenu:
-        title: Software
+        title: Products
         items:
             /pages/software/onyx: Onyx
             /pages/software/opal: Opal
@@ -14,8 +14,6 @@ menu:
             /pages/software/mica: Mica
     http://wiki.obiba.org/: Wiki
     /pages/download: Download
-    /pages/news: News
-    /pages/jobs: Jobs
 ---
 {% include JB/setup %}
 
@@ -42,88 +40,28 @@ menu:
     </div>
 </div>
 
+<div class="obiba-home-section">
+{% include themes/bootstrap/home-section.html icon="fa-question-circle" sectionTitle="What is OBiBa?" sectionBody="themes/bootstrap/home/intro.html" %}
+</div>
+
 <div class="obiba-softwares-header">
     <h3>Our Applications</h3>
 </div>
 
+
 <div class="obiba-home-section">
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <div class="obiba-icon-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/icon-onyx.png" class="obiba-img-responsive"
-                         alt="collect">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <h3>Collect with Onyx</h3>
-                <hr class="obiba-separator"/>
-                <p>A comprehensive software application used to manage participant interviews and to collect data in
-                    biobank
-                    assessment centres. Onyx can be branded with your own colors and logos.</p>
-                <a class="btn-link" href="/pages/software/onyx">Learn more <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <div class="obiba-icon-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/icon-opal.png" class="obiba-img-responsive"
-                         alt="collect">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <h3>Store with Opal</h3>
-                <hr class="obiba-separator"/>
-                <p>Integrates biobank data from different sources into a secure central data repository. It provides
-                    interfaces for managing and querying a data element dictionary and for generating administrative
-                    and scientific reports.</p>
-                <a class="btn-link" href="/pages/software/opal">Learn more <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <div class="obiba-icon-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/icon-datashield.png" class="obiba-img-responsive"
-                         alt="collect">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <h3>Analyze with DataSHIELD</h3>
-                <hr class="obiba-separator"/>
-                <p>Enables advanced statistical analysis across a network of Opal databases without the need of
-                    accessing
-                    individual-level data. This is a powerful tool for studies that can’t share their data but still
-                    want to
-                    co-analyse their data.</p>
-                <a class="btn-link" href="/pages/software/datashield">Learn more <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="col-xs-2 col-xs-offset-2">
-                <div class="obiba-icon-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/icon-mica.png" class="obiba-img-responsive"
-                         alt="collect">
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <h3>Publish with Mica</h3>
-                <hr class="obiba-separator"/>
-                <p>Content Management Software (CMS) application used to create web portals for epidemiological
-                    studies
-                    or
-                    consortia. Mica can be used as a front-end portal to query and aggregate data stored in a
-                    federated
-                    network of Opal databases.</p>
-                <a class="btn-link" href="/pages/software/mica">Learn more <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-    </div>
+    {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-onyx.png" sectionTitle="Collect with Onyx" sectionBody="themes/bootstrap/home/onyx.html" %}
+    {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-opal.png" sectionTitle="Store with Opal" sectionBody="themes/bootstrap/home/opal.html" %}
+    {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-datashield.png" sectionTitle="Analyze with DataSHIELD" sectionBody="themes/bootstrap/home/datashield.html" %}
+    {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-mica.png" sectionTitle="Publish with Mica" sectionBody="themes/bootstrap/home/mica.html" %}
+</div>
+
+<div class="obiba-softwares-header">
+    <h3>News</h3>
+</div>
+
+<div class="obiba-home-section">
+    {% include themes/bootstrap/home-section.html icon="fa-bullhorn" sectionTitle="Releases and Events" sectionBody="themes/bootstrap/news/list.html" %}
 </div>
 
 <div class="obiba-softwares-header">
@@ -133,31 +71,11 @@ menu:
 <div class="obiba-partners">
     <div class="container">
         <div class="row">
-            <div class="col-xs-8 col-xs-offset-2">
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/maelstrom.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/oicr.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/BioSHaRE.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/clsa.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/genome-quebec.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/p3g.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
+            <div class="col-xs-12 text-center">
+                {% for partner in site.data.partners %}
+                <img src="{{ ASSET_PATH }}bootstrap/img/{{partner}}" class="obiba-img-responsive-padded"
+                     alt="Responsive image">
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -170,19 +88,11 @@ menu:
 <div class="obiba-sponsors">
     <div class="container">
         <div class="row">
-            <div class="col-xs-6 col-xs-offset-4">
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/logo_yourkit.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/logo_intellij_idea.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
-                <div class="obiba-img-item">
-                    <img src="{{ ASSET_PATH }}bootstrap/img/logo-atlassian.png" class="obiba-img-responsive"
-                         alt="Responsive image">
-                </div>
+            <div class="col-xs-12 text-center">
+                {% for sponsor in site.data.sponsors %}
+                <img src="{{ ASSET_PATH }}bootstrap/img/{{sponsor}}" class="obiba-img-responsive-padded"
+                     alt="Responsive image">
+                {% endfor %}
             </div>
         </div>
     </div>
