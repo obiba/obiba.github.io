@@ -1,0 +1,7 @@
+<ul class="obiba-news-list">
+    {% for item in site.data.jobs %}
+    <li>
+        <i class="fa fa-briefcase"></i> <a href="/pages/jobs/{{item.job}}">{{item.title}} <i class="fa fa-arrow-circle-right"></i></a>
+    </li>
+    {% endfor %}
+</ul>

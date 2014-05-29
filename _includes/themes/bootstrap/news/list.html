@@ -1,0 +1,7 @@
+<ul class="obiba-news-list">
+    {% for item in site.data.news %}
+    <li>
+        <i class="fa fa-calendar-o"></i> {{item.date}} <a href="/pages/news/{{item.url}}">{{item.title}} <i class="fa fa-arrow-circle-right"></i></a>
+    </li>
+    {% endfor %}
+</ul>
