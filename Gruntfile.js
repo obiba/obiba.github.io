@@ -12,6 +12,7 @@ module.exports = function (grunt) {
         },
         files: {
           // target.css file: source.less file
+          "assets/themes/bootstrap/css/bootstrap-col-height.css": "assets/themes/bootstrap/css/bootstrap-col-height.less",
           "assets/themes/bootstrap/css/obiba.css": "assets/themes/bootstrap/less/obiba.less"
         }
       }

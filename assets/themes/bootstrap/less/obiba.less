@@ -3,6 +3,12 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 480px) {
+  address {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 15px;
+  }
   h3 {
     font-size: 14px;
   }
@@ -107,7 +113,8 @@ h1, h2, h3, h4, p, a, address {
   h3 {
     .obiba-header-text;
   }
-  background-color: #A04C47;
+  color: #ffffff;
+  background-color: #493C23;
 }
 
 .obiba-page-header {
@@ -131,9 +138,13 @@ h1, h2, h3, h4, p, a, address {
   }
 }
 
-hr.obiba-separator {
+.obiba-separator {
   border: none;
   height: 1px;
+}
+
+hr.obiba-section-separator {
+  .obiba-separator;
   margin-top: 10px;
   background-color: #333333;
 }
@@ -183,11 +194,18 @@ img.obiba-img-responsive-padded {
   margin: 15px;
 }
 
-.footer {
+.obiba-footer {
   margin: 0;
-  padding: 10px 0 50px 0;
+  padding: 10px 0 20px 0;
   background-color: #222222; /*Old browsers*/
   color: #adadad;
+}
+
+.footer.copyright {
+  background-color: #222222; /*Old browsers*/
+  p {
+    color: #adadad;
+  }
 }
 
 .obiba-page-top-margin {
@@ -205,7 +223,7 @@ ul.obiba-no-style-list {
   .obiba-no-style;
 }
 
-ul.obiba-job-list {
+.obiba-fa-list {
   .obiba-no-style;
   list-style-position: outside;
   margin-left: 1.8em;
@@ -214,6 +232,22 @@ ul.obiba-job-list {
     font-family: 'FontAwesome';
     content: '\f046';
     margin:0 10px 0 -25px;
+  }
+}
+
+ul.obiba-job-list {
+  .obiba-fa-list;
+
+  li:before {
+    content: '\f046';
+  }
+}
+
+ul.obiba-footer-list {
+  .obiba-fa-list;
+
+  li:before {
+    content: '\f138';
   }
 }
 
@@ -301,4 +335,28 @@ ul.obiba-news-list {
   height: 10%;
   padding-top: 20px;
   margin-bottom: 20px;
+}
+
+a.obiba-product-link:link {
+  a.obiba-product-link:visited {
+    COLOR: #E3E3E3;
+  }
+}
+a.obiba-product-link:hover {
+  COLOR: #ffffff;
+}
+a.obiba-product-link {
+  color: #E3E3E3;
+  text-decoration: none !important;
+}
+
+/* vertical alignment styles */
+.col-top {
+  vertical-align:top;
+}
+.col-middle {
+  vertical-align:middle;
+}
+.col-bottom {
+  vertical-align:bottom;
 }

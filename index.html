@@ -5,15 +5,22 @@ tagline: Open Source Software for BioBankss
 group: navigation
 menu:
     /pages/about: About
-    submenu:
+    submenu_products:
         title: Products
         items:
             /pages/software/onyx: Onyx
             /pages/software/opal: Opal
             /pages/software/datashield: DataSHIELD
             /pages/software/mica: Mica
-    http://wiki.obiba.org/: Wiki
-    /pages/download: Download
+    submenu_documentation:
+        title: Documentation
+        items:
+            http://wiki.obiba.org/display/ONYXDOC/Onyx+Documentation+Home: Onyx
+            http://wiki.obiba.org/display/OPALDOC/Home: Opal
+            http://datashield.org/: DataSHIELD
+            http://wiki.obiba.org/display/MICADOC/Home: Mica
+    /pages/support: Download
+    /pages/support: Support
 ---
 {% include JB/setup %}
 
@@ -41,7 +48,7 @@ menu:
 </div>
 
 <div class="obiba-home-section">
-{% include themes/bootstrap/home-section.html icon="fa-question-circle" sectionTitle="What is OBiBa?" sectionBody="themes/bootstrap/home/intro.html" %}
+{% include themes/bootstrap/home-section.html icon="fa-info-circle" sectionTitle="What is OBiBa?" sectionBody="themes/bootstrap/home/intro.html" %}
 </div>
 
 <div class="obiba-softwares-header">
@@ -54,14 +61,6 @@ menu:
     {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-opal.png" sectionTitle="Store with Opal" sectionBody="themes/bootstrap/home/opal.html" %}
     {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-datashield.png" sectionTitle="Analyze with DataSHIELD" sectionBody="themes/bootstrap/home/datashield.html" %}
     {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-mica.png" sectionTitle="Publish with Mica" sectionBody="themes/bootstrap/home/mica.html" %}
-</div>
-
-<div class="obiba-softwares-header">
-    <h3>News</h3>
-</div>
-
-<div class="obiba-home-section">
-    {% include themes/bootstrap/home-section.html icon="fa-bullhorn" sectionTitle="Releases and Events" sectionBody="themes/bootstrap/news/list.html" %}
 </div>
 
 <div class="obiba-softwares-header">
@@ -96,4 +95,12 @@ menu:
             </div>
         </div>
     </div>
+</div>
+
+<div class="obiba-softwares-header">
+    <h3>News</h3>
+</div>
+
+<div class="obiba-home-section">
+    {% include themes/bootstrap/home-section.html icon="fa-bullhorn" sectionTitle="Releases and Events" sectionBody="themes/bootstrap/news/list.html" %}
 </div>

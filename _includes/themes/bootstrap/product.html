@@ -1,0 +1,27 @@
+<div class="obiba-section">
+    <div class="obiba-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-xs col-sm-2 col-md-2 col-md-offset-2"></div>
+                <div class="col-xs-12 col-sm-10 col-md-6">
+                    <h1>{{page.title}}
+                        <span class="pull-right">
+                            {% if page.download != null %}
+                                <a class="obiba-product-link" href="{{page.download}}">
+                                    <i class="fa fa-download obiba-small-right-margin"></i>
+                                </a>
+                            {% endif %}
+                            {% if page.wiki != null %}
+                                <a class="obiba-product-link" href="{{page.wiki}}">
+                                    <i class="fa fa-question-circle"></i>
+                                </a>
+                            {% endif %}
+                        </span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ content }}
+</div>

@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-fixed-top obiba-navbar" role="navigation">
         <div class="container">
             <div class="row obiba-row">
-                <div class="hidden-xs col-sm-2 col-md-2 col-md-offset-2" style="padding-left: 0">
+                <div class="col-sm-2 col-md-2 col-md-offset-2" style="padding-left: 0">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
                                 data-target=".navbar-ex1-collapse">
@@ -29,18 +29,18 @@
                                     {% if group == null or group == node.group %}
                                         {% if menu != null %}
                                             {% for item in menu %}
-                                                {% if item[0] == 'submenu' %}
+                                                {% unless item[0] contains 'submenu_' %}
+                                                    <li><a href="{{item[0]}}" class="active">{{item[1]}}</a></li>
+                                                {% else %}
                                                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{item[1].title}}<b
                                                             class="caret"></b></a>
                                                         <ul class="dropdown-menu" role="menu">
                                                             {% for subitem in item[1].items %}
-                                                                <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
+                                                            <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
                                                             {% endfor %}
                                                         </ul>
                                                     </li>
-                                                {% else %}
-                                                    <li><a href="{{item[0]}}" class="active">{{item[1]}}</a></li>
-                                                {% endif %}
+                                                {% endunless %}
                                             {% endfor %}
                                         {% endif %}
                                     {% endif %}
