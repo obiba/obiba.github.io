@@ -51,10 +51,9 @@ menu:
 {% include themes/bootstrap/home-section.html icon="fa-info-circle" sectionTitle="What is OBiBa?" sectionBody="themes/bootstrap/home/intro.html" %}
 </div>
 
-<div class="obiba-softwares-header">
-    <h3>Our Applications</h3>
+<div class="obiba-home-section-header">
+    {% include themes/bootstrap/home-title.html sectionTitle="Our Applications" %}
 </div>
-
 
 <div class="obiba-home-section">
     {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-onyx.png" sectionTitle="Collect with Onyx" sectionBody="themes/bootstrap/home/onyx.html" %}
@@ -63,42 +62,25 @@ menu:
     {% include themes/bootstrap/home-section.html img="/assets/themes/bootstrap/img/icon-mica.png" sectionTitle="Publish with Mica" sectionBody="themes/bootstrap/home/mica.html" %}
 </div>
 
-<div class="obiba-softwares-header">
-    <h3>Our Partners</h3>
+
+<div class="obiba-home-section-header">
+    {% include themes/bootstrap/home-title.html sectionTitle="Our Partners" %}
+</div>
+<div class="obiba-home-section">
+    {% include themes/bootstrap/home-images-section.html icon="fa-users" sectionBody="themes/bootstrap/partners/list.html" %}
 </div>
 
-<div class="obiba-partners">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                {% for partner in site.data.partners %}
-                <img src="{{ ASSET_PATH }}bootstrap/img/{{partner}}" class="obiba-img-responsive-padded"
-                     alt="Responsive image">
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+
+<div class="obiba-home-section-header">
+    {% include themes/bootstrap/home-title.html sectionTitle="Our Sponsors" %}
+</div>
+<div class="obiba-home-section">
+    {% include themes/bootstrap/home-images-section.html icon="fa-users" sectionBody="themes/bootstrap/sponsors/list.html" %}
 </div>
 
-<div class="obiba-softwares-header">
-    <h3>Our Sponsors</h3>
-</div>
 
-<div class="obiba-sponsors">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                {% for sponsor in site.data.sponsors %}
-                <img src="{{ ASSET_PATH }}bootstrap/img/{{sponsor}}" class="obiba-img-responsive-padded"
-                     alt="Responsive image">
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="obiba-softwares-header">
-    <h3>News</h3>
+<div class="obiba-home-section-header">
+    {% include themes/bootstrap/home-title.html sectionTitle="Latest Released Products" %}
 </div>
 
 <div class="obiba-home-section">

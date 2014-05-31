@@ -109,9 +109,10 @@ h1, h2, h3, h4, p, a, address {
   line-height: 200%;
 }
 
-.obiba-softwares-header {
+.obiba-home-section-header {
   h3 {
     .obiba-header-text;
+    text-align: left;
   }
   color: #ffffff;
   background-color: #493C23;
@@ -149,6 +150,13 @@ hr.obiba-section-separator {
   background-color: #333333;
 }
 
+hr.obiba-footer-separator {
+  .obiba-separator;
+  margin-top: 10px;
+  height: 0.05em;
+  background-color: #8E7E6E;
+}
+
 .obiba-partners {
   margin: 5px;
   padding: 5px;
@@ -171,7 +179,7 @@ img.obiba-img-responsive {
 
 img.obiba-img-responsive-padded {
   .obiba-image-responsive;
-  padding: 1em;
+  padding-right: 1em;
 }
 
 
@@ -196,7 +204,7 @@ img.obiba-img-responsive-padded {
 
 .obiba-footer {
   margin: 0;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 10px 0;
   background-color: #222222; /*Old browsers*/
   color: #adadad;
 }
@@ -245,9 +253,14 @@ ul.obiba-job-list {
 
 ul.obiba-footer-list {
   .obiba-fa-list;
+  display: table;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
 
   li:before {
     content: '\f138';
+    margin: 0 10px 0 0;
   }
 }
 
