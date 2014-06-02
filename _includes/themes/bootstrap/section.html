@@ -1,22 +1,22 @@
-<div class="obiba-section">
-
-    <div class="container obiba-top-margin">
-        <div class="row">
-            <div class="hidden-xs col-sm-2 col-md-2 col-md-offset-2">
+<div class="container obiba-top-margin">
+    <div class="row">
+        <div class="hidden-xs col-sm-2 col-md-2 col-md-offset-2">
+            <div class="text-center obiba-top-margin">
                 {% if include.icon != null %}
-                <i class="fa {{include.icon}} fa-3x"></i>
+                <i class="fa {{include.icon}} fa-5x"></i>
                 {% else %}
-                <img src="{{include.img}}" class="obiba-img-responsive" alt="collect">
+                <div class="obiba-image-holder text-center">
+                    <img src="{{include.img}}" class="obiba-img-responsive" alt="collect">
+                </div>
                 {% endif %}
-
             </div>
-            <div class="col-xs-12 col-sm-10 col-md-6">
-                {% if include.sectionTitle != null %}
-                    <h3 class="obiba-no-vertical-margin obiba-no-top-padding">{{include.sectionTitle}}</h3>
-                    <hr class="obiba-section-separator">
-                {% endif %}
-                {% include {{include.sectionBody}} %}
-            </div>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-6">
+            {% if include.sectionTitle != null %}
+            <h3>{{include.sectionTitle}}</h3>
+            <hr class="obiba-section-separator"/>
+            {% endif %}
+            {% include {{include.sectionBody}} %}
         </div>
     </div>
 </div>
