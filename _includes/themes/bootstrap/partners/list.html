@@ -1,4 +1,7 @@
 {% for partner in site.data.partners %}
-<img src="{{ ASSET_PATH }}bootstrap/img/{{partner}}" class="obiba-img-responsive-padded"
-     alt="Responsive image">
+<a class="obiba-product-link" href="{{partner.url}}">
+    <img title="{{partner.title}}" src="{{ ASSET_PATH }}bootstrap/img/{{partner.img}}"
+         class="obiba-img-responsive-padded"
+         alt="Responsive image">
+</a>
 {% endfor %}

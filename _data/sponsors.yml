@@ -1,3 +1,11 @@
-- logo_yourkit.png
-- logo_intellij_idea.png
-- logo-atlassian.png
+- title: Jet Brains
+  img: logo-jet-brains.png
+  url: http://www.jetbrains.com/
+
+- title: Atlassian
+  img: logo-atlassian.png
+  url: http://www.atlassian.com
+
+- title: YourKit
+  img: logo-yourkit.png
+  url: http://www.yourkit.com

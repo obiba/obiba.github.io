@@ -13,7 +13,12 @@
                             {% endif %}
                             {% if page.wiki != null %}
                                 <a class="obiba-product-link" href="{{page.wiki}}">
-                                    <i class="fa fa-question-circle"></i>
+                                    <i class="fa fa-question-circle obiba-small-right-margin"></i>
+                                </a>
+                            {% endif %}
+                            {% if page.github != null %}
+                                <a class="obiba-product-link" href="{{page.wiki}}">
+                                    <i class="fa fa-github-square"></i>
                                 </a>
                             {% endif %}
                         </span>
