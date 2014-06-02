@@ -36,7 +36,11 @@
                                                             class="caret"></b></a>
                                                         <ul class="dropdown-menu" role="menu">
                                                             {% for subitem in item[1].items %}
-                                                            <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
+                                                                {% unless subitem[0] contains 'divider' %}
+                                                                    <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
+                                                                {% else %}
+                                                                    <li class="nav-divider"></li>
+                                                                {% endunless %}
                                                             {% endfor %}
                                                         </ul>
                                                     </li>
