@@ -4,7 +4,6 @@ title: OBiBa!
 tagline: Open Source Software for BioBankss
 group: navigation
 menu:
-    /pages/about: About
     submenu_products:
         title: Products
         items:
@@ -12,6 +11,7 @@ menu:
             /pages/software/opal: Opal
             /pages/software/datashield: DataSHIELD
             /pages/software/mica: Mica
+    /pages/stories: Stories
     submenu_documentation:
         title: Documentation
         items:
@@ -22,8 +22,7 @@ menu:
             divider: divider
             /pages/docs/usecases: Use Cases
             /pages/docs/publications: Publications
-    /pages/support: Download
-    /pages/support: Support
+    /pages/about: About
 ---
 {% include JB/setup %}
 
@@ -32,7 +31,7 @@ menu:
         <h1>Open Source Software<br>For BioBanks</h1>
         <br>
 
-        <p>Integrated application suite to manage epidemiological data life cycle</p>
+        <p>Integrated software applications for epidemiological data management and analysis</p>
 
         <div class="obiba-promo-icon">
             <img src="{{ ASSET_PATH }}bootstrap/img/icon-onyx-small.png" class="obiba-img-responsive"
@@ -67,7 +66,7 @@ menu:
 
 
 <div class="obiba-home-section-header">
-    {% include themes/bootstrap/home-title.html sectionTitle="Latest Released Products" %}
+    {% include themes/bootstrap/home-title.html sectionTitle="Latest News" %}
 </div>
 
 <div class="obiba-home-section">
@@ -75,7 +74,7 @@ menu:
 </div>
 
 <div class="obiba-home-section-header">
-    {% include themes/bootstrap/home-title.html sectionTitle="Our Partners and Sponsors" %}
+    {% include themes/bootstrap/home-title.html sectionTitle="Our Partners" %}
 </div>
 <div class="obiba-home-section">
     {% include themes/bootstrap/home-images-section.html icon="fa-users" sectionBody="themes/bootstrap/partners/list.html" %}
