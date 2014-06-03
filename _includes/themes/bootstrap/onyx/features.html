@@ -1,0 +1,195 @@
+<p>Onyx consists of an application engine and a series of stage-specific data collection modules. </p>
+
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Onyx Engine</h4>
+</div>
+
+<p>The Onyx engine supplies this main functionality:</p>
+<ul class="obiba-gear-list">
+    <li>Manages appointment lists and walk-ins</li>
+    <li>Can connect to external participant registries to fetch identifiable information at reception</li>
+    <li>Manages the flow of interviews</li>
+    <li>Controls stage availability and dependency</li>
+    <li>Encrypts data before exporting it to the study <a href="?q=node/63">central database</a></li>
+    <li>Can filter data on export to protect participant privacy</li>
+    <li>Supports multiple languages</li>
+    <li>Printing interview reports and handouts (PDF)</li>
+    <li>Workstation management (environmental conditions, assigned instruments)</li>
+</ul>
+
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Consent Module</h4>
+</div>
+
+<p>The Onyx Consent Module collects the participant’s consent to partake in the assessment center interview. The module
+    displays customizable consent forms onscreen.</p>
+<p>The Consent Module's special features include:</p>
+
+<ul class="obiba-gear-list obiba-small-vertical-margin">
+    <li>Capture of <strong>electronic signatures</strong></li>
+    <li>Support for manual signatures</li>
+    <li>Capture of any kind of consent form in any language</li>
+</ul>
+
+<p>Electronic signatures are embedded in the document making it impossible to modify the document once it has been
+    signed. Signed consent forms are saved as <strong>PDF files</strong>.</p>
+
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Questionnaire Module</h4>
+</div>
+
+<p>The Onyx Questionnaire Module administers custom questionnaires to participants It displays questions on screen, and
+    captures and validates answers.</p>
+<p>The Questionnaire Module's <strong>advanced features</strong> include:</p>
+
+<ul class="obiba-gear-list">
+    <li> Multiple language versions of the same questionnaire</li>
+    <li>Support for many question/answer formats, such as open text, single-selection, multiple selection, dropdown
+        lists, tables, and so on
+    </li>
+    <li>Questions can be grouped into sections</li>
+    <li>Time-stamping permits evaluation of the efficiency of various sections</li>
+    <li>Answer validation based on rules, such as valid ranges and data format</li>
+    <li>Answer validation based on answers to previous questions. Example: Participant could not have started smoking at
+        50 if he is only 40 years old.
+    </li>
+    <li>Answer validation using an arbitrary script (JavaScript)</li>
+    <li>Skip patterns. Example: Smoking section is only displayed for smokers.</li>
+    <li>Complex, scripted (JavaScript) skip patterns</li>
+    <li>Questionnaire can be completed in multiple sittings—after a pause, questionnaire resumes at the last question
+        answered
+    </li>
+    <li>Comment can be added for participant's answer to each question</li>
+    <li>Display images, play audio or videos as instructions (for example) to the participant</li>
+    <li>Audio recording: record participant as they answer question using a microphone</li>
+    <li>A comprehensive and user-friendly web interface to create and edit questionnaires</li>
+</ul>
+
+<p class="obiba-small-top-margin">The questionnaire module supports two forms of survey administration: <strong>assisted</strong> (interviewer asks
+    questions and enters participant's answers); and <strong>self-administered</strong> (participant answers the survey
+    questions independently).</p>
+<p>Both versions of the interface were developed in consultation with a professional software ergonomist ensuring that a
+    variety of value-added features are available. For example, the nurse-assisted interface can take advantage of
+    different question formats.</p>
+<p>The self-administered interface takes into account the diverse needs of participants. It can be presented on a
+    <strong>user-friendly touch screen</strong> that allows participants who have few or no computer skills, to navigate
+    the questionnaire. A broad range of features has also been built in—from simple progress bars to accommodation for
+    color blindness. </p>
+<p>This rich set of features makes the Onyx Questionnaire Module an excellent questionnaire administration tool for
+    different biobank studies.</p>
+
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right"></i> Physical Measurement Module</h4>
+</div>
+
+<p>Onyx’s Physical Measurement Module captures data from <strong>manual and electronic instruments </strong> used for
+    physical measurements such as blood pressure, bone density, hip/waist circumference, and so on. This module prevents
+    completion of a particular stage if there are any <strong>contraindications </strong>either in the contraindication
+    questionnaire stage (previously administered using the questionnaire module) or immediately before the measurement.
+    Interfaces are available to enter measurements made using manual instruments, or electronic data can be imported or
+    exported between proprietary software and the database.</p>
+<p>The Physical Measurement Module offers the following features:</p>
+<ul class="obiba-gear-list">
+    <li>Manages proprietary software from instrument vendors</li>
+    <li>Can connect directly to instruments to capture measurements</li>
+    <li>Automatically provides input to instruments when available (age, gender, height, weight, and so on)</li>
+    <li>Multiple and conditional measurements from the same instrument</li>
+    <li>Manages contraindications</li>
+    <li>Pre-populates a printable form with data collected during each physical measurement stage of the interview</li>
+</ul>
+
+<h4 class="text-info">Calibration and Experimental Condition Logs</h4>
+<p>Instrument <strong>calibration </strong>data and <strong>experimental conditions </strong>(such as room temperature
+    and humidity) can be entered in logs configured to the study's requirements. This data can be exported along with
+    participant data to ensure that all relevant information is available for future analysis.</p>
+
+<h4 class="text-info">Supported Instruments</h4>
+
+<p>The Physical Measurement Module can support any number of instruments. Support for the following models has already
+    been implemented:</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <th>Instrument Type</th>
+            <th>Vendor</th>
+            <th>Model</th>
+        </tr>
+        <tr>
+            <td>Blood Pressure</td>
+            <td><a href="http://www.vsmmedtech.com/html-pages/index.html/">VSM MedTech</a></td>
+            <td>BPM-200 or BPM-300</td>
+        </tr>
+        <tr>
+            <td>Bioimpedance</td>
+            <td><a href="http://www.tanita.com/">Tanita</a></td>
+            <td>TBF-310</td>
+        </tr>
+        <tr>
+            <td>Bioimpedance</td>
+            <td><a href="http://www.tanita.com/">Tanita</a></td>
+            <td>BC-418</td>
+        </tr>
+        <tr>
+            <td>Spirometry</td>
+            <td><a href="http://www.spirometry.com">MIR</a></td>
+            <td><a href="http://www.spirometry.com/ENG/Products/MiniSpir.asp">Minispir</a></td>
+        </tr>
+        <tr>
+            <td>Spirometry</td>
+            <td><a href="http://www.nddmed.com/">ndd Medical Technologies</a></td>
+            <td><a href="http://www.nddmed.com/index/easy-on-pc">Easy on-PC</a></td>
+        </tr>
+        <tr>
+            <td>Arterial stiffness</td>
+            <td><a href="http://www.atcormedical.com/">AtCor Medical</a></td>
+            <td><a href="http://www.atcormedical.com/sphygmocor_px.html">SphygmoCor SCOR-Px</a></td>
+        </tr>
+        <tr>
+            <td>Arterial stiffness</td>
+            <td><a href="http://www.summitdoppler.com/">Summit Doppler</a></td>
+            <td><a href="http://www.summitdoppler.com/site/epage/109690_969.htm">Vantage ABI</a></td>
+        </tr>
+        <tr>
+            <td>Osteodensity (ultrasound)</td>
+            <td><a href="http://www.gehealthcare.com">GE Healthcare</a></td>
+            <td>Lunar Achilles Express</td>
+        </tr>
+        <tr>
+            <td>Osteodensity (DXA)</td>
+            <td><a href="http://www.hologic.com">Hologic</a></td>
+            <td><a href="http://www.hologic.com/en/skeletal/osteoporosis-assessment/discovery/">Discovery</a></td>
+        </tr>
+        <tr>
+            <td>Grip Strength</td>
+            <td><a href="http://www.jtechmedical.com/">JTECH Medical</a></td>
+            <td><a href="http://www.jtechmedical.com/t5-grip-strength">Tracker Freedom Grip</a></td>
+        </tr>
+        <tr>
+            <td>ECG</td>
+            <td><a href="http://www.gehealthcare.com">GE Healthcare</a></td>
+            <td>Cardiosoft</td>
+        </tr>
+        <tr>
+            <td>Audiogram</td>
+            <td><a href="http://tremetrics.com/">Tremetrics</a></td>
+            <td>
+                <a href="http://tremetrics.com/com_en/Menus/ProductByType/1-IndustrialAudiometers/_index.htm?prodid=10403">RA-300</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Sample Collection Module</h4>
+</div>
+
+<p>Onyx's Sample Collection Module collects and validates the <strong>bar codes </strong> on sample tubes. Like the
+    Physical Measurement Module, the Sample Collection Module monitors for <strong>contraindications</strong> to ensure
+    that samples are not collected if contraindications exist.</p>
+<p>The Sample Collection Module can be configured via a number of attributes including:</p>
+<ul class="obiba-gear-list">
+    <li>Number of tubes containing the primary samples expected</li>
+    <li>Bar code structure, length and format (smart or random)</li>
+    <li>Elements making up the bar code (participant code, additive code, or random numbers)</li>
+</ul>

@@ -1,7 +1,15 @@
-{% for partner in site.data.partners %}
-<a class="obiba-product-link" href="{{partner.url}}">
-    <img title="{{partner.title}}" src="{{ ASSET_PATH }}bootstrap/img/{{partner.img}}"
-         class="obiba-img-responsive-padded"
-         alt="Responsive image">
-</a>
+{% for r in (0..1) %}
+    <div class="row">
+    {% for i in (0..2) %}
+        {% assign index = r | times:3 | plus:i %}
+        {% assign partner = site.data.partners[index] %}
+        <div class="col-xs-4 text-center">
+            <a class="obiba-product-link text-center" href="{{partner.url}}">
+                <img title="{{partner.title}}" src="{{ ASSET_PATH }}bootstrap/img/{{partner.img}}"
+                     class="obiba-img-responsive-padded"
+                     alt="Responsive image">
+            </a>
+        </div>
+    {% endfor %}
+    </div>
 {% endfor %}

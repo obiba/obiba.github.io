@@ -9,8 +9,10 @@ menu:
         items:
             /pages/software/onyx: Onyx
             /pages/software/opal: Opal
-            /pages/software/datashield: DataSHIELD
+            http://datashield.org: DataSHIELD
             /pages/software/mica: Mica
+            divider: divider
+            http://wiki.obiba.org/pages/viewpage.action?pageId=22544438: Mica-Opal Demo
     /pages/stories: Stories
     submenu_documentation:
         title: Documentation
@@ -19,16 +21,13 @@ menu:
             http://wiki.obiba.org/display/OPALDOC/Home: Opal
             http://datashield.org/: DataSHIELD
             http://wiki.obiba.org/display/MICADOC/Home: Mica
-            divider: divider
-            /pages/docs/usecases: Use Cases
-            /pages/docs/publications: Publications
     /pages/about: About
 ---
 {% include JB/setup %}
 
 <div class="jumbotron overview">
     <div class="obiba-promo">
-        <h1>Open Source Software<br>For BioBanks</h1>
+        <h1>Open Source Software<br>for BioBanks</h1>
         <br>
 
         <p>Integrated software applications for epidemiological data management and analysis</p>
@@ -53,10 +52,10 @@ menu:
 {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is OBiBa?" sectionBody="themes/bootstrap/home/intro.html" %}
 </div>
 
+
 <div class="obiba-home-section-header">
     {% include themes/bootstrap/home-title.html sectionTitle="Our Applications" %}
 </div>
-
 <div class="obiba-home-section">
     {% include themes/bootstrap/section.html img="/assets/themes/bootstrap/img/icon-onyx.png" sectionTitle="Collect with Onyx" sectionBody="themes/bootstrap/home/onyx.html" %}
     {% include themes/bootstrap/section.html img="/assets/themes/bootstrap/img/icon-opal.png" sectionTitle="Store with Opal" sectionBody="themes/bootstrap/home/opal.html" %}
@@ -68,10 +67,10 @@ menu:
 <div class="obiba-home-section-header">
     {% include themes/bootstrap/home-title.html sectionTitle="Latest News" %}
 </div>
-
 <div class="obiba-home-section">
     {% include themes/bootstrap/section.html icon="fa-bullhorn" sectionBody="themes/bootstrap/news/list.html" %}
 </div>
+
 
 <div class="obiba-home-section-header">
     {% include themes/bootstrap/home-title.html sectionTitle="Our Partners" %}

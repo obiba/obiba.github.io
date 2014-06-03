@@ -106,7 +106,7 @@ h1, h2, h3, h4, p, a, address {
     text-align: left;
   }
   color: #ffffff;
-  background-color: #493C23;
+  background-color: #CE4A21;
 }
 
 .obiba-page-header {
@@ -170,9 +170,7 @@ img.obiba-img-responsive {
 
 img.obiba-img-responsive-padded {
   .obiba-image-responsive;
-  padding-right: 1em;
 }
-
 
 .obiba-img-item {
   margin: 3px;
@@ -230,7 +228,15 @@ ul.obiba-no-style-list {
   li:before {
     font-family: 'FontAwesome';
     content: '\f046';
-    margin:0 10px 0 -25px;
+    margin:0 10px 0 -22px;
+  }
+}
+
+ul.obiba-user-list {
+  .obiba-fa-list;
+
+  li:before {
+    content: '\f0c0';
   }
 }
 
@@ -239,6 +245,14 @@ ul.obiba-job-list {
 
   li:before {
     content: '\f046';
+  }
+}
+
+ul.obiba-gear-list {
+  .obiba-fa-list;
+
+  li:before {
+    content: '\f013';
   }
 }
 

@@ -17,8 +17,13 @@
                                 </a>
                             {% endif %}
                             {% if page.github != null %}
-                                <a title="Github" class="obiba-product-link" href="{{page.github}}">
+                                <a title="Github" class="obiba-product-link obiba-small-right-margin" href="{{page.github}}">
                                     <i class="fa fa-github-square"></i>
+                                </a>
+                            {% endif %}
+                            {% if page.demo != null %}
+                                <a title="Demo" class="obiba-product-link" href="{{page.demo}}">
+                                    <i class="fa fa-play-circle"></i>
                                 </a>
                             {% endif %}
                         </span>
