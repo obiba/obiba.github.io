@@ -82,10 +82,10 @@ To start the development follow these steps:
 
 To view the website locally go to [http://localhost:4000](http://localhost:4000)
 
-You can change the port alternativaly by adding a **-port <number>** to the **jeckyll** commandline:
+You can change the port alternativaly by adding a **--port <number>** to the **jeckyll** commandline:
 
 
-    $>jekyll serve -w -port 4001
+    $>jekyll serve -w --port 4001
 
 
 ## Website Issues
