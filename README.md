@@ -1,32 +1,94 @@
-# Jekyll-Bootstrap-3
+# OBiBa Website [Open Source Software for BioBanks]
+### License [GPL3](http://www.gnu.org/copyleft/gpl.html#gnu-license)
 
-Easily publish Bootstrap 3 powered Jekyll sites.  
-Fork of the well known jekyll-bootstrap (v0.3.0). Original project is [here](https://github.com/plusjade/jekyll-bootstrap).  
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages.  
+## Directories
 
-## Usage
+### Website Structure
 
-### 1. Create a Repo
-- Go to <https://github.com> and create a new repository named *USERNAME.github.com*  
+In order to have clean URLs, each section of the site has its own directory under pages. For example the link to Opal
+page will be:
 
-### 2. Install Jekyll-Bootstrap-3  
-<pre>
-  <code>
-    $ git clone https://github.com/dbtek/jekyll-bootstrap-3 USERNAME.github.com
-    $ cd USERNAME.github.com
-    $ git remote set-url origin git@github.com:USERNAME/USERNAME.github.com.git
-    $ git push origin master  
-  </code>
-</pre>  
-### 3. Enjoy !
-- After giving 10 mins to GitHub of course.  
+    http://obiba.github.io/pages/products/opal
 
-For original project's usage and documentation please see: <http://jekyllbootstrap.com>  
+Under each section folder there is an index.html file which serves as including sub-section templates. Here is Opal's
+index file:
 
-## License
+    ---
+    layout: product
+    wiki: http://wiki.obiba.org/display/OPALDOC/Home
+    download: http://download.obiba.org/opal/stable/
+    github: http://github.com/obiba/opal
+    demo: http://wiki.obiba.org/pages/viewpage.action?pageId=22544438
+    title: Store with Opal
+    ---
+    {% include JB/setup %}
+    {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Opal?" sectionBody="themes/bootstrap/opal/what.html" %}
+    {% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/opal/features.html" %}
 
-[MIT](http://opensource.org/licenses/MIT)
+The section between the three dashes is the page YAML configuration used by the corresponding template files:
+
+* **layout**: name of the page layout used by this page
+* **wiki**, **download**, **github**, **demo**: are the icons in each product page (aligned to the right)
+* **title**: The title on top of the page
+
+As an example, a template file such as *product.html* can access the download key as follows:
+
+    page.download
+
+The first include is useful if Jekyll Bootstrap functionality is required.
+The last two include files are actually including the content of the page.
+
+As a general rule, each main page uses templates (partials) to make the edition simpler and more organized. As it can be
+seen, the Opal's intro and feature pages are divided into two separate template files.
+
+All template files are under <strong>_includes/themes/bootstrap/</strong>, you can have a look at each to get some ideas how they use
+the YAML settings and the Liquid template codes.
+
+Currently there are four general layouts:
+
+* **default**: the main container layout
+* **page**: for all non-product pages
+* **product**: for product only pages
+* **post**: for posts that are not currently used
+
+All data files are placed under <strong>_data</strong> files:
+
+* **jobs**: list of job postings
+* **news**: list of news
+* **partners**: list of partners
+* **post**: list of sponsors
+
+### Website Development
+
+You need the following tools:
+
+* **ruby**
+* **ruby-dev**
+* **nodejs**
+* **grunt**
+* **jekyll**
+
+To start the development follow these steps:
+
+* open two Terminal TABs or windows
+* in the first one run:
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/jekyll-bootstrap-3/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+    $>grunt
 
+* in the second run:
+
+
+    $> jekyll serve -w
+
+To view the website locally go to [http://localhost:4000](http://localhost:4000)
+
+You can change the port alternativaly by adding a **-port <number>** to the **jeckyll** commandline:
+
+
+    $>jekyll serve -w -port 4001
+
+
+### Website Issues
+
+You can always log bugs and improvements using our [JIRA](http://jira.obiba.org/) under the project **OBiBa Website**
