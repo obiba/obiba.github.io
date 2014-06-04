@@ -1,4 +1,5 @@
-# OBiBa Website [Open Source Software for BioBanks]
+# OBiBa Website
+#### Open Source Software for BioBanks
 ### License [GPL3](http://www.gnu.org/copyleft/gpl.html#gnu-license)
 
 ## Directories
