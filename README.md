@@ -2,9 +2,7 @@
 #### Open Source Software for BioBanks
 ### License [GPL3](http://www.gnu.org/copyleft/gpl.html#gnu-license)
 
-## Directories
-
-### Website Structure
+## Website Structure
 
 In order to have clean URLs, each section of the site has its own directory under pages. For example the link to Opal
 page will be:
@@ -59,7 +57,7 @@ All data files are placed under <strong>_data</strong> files:
 * **partners**: list of partners
 * **post**: list of sponsors
 
-### Website Development
+## Website Development
 
 You need the following tools:
 
@@ -90,6 +88,6 @@ You can change the port alternativaly by adding a **-port <number>** to the **je
     $>jekyll serve -w -port 4001
 
 
-### Website Issues
+## Website Issues
 
 You can always log bugs and improvements using our [JIRA](http://jira.obiba.org/) under the project **OBiBa Website**
