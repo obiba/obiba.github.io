@@ -1,6 +1,1 @@
-{% for sponsor in site.data.sponsors %}
-<a class="obiba-product-link" href="{{sponsor.url}}">
-    <img title="{{sponsor.title}}" src="{{ ASSET_PATH }}bootstrap/img/{{sponsor.img}}"
-         class="obiba-img-responsive-padded"
-         alt="Responsive image">
-</a>{% endfor %}
+{% include themes/bootstrap/image-list.html list=site.data.sponsors %}
