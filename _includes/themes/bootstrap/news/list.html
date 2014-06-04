@@ -1,9 +1,11 @@
 {% if page.menu != null %}
     {% assign count = site.data.news.summary %}
 {% else %}
-    {% assign count = 9999 %}
+    {% assign count = site.data.news.data.size %}
 {% endif %}
-<ul class="obiba-news-list">
+
+
+<ul class="visible-xs obiba-news-list">
     {% for item in site.data.news.data limit:{{count}}%}
     <li>
         <i class="fa fa-calendar-o"></i> {{item.date}} <a href="/pages/news/{{item.url}}">{{item.title}} <i class="fa fa-arrow-circle-right"></i></a>
@@ -11,28 +13,32 @@
     {% endfor %}
 </ul>
 
-{% if count != 9999 %}
-    <p class="obiba-top-margin">A complete list of releases and events can be found <a href="/pages/news">here <i class="fa fa-arrow-circle-right"></i></a></p>
+
+{% assign mod = count | modulo:2 %}
+{% assign rows = count | divided_by:2 | plus:mod | minus:1 %}
+{% for r in (0..rows) %}
+<div class="hidden-xs row">
+    {% for i in (0..1) %}
+    {% assign index = r | times:2 | plus:i %}
+    {% unless r == 0 %}
+    {% assign margin = 'obiba-top-margin' %}
+    {% endunless %}
+    {% assign item = site.data.news.data[index] %}
+    <div class="col-xs-6 {{margin}}">
+        <ul class="obiba-news-list">
+            <li>
+                <h5>{{item.title}} <span class="pull-right"><i class="fa fa-calendar-o"></i> {{item.date}}</span></h5>
+                <hr class="obiba-news-separator">
+                <p>{{item.summary}}</p>
+                <a href="/pages/news/{{item.url}}">Details <i class="fa fa-arrow-circle-right"></i></a>
+            </li>
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+{% if count == site.data.news.summary %}
+<p class="obiba-top-margin">A complete list of releases and events can be found <a href="/pages/news">here <i class="fa fa-arrow-circle-right"></i></a></p>
 {% endif %}
 
-
-<!--{% assign mod = count | modulo:3 %}-->
-<!--{% assign rows = include.list.size | divided_by:3 | plus:mod | minus:1 %}-->
-<!--{% for r in (0..rows) %}-->
-<!--<div class="row">-->
-    <!--{% for i in (0..2) %}-->
-    <!--{% assign index = r | times:3 | plus:i %}-->
-    <!--{% unless r == 0 %}-->
-    <!--{% assign margin = 'obiba-large-top-margin' %}-->
-    <!--{% endunless %}-->
-    <!--{% assign item = include.list[index] %}-->
-    <!--<div class="col-xs-4 text-center {{margin}}">-->
-        <!--<a class="obiba-product-link text-center" href="{{item.url}}">-->
-            <!--<img title="{{item.title}}" src="{{ ASSET_PATH }}bootstrap/img/{{item.img}}"-->
-                 <!--class="obiba-img-responsive-padded"-->
-                 <!--alt="Responsive image">-->
-        <!--</a>-->
-    <!--</div>-->
-    <!--{% endfor %}-->
-<!--</div>-->
-<!--{% endfor %}-->

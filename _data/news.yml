@@ -3,12 +3,15 @@ data:
   - date: 2014-03-21
     title: Opal 2.0 Released
     url: release/opal/2.0/
+    summary: This release offers a complete rework of the web user interface.
   - date: 2013-10-17
     title: Mica 8.2 Released
     url: release/mica/8.2/
+    summary: This release fixes bugs for longitudinal studies.
   - date: 2013-07-03
     title: Opal 1.15.0 Released
     url: release/opal/1.15.0/
+    summary: This release includes Python client, Geospatial data types and Public datasources.
   - date: 2013-06-14
     title: Mica 8.0 Released
     url: release/mica/8.0/
