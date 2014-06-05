@@ -6,24 +6,24 @@
                     <h1>{{page.title}}
                         <span class="pull-right">
                             {% if page.download != null %}
-                                <a title="Download" class="obiba-product-link" href="{{page.download}}">
-                                    <i class="fa fa-download obiba-small-right-margin"></i>
-                                </a>
-                            {% endif %}
-                            {% if page.wiki != null %}
-                                <a title="Wiki" class="obiba-product-link" href="{{page.wiki}}">
-                                    <i class="fa fa-question-circle obiba-small-right-margin"></i>
-                                </a>
-                            {% endif %}
-                            {% if page.github != null %}
-                                <a title="Github" class="obiba-product-link obiba-small-right-margin"
-                                   href="{{page.github}}">
-                                    <i class="fa fa-github-square"></i>
+                                <a title="Download" class="obiba-product-link obiba-small-right-margin" href="{{page.download}}">
+                                    <i class="fa fa-download"></i>
                                 </a>
                             {% endif %}
                             {% if page.demo != null %}
-                                <a title="Demo" class="obiba-product-link" href="{{page.demo}}">
+                                <a title="Demo" class="obiba-product-link obiba-small-right-margin" href="{{page.demo}}">
                                     <i class="fa fa-play-circle"></i>
+                                </a>
+                            {% endif %}
+                            {% if page.wiki != null %}
+                                <a title="Wiki" class="obiba-product-link obiba-small-right-margin" href="{{page.wiki}}">
+                                    <i class="fa fa-question-circle"></i>
+                                </a>
+                            {% endif %}
+                            {% if page.github != null %}
+                                <a title="Github" class="obiba-product-link"
+                                   href="{{page.github}}">
+                                    <i class="fa fa-github-square"></i>
                                 </a>
                             {% endif %}
                         </span>
