@@ -7,13 +7,16 @@
     font-size: 12px;
   }
   h1 {
-    font-size: 15px;
+    font-size: 16px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
   h3 {
     font-size: 14px;
+  }
+  h4 {
+    font-size: 13px;
   }
 }
 
@@ -120,7 +123,7 @@ h1, h2, h3, h4, p, a, address {
   padding: 0;
   text-align: center;
   color: #E3E3E3;
-  line-height: 200%;
+  line-height: 250%;
 }
 
 .obiba-home-section-header {
@@ -190,6 +193,12 @@ hr.obiba-footer-separator {
 .obiba-image-responsive {
   height: auto;
   max-width: 100%;
+  margin: auto;
+}
+
+.obiba-image-width-responsive {
+  width: auto;
+  max-height: 100%;
   margin: auto;
 }
 
@@ -312,7 +321,6 @@ ul.obiba-gear-list {
 
 ul.obiba-footer-list {
   .obiba-fa-list;
-  display: table;
   margin-left:auto;
   margin-right:auto;
   position: relative;
@@ -345,6 +353,19 @@ ul.obiba-news-list {
 
 .obiba-left-margin {
   margin-left: 20px;
+}
+
+.obiba-small-top-padding {
+  padding-top: 10px;
+}
+
+.obiba-small-bottom-padding {
+  padding-bottom: 10px;
+}
+
+.obiba-small-vertical-padding {
+  .obiba-small-top-padding;
+  .obiba-small-bottom-padding;
 }
 
 .obiba-small-top-margin {
@@ -415,9 +436,11 @@ a.obiba-product-link:link {
     COLOR: #E3E3E3;
   }
 }
+
 a.obiba-product-link:hover {
   COLOR: #ffffff;
 }
+
 a.obiba-product-link {
   color: #E3E3E3;
   text-decoration: none !important;
@@ -426,16 +449,19 @@ a.obiba-product-link {
 .obiba-copyright {
   .text-muted;
   font-size: 12px;
-  margin-left: -20px;
 }
 
-/* vertical alignment styles */
-.col-top {
-  vertical-align:top;
+.obiba-ribbon {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10000;
+
+  img {
+    width: 10em;
+  }
 }
-.col-middle {
-  vertical-align:middle;
-}
-.col-bottom {
-  vertical-align:bottom;
+
+.obiba-bg-primary-border {
+  border-left: 5px solid #173F62;
 }
