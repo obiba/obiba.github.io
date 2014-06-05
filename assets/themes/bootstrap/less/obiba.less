@@ -52,7 +52,7 @@ h1, h2, h3, h4, p, a, address {
 }
 
 .obiba-body {
-  background-color: #F3EFE6;
+  background-color: #f7f4ee;
 }
 
 .obiba-small-image-shadow {
@@ -83,6 +83,19 @@ h1, h2, h3, h4, p, a, address {
 
 .obiba-promo-icon-color {
   color: #E7E8E9;
+}
+
+.obiba-no-left-padding {
+  padding-left: 0;
+}
+
+.obiba-no-right-padding {
+  padding-right: 0;
+}
+
+.obiba-no-horizontal-padding {
+  .obiba-no-left-padding;
+  .obiba-no-right-padding;
 }
 
 .obiba-no-top-marin {
@@ -152,9 +165,9 @@ hr.obiba-section-separator {
 
 hr.obiba-news-separator {
   .obiba-separator;
-  background-color: #aaaaaa;
+  background-color: #e2d9c5;
   padding: 0;
-  margin: 0 0 2px 0;
+  margin: 2px 0 10px 0;
 }
 
 hr.obiba-footer-separator {
@@ -181,7 +194,7 @@ hr.obiba-footer-separator {
 }
 
 .obiba-header-image {
-  vertical-align: bottom;
+
 
   img {
     @media only screen and (max-width : 480px) {
@@ -190,6 +203,7 @@ hr.obiba-footer-separator {
     @media only screen and (min-width : 481px) {
       height: 32px;
     }
+    vertical-align: bottom;
     max-width: 100%;
     padding: 0px;
     margin: 0px;
@@ -241,6 +255,7 @@ img.obiba-img-responsive-padded {
   margin-bottom: 20px;
 }
 
+
 .obiba-no-style {
   list-style: none;
   padding: 0;
@@ -267,7 +282,7 @@ ul.obiba-user-list {
   .obiba-fa-list;
 
   li:before {
-    content: '\f0c0';
+    content: '\f007';
   }
 }
 

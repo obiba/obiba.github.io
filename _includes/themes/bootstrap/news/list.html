@@ -19,21 +19,26 @@
 {% for r in (0..rows) %}
 <div class="hidden-xs row">
     {% for i in (0..1) %}
-    {% assign index = r | times:2 | plus:i %}
-    {% unless r == 0 %}
-    {% assign margin = 'obiba-top-margin' %}
-    {% endunless %}
-    {% assign item = site.data.news.data[index] %}
-    <div class="col-xs-6 {{margin}}">
-        <ul class="obiba-news-list">
-            <li>
-                <h5>{{item.title}} <span class="pull-right"><i class="fa fa-calendar-o"></i> {{item.date}}</span></h5>
-                <hr class="obiba-news-separator">
-                <p>{{item.summary}}</p>
-                <a href="/pages/news/{{item.url}}">Details <i class="fa fa-arrow-circle-right"></i></a>
-            </li>
-        </ul>
-    </div>
+        {% assign index = r | times:2 | plus:i %}
+        {% unless r == 0 %}
+            {% assign margin = 'obiba-top-margin' %}
+        {% endunless %}
+        {% unless i == 0 %}
+            {% assign padding = 'obiba-no-right-padding' %}
+        {% else %}
+            {% assign padding = 'obiba-no-left-padding' %}
+        {% endunless %}
+        {% assign item = site.data.news.data[index] %}
+        <div class="col-xs-6 {{margin}} {{padding}}">
+            <ul class="obiba-news-list">
+                <li class="obiba-no-left">
+                    <h5>{{item.title}} <span class="pull-right"><i class="fa fa-calendar-o"></i> {{item.date}}</span></h5>
+                    <hr class="obiba-news-separator">
+                    <p>{{item.summary}}</p>
+                    <a href="/pages/news/{{item.url}}">Details <i class="fa fa-arrow-circle-right"></i></a>
+                </li>
+            </ul>
+        </div>
     {% endfor %}
 </div>
 {% endfor %}
