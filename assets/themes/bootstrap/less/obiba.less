@@ -18,12 +18,37 @@
   h4 {
     font-size: 13px;
   }
+  p {
+    font-size: 12px;
+  }
+
+  .jumbotron {
+    p {
+      font-size: 12px;
+    }
+  }
 }
+
+@page-header-background-color: #2D5670;
+@section-header-background-color: #536C70;
+@body-background-color: #f1f1f1;
+@promo-color: #E7E8E9;
+@header-text-color: #E3E3E3;
+@separator-background-color: #333333;
+@news-separator-background-color: #E2D9C5;
+@home-section-color: #ffffff;
+@promo-icon-color: #E7E8E9;
+@footer-color: #ADADAD;
+@footer-background-color: #222222;
+@footer-separator-background-color: #8E7E6E;
+@product-link-color: #E2E3E3;
+@product-link-hover-color: #FFFFFF;
+@primary-background-color: #173F62;
 
 /* HACK to remove horizontal scroll when we don't need it */
 .row {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 /* centered columns styles */
@@ -40,12 +65,27 @@
 }
 
 .overview {
-  margin: 0;
+  margin: 0px;
   padding: 10px 0 50px 0;
-  background-color: #02535E;
+  background-color: @page-header-background-color;
   margin-top: 50px;
 }
 
+.obiba-home-section-header {
+  h2 {
+    .obiba-header-text;
+  }
+  color: @home-section-color;
+  background-color: @section-header-background-color;
+}
+
+.obiba-page-header {
+  h1 {
+    .obiba-header-text;
+    text-align: left;
+  }
+  background-color: @page-header-background-color;
+}
 .obiba-navbar {
   margin-bottom: 0;
 }
@@ -54,18 +94,18 @@ h1, h2, h3, h4, p, a, address {
   font-family: "Open Sans";
 }
 
-.obiba-body {
-  background-color: #f7f4ee;
+h1.obiba-main-title {
+  font-weight: 700;
 }
 
-.obiba-small-image-shadow {
-  box-shadow: 1px 1px 4px #888888;
+.obiba-body {
+  background-color: @body-background-color;
 }
 
 .obiba-promo-text {
   text-align: center;
   line-height: 150%;
-  color: #ffffff;
+  color: @promo-color;
 }
 
 .obiba-promo {
@@ -85,7 +125,7 @@ h1, h2, h3, h4, p, a, address {
 }
 
 .obiba-promo-icon-color {
-  color: #E7E8E9;
+  color: @promo-icon-color;
 }
 
 .obiba-no-left-padding {
@@ -95,6 +135,20 @@ h1, h2, h3, h4, p, a, address {
 .obiba-no-right-padding {
   padding-right: 0;
 }
+
+.obiba-small-left-padding {
+  padding-left: 10px;
+}
+
+.obiba-small-right-padding {
+  padding-right: 10px;
+}
+
+.obiba-small-horizontal-padding {
+  .obiba-small-left-padding;
+  .obiba-small-right-padding;
+}
+
 
 .obiba-no-horizontal-padding {
   .obiba-no-left-padding;
@@ -122,24 +176,8 @@ h1, h2, h3, h4, p, a, address {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #E3E3E3;
+  color: @header-text-color;
   line-height: 250%;
-}
-
-.obiba-home-section-header {
-  h2 {
-    .obiba-header-text;
-  }
-  color: #ffffff;
-  background-color: #CE4A21;
-}
-
-.obiba-page-header {
-  h1 {
-    .obiba-header-text;
-    text-align: left;
-  }
-  background-color: #02535E;
 }
 
 .obiba-section {
@@ -163,12 +201,12 @@ h1, h2, h3, h4, p, a, address {
 hr.obiba-section-separator {
   .obiba-separator;
   margin-top: 10px;
-  background-color: #333333;
+  background-color: @separator-background-color;
 }
 
 hr.obiba-news-separator {
   .obiba-separator;
-  background-color: #e2d9c5;
+  background-color: @news-separator-background-color;
   padding: 0;
   margin: 2px 0 10px 0;
 }
@@ -176,8 +214,9 @@ hr.obiba-news-separator {
 hr.obiba-footer-separator {
   .obiba-separator;
   margin-top: 10px;
-  height: 0.05em;
-  background-color: #8E7E6E;
+  height: 1px;
+  background-color: @footer-separator-background-color;
+  opacity: 0.3;
 }
 
 .obiba-partners {
@@ -248,14 +287,14 @@ img.obiba-img-responsive-padded {
 .obiba-footer {
   margin: 0;
   padding: 10px 0 10px 0;
-  background-color: #222222; /*Old browsers*/
-  color: #adadad;
+  background-color: @footer-background-color;
+  color: @footer-color;
 }
 
 .footer.copyright {
-  background-color: #222222; /*Old browsers*/
+  background-color: @footer-background-color; /*Old browsers*/
   p {
-    color: #adadad;
+    color: @footer-color;
   }
 }
 
@@ -433,16 +472,16 @@ ul.obiba-news-list {
 
 a.obiba-product-link:link {
   a.obiba-product-link:visited {
-    COLOR: #E3E3E3;
+    color: @product-link-color;
   }
 }
 
 a.obiba-product-link:hover {
-  COLOR: #ffffff;
+  color: @product-link-hover-color;
 }
 
 a.obiba-product-link {
-  color: #E3E3E3;
+  color: @product-link-color;
   text-decoration: none !important;
 }
 
@@ -463,5 +502,5 @@ a.obiba-product-link {
 }
 
 .obiba-bg-primary-border {
-  border-left: 5px solid #173F62;
+  border-left: 5px solid @primary-background-color;
 }
