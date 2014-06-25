@@ -1,4 +1,9 @@
-<div class="container obiba-top-margin">
+{% if include.noMargin %}
+    {% assign topMargin = '' %}
+{% else %}
+    {% assign topMargin = 'obiba-top-margin' %}
+{% endif %}
+<div class="container {{topMargin}}">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
             {% if include.sectionTitle != null %}
