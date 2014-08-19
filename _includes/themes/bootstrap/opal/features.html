@@ -1,41 +1,143 @@
-<p>Opal is a complex and powerful software application for storing and integrating heterogeneous biobank
-    data. We list here some of its key features.</p>
+<div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Warehouse</h4>
+</div>
 
 <div>
-    <div class="obiba-vertical-margin">
-        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Warehouse</h4>
-    </div>
+    <p>Opal's database structure enables to store values on an unlimited number of variables without any database
+        structure alterations. Customized variable dictionaries are simply defined in Excel files that are then uploaded
+        into Opal. Here are some of the main features and functionality of the Opal's database:</p>
 
-    <p>Opal's database implements a generalized <a href="http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model" target="_blank">Entity-Attribute-Value <i class="fa fa-external-link-square"></i></a> (EAV) data model which enables
-        to
-        store values on an unlimited number of variables without any database structure alterations.
-        Customized variable dictionaries are simply defined in Excel files that are then uploaded into
-        Opal.
-        Here are some of the main features and functionalities of the Opal's database.</p>
+
     <ul class="obiba-carret-list">
-        <li>Able to integrate multiple sources of data (datasource)</li>
-        <li>Variable dictionary manager</li>
-        <li>Import data in CSV, Excel and Onyx format</li>
-        <li>Connect to existing SQL databases</li>
-        <li>Uniform variable and data representation</li>
-        <li>Any number of variables and entities</li>
-        <li>Any type of "entity"</li>
-        <li>Statistical summary</li>
+        <li>Use MongoDB or Mysql as database software backend.</li>
+        <li>Import data in CSV, Excel, SPSS and Onyx format.</li>
+        <li>Can connect with multiple data sources such as existing SQL databases and LimeSurvey software to import data
+            directly to Opal.
+        </li>
+        <li>Include an advanced variable dictionary manager.</li>
+        <li>Data organized in projects and tables.</li>
+        <li>Uniform variable and data representation.</li>
+        <li>Unlimited number of variables and records.</li>
+        <li>Can store data on any type of "entity", such as subject, sample, geographic area, etc.</li>
+        <li>Support any data type (e.g, decimal, binary) including geographical.</li>
+        <li>Advanced indexing functionality using ElasticSearch.</li>
     </ul>
 </div>
 
 <div class="obiba-top-margin">
     <div class="obiba-vertical-margin">
-        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Derive Variables</h4>
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Views and Derived Variables</h4>
     </div>
 
-    <p>Most of the time, researchers need to create research datasets that contain new derived
-        variables. For example, a researcher might be interested in the Body Mass Index (BMI) for each
-        participant which is obtained by dividing the measured weight by the height. Opal provides all
-        the infrastructure to derive new variables as summarized in this list of features.</p>
+    <p>Most of the time, researchers need to create datasets that contain new derived variables. To this end, Opal
+        provides all the infrastructure to create virtual tables or “views” of derived variables that can be persisted
+        on disk or exported into files afterward. Derived variables are defined using JavaScript code executed on demand
+        to create new datasets from raw data stored in Opal. Here are the main features of this infrastructure:</p>
+
     <ul class="obiba-carret-list">
-        <li>Free-form algorithms</li>
-        <li>Measurement unit conversion</li>
+        <li>Advanced JavaScript library of util functions commonly used to derive new variable (e.g. unit conversion)
+            See <a href="http://datashield.org" target="_blank">http://wiki.obiba.org/display/OPALDOC/Magma+Javascript+API<i
+                    class="fa fa-external-link-square"></i>Magma Javascript API</a>.
+        </li>
+        <li>Graphical wizard to easily recode variables without writing Javascript code.</li>
+        <li>instant summary statistics computation of the new derived variables.</li>
     </ul>
 
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Privacy, Confidentiality and Security</h4>
+    </div>
+
+    <p>Ensuring participant privacy and data confidentiality is a fundamental issues in any biobank or epidemiological
+        study. Opal provides users with state-of-the-art infrastructure for managing data encryption, participant
+        identifiers and data access privileges. Here is a summary of Opal's features regarding privacy, confidentiality
+        and security:</p>
+
+    <ul class="obiba-carret-list">
+        <li>Public Key Infrastructure (PKI) allowing Opal to create and use public-private key pairs for encrypting and
+            decrypting data.
+        </li>
+        <li>Authentication using either certificates and username/password mechanisms.</li>
+        <li>Advanced participant identifiers manager enabling multiple identifiers per participant.</li>
+        <li>Distinct and highly secure database for storing participant identifiers.</li>
+        <li>Granular permission management down to the variable level.</li>
+        <li>Restful services using HTTPS protocol.</li>
+    </ul>
+
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> File System</h4>
+    </div>
+
+    <p>Studies operational activities involve a lot of file management and file exchanges with external organizations or
+        software. Opal comes with its own file system to facilitate these processes:</p>
+
+    <ul class="obiba-carret-list">
+        <li>Centralized and file management</li>
+        <li>SFTP access</li>
+    </ul>
+
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Reporting</h4>
+    </div>
+
+    <p>The ability to create complex report on the data is essential for managing properly a study. Opal is able to
+        create sophisticated report using the library R…Main functionality is:</p>
+
+    <ul class="obiba-carret-list">
+        <li>Scheduled Execution (with email notifications)</li>
+    </ul>
+
+    <p><a href="http://wiki.obiba.org/display/OPALDOC/Opal+Reporting+User+Guide" target="_blank">Learn more <i
+            class="fa fa-external-link-square"></i></a></p>
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> R Interface</h4>
+    </div>
+
+    <p>Statistical environments are complex software that require training to understand and use efficiently. Opal
+        provides an R module that can be installed in an R environment and that allows using data stored in an Opal
+        instance within that environment:</p>
+
+    <ul class="obiba-carret-list">
+        <li>R server monitoring from Opal</li>
+        <li>Opal data pushed automatically into R sessions (server side)</li>
+    </ul>
+
+    <p><a href="http://wiki.obiba.org/display/OPALDOC/Opal+Reporting+User+Guide" target="_blank">Learn more <i
+            class="fa fa-external-link-square"></i></a></p>
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Indexing</h4>
+    </div>
+
+    <p>Opal will automatically index all the data that is added to it. This allows for very fast retrieval and complex
+        querying of the data. Furthermore, the indexing can be managed by a cluster of machines for better performance,
+        thanks to the ElasticSearch software:</p>
+
+    <ul class="obiba-carret-list">
+        <li>Clustered indexing</li>
+        <li>Real-time search capability</li>
+    </ul>
+</div>
+
+<div class="obiba-top-margin">
+    <div class="obiba-vertical-margin">
+        <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Web Services (API)</h4>
+    </div>
+
+    <p>Opal is built on RESTful services. Everything in Opal is accessible through a URL. The resources can be obtained
+        in JSON or binary form (Protobuf). Any client that can make an HTTPs request can be a client to an Opal
+        server.</p>
 </div>
