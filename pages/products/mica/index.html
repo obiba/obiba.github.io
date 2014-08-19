@@ -1,17 +1,26 @@
 ---
 layout: product
-wiki: http://wiki.obiba.org/display/MICADOC/Home
-download: "#download"
-demo: "#demo"
-github: http://github.com/obiba/mica
 title: Publish with Mica
+menu:
+  download:
+    href: "#download"
+    target: _self
+  demo:
+    href: "#demo"
+    target: _self
+  github:
+    href: http://github.com/obiba/mica
+    target: _blank
+  wiki:
+    href: http://wiki.obiba.org/display/MICADOC/Home
+    target: _blank
 ---
 {% include JB/setup %}
 {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Mica?" sectionBody="themes/bootstrap/mica/what.html" %}
 {% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/mica/features.html" %}
-<section id="download">
+<section class="obiba-fix-navbar-section" id="download">
     {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Downloading Mica" sectionBody="themes/bootstrap/mica/download.html" %}
 </section>
 <section id="demo">
-    {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Downloading Mica" sectionBody="themes/bootstrap/mica/demo.html" %}
+    {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Try Mica" sectionBody="themes/bootstrap/mica/demo.html" %}
 </section>

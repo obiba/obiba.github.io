@@ -1,15 +1,24 @@
 ---
 layout: product
-wiki: http://wiki.obiba.org/display/OPALDOC/Home
-download: "#download"
-demo: "#demo"
-github: http://github.com/obiba/opal
 title: Store with Opal
+menu:
+  wiki:
+    href: http://wiki.obiba.org/display/OPALDOC/Home
+    target: _blank
+  download:
+    href: "#download"
+    target: _self
+  demo:
+    href: "#demo"
+    target: _self
+  github:
+    href: http://github.com/obiba/opal
+    target: _blank
 ---
 {% include JB/setup %}
 {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Opal?" sectionBody="themes/bootstrap/opal/what.html" %}
 {% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/opal/features.html" %}
-<section id="download">
+<section class="obiba-fix-navbar-section" id="download">
     {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Downloading Opal" sectionBody="themes/bootstrap/opal/download.html" %}
 </section>
 <section id="demo">

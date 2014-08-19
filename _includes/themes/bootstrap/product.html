@@ -1,37 +1,40 @@
 <div class="obiba-section">
-    <div class="obiba-page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-                    <h1>{{page.title}}
-                        <span class="pull-right">
-                            {% if page.download != null %}
-                                <a title="Download" class="obiba-product-link obiba-small-right-margin" href="{{page.download}}">
-                                    <i class="fa fa-download"></i>
-                                </a>
-                            {% endif %}
-                            {% if page.demo != null %}
-                                <a title="Demo" class="obiba-product-link obiba-small-right-margin" href="{{page.demo}}">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                            {% endif %}
-                            {% if page.wiki != null %}
-                                <a title="Wiki" class="obiba-product-link obiba-small-right-margin" href="{{page.wiki}}">
-                                    <i class="fa fa-question-circle"></i>
-                                </a>
-                            {% endif %}
-                            {% if page.github != null %}
-                                <a title="Github" class="obiba-product-link"
-                                   href="{{page.github}}">
-                                    <i class="fa fa-github-square"></i>
-                                </a>
-                            {% endif %}
-                        </span>
-                    </h1>
-                </div>
-            </div>
+  <div class="obiba-page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+          <h1>{{page.title}}
+            <span class="pull-right">
+              {% if page.menu.download != null %}
+                  <a title="Download" class="obiba-product-link obiba-small-right-margin"
+                     href="{{page.menu.download.href}}" target="{{page.menu.download.target}}">
+                    <i class="fa fa-download"></i>
+                  </a>
+              {% endif %}
+              {% if page.menu.demo != null %}
+                  <a title="Demo" class="obiba-product-link obiba-small-right-margin"
+                     href="{{page.menu.demo.href}}" target="{{page.menu.demo.target}}">
+                    <i class="fa fa-play-circle"></i>
+                  </a>
+              {% endif %}
+              {% if page.menu.wiki != null %}
+                  <a title="Wiki" class="obiba-product-link obiba-small-right-margin"
+                     href="{{page.menu.wiki.href}}" target="{{page.menu.wiki.target}}">
+                    <i class="fa fa-question-circle"></i>
+                  </a>
+              {% endif %}
+              {% if page.menu.github != null %}
+                  <a title="Github" class="obiba-product-link"
+                     href="{{page.menu.github.href}}" target="{{page.menu.github.target}}">
+                    <i class="fa fa-github-square"></i>
+                  </a>
+              {% endif %}
+            </span>
+          </h1>
         </div>
+      </div>
     </div>
+  </div>
 
-    {{ content }}
+  {{ content }}
 </div>

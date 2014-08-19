@@ -1,7 +1,7 @@
 <ul class="visible-xs obiba-news-list">
     {% for item in include.list %}
     <li class="text-center">
-        <a class="obiba-product-link" href="{{item.url}}">
+        <a class="obiba-product-link" href="{{item.url}}" target="_blank">
             <img title="{{item.title}}"
                  src="{{ ASSET_PATH }}bootstrap/img/{{item.img}}"
                  class="obiba-img-responsive-padded"
@@ -25,7 +25,7 @@
         {% assign index = r | times:3 | plus:i %}
         {% assign item = include.list[index] %}
         <div class="col-xs-4 text-center {{margin}}">
-            <a class="obiba-product-link text-center" href="{{item.url}}">
+            <a class="obiba-product-link text-center" href="{{item.url}}" target="_blank">
                 <img title="{{item.title}}"
                      src="{{ ASSET_PATH }}bootstrap/img/{{item.img}}"
                      class="obiba-img-responsive-padded"

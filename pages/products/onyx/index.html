@@ -1,13 +1,27 @@
 ---
 layout: product
-demo: "#demo"
-wiki: http://wiki.obiba.org/display/ONYXDOC/Onyx+Documentation+Home
-github: https://github.com/obiba/onyx
 title: Collect with Onyx
+menu:
+  download:
+    href: "#download"
+    target: _self
+  demo:
+    href: "#demo"
+    target: _self
+  wiki:
+    href: http://wiki.obiba.org/display/ONYXDOC/Onyx+Documentation+Home
+    target: _blank
+  github:
+    href: https://github.com/obiba/onyx
+    target: _blank
+
 ---
 {% include JB/setup %}
 {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Onyx?" sectionBody="themes/bootstrap/onyx/what.html" %}
 {% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/onyx/features.html" %}
+<section class="obiba-fix-navbar-section" id="download">
+  {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Downloading Onyx" sectionBody="themes/bootstrap/onyx/download.html" %}
+</section>
 <section id="demo">
-    {% include themes/bootstrap/section.html icon="fa-play-circle" sectionTitle="Try Onyx" sectionBody="themes/bootstrap/onyx/demo.html" %}
+  {% include themes/bootstrap/section.html icon="fa-play-circle" sectionTitle="Try Onyx" sectionBody="themes/bootstrap/onyx/demo.html" %}
 </section>
