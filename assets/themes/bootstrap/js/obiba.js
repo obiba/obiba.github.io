@@ -10,7 +10,7 @@
     $('#image-modal-container #image-modal')
     .css({
       'width': function () {
-        return ($(document).width() * .6) + 'px';
+        return ($(document).width() * .5) + 'px';
       }
     });
 
