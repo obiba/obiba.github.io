@@ -1,7 +1,7 @@
 (function ($) {
   'use strict';
 
-  $.popImageModal = function (imageUrl) {
+  $.popImageModal = function (imageUrl, imageHeader, imageCaption) {
     $('#image-modal-container').modal({
       backdrop: true,
       keyboard: true
@@ -15,6 +15,8 @@
     });
 
     $('#modal-image-holder').attr('src', imageUrl);
+    $('#modal-image-header').text(imageHeader);
+    $('#modal-image-caption').text(imageCaption);
   }
 
 }(jQuery));
