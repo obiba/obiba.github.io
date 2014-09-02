@@ -1,0 +1,11 @@
+<div class="obiba-top-margin">
+    <ul id="image-gallery-container" class="obiba-image-gallery row">
+        {% for image in include.list %}
+        <li class="col-lg-2 col-md-4 col-sm-5 col-xs-6">
+            <img id="{{include.list.size}}:{{forloop.index}}" class="img-responsive"
+                 src="{{ ASSET_PATH }}/bootstrap/img/{{image.url}}"
+                 onclick="ModalImageBrowser.getInstance().init(this)"/>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
