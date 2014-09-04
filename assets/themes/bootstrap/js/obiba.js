@@ -14,6 +14,13 @@
         }
       });
 
+    $('#modal-image-holder')
+      .css({
+        'left': function () {
+          return ($(document).width() * .25) + 'px';
+        }
+      });
+
 
     if (!pager) {
       $('#model-footer-pager').hide();
@@ -67,7 +74,7 @@ var ModalImageBrowser = (function () {
     }
 
     function bindKeydownEvents() {
-      $(document).bind('keydown', function(e) {
+      $(document).bind('keydown', function (e) {
         switch (e.which || e.keyCode) {
           case 37:
             prev();

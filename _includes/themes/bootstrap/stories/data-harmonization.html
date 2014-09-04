@@ -1,24 +1,27 @@
 <p>This story is an impressive example of use of the OBIBA software to create a federated database enabling advanced
-    analysis without divulging any individual-level data.</p>
+  analysis without divulging any individual-level data.</p>
 
-<p>BioSHare is a European FP7 funded project which has a mission to standardize and harmonize data from some of the
-    largest biobanks in Europe. More than 160 selected data elements from 13 European biobanks including UK Biobank,
-    Lifelines (Netherlands) and the Nord-Trøndelag Health Study (Norway) have been harmonized by Maelstrom Research and
-    corresponding harmonized datasets were derived and stored locally by each cohorts in their local Opal database.</p>
+<p><a href="http://www.bioshare.eu/" target="_blank">BioSHaRE <i class="fa fa-external-link-square"></i></a> is a
+  European project which aims to standardize and harmonize data from some of the largest biobanks in
+  Europe. More than 160 selected data elements from 13 European biobanks including UK Biobank and Lifelines
+  (Netherlands) have been harmonized by <a href="http://www.maelstrom-research.org/" target="_blank">Maelstrom Research
+    <i class="fa fa-external-link-square"></i></a> and corresponding harmonized datasets were derived and stored
+  locally by each cohort using its local Opal software instance.</p>
 
-<p>These databases have been then securely connected to the Mica-based BioSHARE website (bioshare.eu) and to the
-    DataSHIELD rstudio client (rstudio.bioshare.eu) to create a federated database system of more than 650,000 European
-    subjects. Using this infrastructure, researchers participating in this collaborative endeavour can log on and
-    securely run distributed queries and statistical analysis on the harmonized databases hosted on these
-    geographically-dispersed data computers. Queries available in a Mica-Opal federated infrastructure allows remote
-    retrieval of harmonized data summaries and descriptive statistics such as frequencies/counts, minimums, maximums,
-    means, standard deviations, as well as contingency tables for each participating biobank in real time. DataSHIELD
-    allows more advanced types of real time analyses such as generalized linear model fitting without disclosing any
-    individual-level data.</p>
 
-<p>More details can be read in <a href="http://www.biomedcentral.com/content/pdf/1742-7622-10-12.pdf" target="_blank">Data
-    harmonization and federated analysis of population-based studies <i class="fa fa-external-link-square"></i></a>
-    publication.</p>
+<p>The 13 resulting databases were then securely federated through the Mica-based <a href="http://www.bioshare.eu/"
+                                                                                     target="_blank">BioSHARE website <i
+  class="fa fa-external-link-square"></i></a> and the
+  DataSHIELD R client (rstudio.bioshare.eu) to create a distributed dataset on more than 650,000 European subjects.
+  Authorised researchers can now securely run distributed queries and statistical analyses on the harmonized data hosted
+  on geographically-dispersed Opal servers. Queries from Mica allows remote retrieval of data summaries and descriptive
+  statistics such as frequencies/counts, minimums, maximums, means, standard deviations, as well as contingency tables
+  for each participating biobank in real time whereas DataSHIELD allows more advanced types of real time analyses such
+  as generalized linear model fitting. In both cases, no individual-level data is ever transferred or disclosed to the
+  researchers protecting this way subjects’ privacy.</p>
+
+<p>More details can be read in this <a href="http://www.biomedcentral.com/content/pdf/1742-7622-10-12.pdf"
+                                       target="_blank">publication <i class="fa fa-external-link-square"></i></a>.</p>
 
 {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/bioshare-federation-map.png' header='BioSHaRE Federated Cohorts' caption='The BioSHaRE federated database connects together Opal databases from xx cohorts in yy different European countries and includes data on more than 650,000 subjects.' %}
 
