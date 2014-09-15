@@ -38,6 +38,7 @@
 @news-separator-background-color: #E2D9C5;
 @home-section-color: #2d5670;
 @promo-icon-color: #E7E8E9;
+@paragraph-text-color: @gray;
 @footer-color: #ADADAD;
 @footer-background-color: #222222;
 @footer-separator-background-color: #8E7E6E;
@@ -107,9 +108,15 @@ h1.obiba-main-title {
   background-color: @body-background-color;
 }
 
+p, li {
+  color: @paragraph-text-color;
+  h5 {
+    color: @text-color;
+  }
+}
+
 .highlight {
   font-size: 18px;
-  color: #666;
   line-height: 30px;
 }
 
@@ -338,6 +345,7 @@ ul.obiba-no-style-list {
   .obiba-no-style;
   list-style-position: outside;
   margin-left: 1.8em;
+  margin-bottom: 0.8em;
 
   li:before {
     font-family: 'FontAwesome';
