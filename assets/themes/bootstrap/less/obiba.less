@@ -18,7 +18,7 @@
   h4 {
     font-size: 13px;
   }
-  p {
+  p, p.highlight, li {
     font-size: 12px;
   }
 
@@ -30,13 +30,13 @@
 }
 
 @page-header-background-color: #2D5670;
-@section-header-background-color: #536C70;
+@section-header-background-color: #E3E3E3;
 @body-background-color: #f1f1f1;
 @promo-color: #E7E8E9;
 @header-text-color: #E3E3E3;
 @separator-background-color: #333333;
 @news-separator-background-color: #E2D9C5;
-@home-section-color: #ffffff;
+@home-section-color: #2d5670;
 @promo-icon-color: #E7E8E9;
 @footer-color: #ADADAD;
 @footer-background-color: #222222;
@@ -74,8 +74,8 @@
 .obiba-home-section-header {
   h2 {
     .obiba-header-text;
+    color: @home-section-color;
   }
-  color: @home-section-color;
   background-color: @section-header-background-color;
 }
 
@@ -100,11 +100,17 @@ h1, h2, h3, h4, p, a, address {
 }
 
 h1.obiba-main-title {
-  font-weight: 700;
+  
 }
 
 .obiba-body {
   background-color: @body-background-color;
+}
+
+.highlight {
+  font-size: 18px;
+  color: #666;
+  line-height: 30px;
 }
 
 .obiba-promo-text {

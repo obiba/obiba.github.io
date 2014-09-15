@@ -1,0 +1,18 @@
+{% if include.noMargin %}
+    {% assign topMargin = '' %}
+{% else %}
+    {% assign topMargin = 'obiba-top-margin' %}
+{% endif %}
+    <div class="row obiba-top-margin">
+        <div class="col-xs-6 col-sm-2 col-md-2 col-md-offset-1">
+            <img src="{{include.img}}" class="obiba-large-top-margin">
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-9">
+            {% if include.sectionTitle != null %}
+                <h3 class="obiba-header-image">
+                    {{include.sectionTitle}}
+                </h3>
+            {% endif %}
+            {% include {{include.sectionBody}} %}
+        </div>
+    </div>
