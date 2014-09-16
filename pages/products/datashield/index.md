@@ -1,6 +1,6 @@
 ---
 layout: product
-title: DataSHIELD
+title: Analyze with DataSHIELD
 ---
 {% include JB/setup %}
 {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is DataSHIELD?" sectionBody="themes/bootstrap/datashield/what.html" %}
