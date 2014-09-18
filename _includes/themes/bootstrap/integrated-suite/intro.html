@@ -4,36 +4,83 @@
 
 <h3>Individual Study</h3>
 
-blabla
+<p>An epidemiological study can take advantage of the whole OBiBa's stack.</p>
+
+<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Collection</h4>
+<p><a href="/pages/products/onyx">Onyx</a> can be used to automate data capture and thus ensuring a low level of errors
+    (data loss and inconcistencies). The type of data that can be captured (and validated at the time of their capture)
+    are:</p>
+
+<ul class="obiba-carret-list">
+    <li>Electronic consent,</li>
+    <li>Questionnaire answers and sound recordings,</li>
+    <li>Instrument outputs (numerical measures, images, files...),</li>
+    <li>Biological samples registration,</li>
+    <li>Experimental conditions (temperature, etc.),</li>
+    <li>Instrument calibrations.</li>
+</ul>
+
+<p><a href="/pages/products/onyx">Onyx</a> can automatically and securely export these data daily. The data dictionary
+    is always associated to the data export, ensuring that no information will be lost when interpreting the collected
+    data. The export media can be of different type to allow interfacing with various data processing systems:</p>
+<ul class="obiba-carret-list">
+    <li>XML files (optionally encrypted),</li>
+    <li>CSV files,</li>
+    <li>Direct connection to a <a href="/pages/products/opal">Opal</a> server.</li>
+</ul>
+
+<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Storage</h4>
+<p><a href="/pages/products/opal">Opal</a> is able to store data from <a href="/pages/products/onyx">Onyx</a> but also
+    from other data sources, usually CSV or SPSS files.</p>
+
+<p>The data dictionary can be prepared before or after the data importation. Data can also be transformed by developing
+derivation algorithms for data cleaning and quality checks. The participants' data can also be enriched with other type of information:
+    drug registry, geographical area metrics etc.</p>
+
+<p>The specificity of <a href="/pages/products/opal">Opal</a> is also that participant identifiers can be
+    compartmentalized for a better privacy and to avoid data collusion: the same participant can have one ID in the data
+    collected, another one in <a href="/pages/products/opal">Opal</a> storage and another one again in the data
+    exported to a research group.</p>
+
+<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Analysis</h4>
+<p>Data stored in <a href="/pages/products/opal">Opal</a> can be exported to files in common data formats or can be
+    pushed on-demand into <a href="http://www.r-project.org/" target="_blank">R <i class="fa fa-external-link-square"></i></a>
+    for performing statistical analysis, graphics and reports.</p>
+
+<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Data Publication</h4>
+<p><a href="/pages/products/mica">Mica</a> is the web portal of choice for publishing data dictionaries and aggregated
+    results. Out-of-the-box search capabilities of <a href="/pages/products/mica">Mica</a> allow researcher to explore
+    study's variables and data profiles that could match their project needs. Data access requests can also be submitted
+    and evaluated.</p>
 
 <h3>Study Consortia</h3>
-
-Blabla
-
 
 <p>Obiba offers a unique software solution to support data collection, harmonization and federation. As depicted in the
   figure below:</p>
 
+<div class="obiba-image-holder">
+    {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/opal-federated.png' header='Federated Database' caption='From data collection to data federation via data harmonization in a study consortia.' %}
+</div>
 
 <ul class="obiba-carret-list">
-  <li>data collected from Onyx can be seamlessly exported to study-specific Opal databases.</li>
-  <li>each study then uses the Opal’s ability of creating views and derived variables to implement processing
-    algorithms that transform data collected by each study into a common (i.e. harmonized) dataset.
+  <li>Data collected from <a href="/pages/products/onyx">Onyx</a> (or from other sources) can be imported into study-specific Opal databases,</li>
+  <li>Each study then uses the <a href="/pages/products/opal">Opal</a>’s ability of creating views and derived variables to implement processing
+    algorithms that transform data collected by each study into a common (i.e. harmonized) dataset,
   </li>
-  <li>making use of Mica and Opal, harmonized data can then be queried and analyzed with the DataSHIELD approach
-    through a federated database system, without sending individual-level study data outside of host institutions.
+  <li>Making use of <a href="/pages/products/mica">Mica</a> and <a href="/pages/products/opal">Opal</a>, harmonized data
+      can then be queried and analyzed with the <a href="/pages/products/datashield">DataSHIELD</a> approach
+    through a federated database system, <i>without sending individual-level study data outside of host institutions</i>.
   </li>
 </ul>
 
 <div class="obiba-top-margin">
-  <p>A real example of such OBiBa federated and harmonized database is described <a class="btn-link"
-                                                                                    href="/pages/stories">here</a>.
+  <p>Real examples of such OBiBa federated and harmonized database is described in
+      <a class="btn-link" href="/pages/stories">CPTP and BioSHaRE user stories</a>.
   </p>
 
-  <div class="obiba-image-holder">
-    {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/opal-federated.png' header='Onyx Engine' caption='Needs comments...' %}
-  </div>
 
-  <p>To set up your own federated database infrastructure using OBiBa, follow this tutorial</p>
+  <p>To set up or evaluate your own federated database infrastructure using OBiBa, follow the
+      <a href="http://wiki.obiba.org/pages/viewpage.action?pageId=22544438" target="_blank">Data Harmonization and
+          Database Federation Tutorial <i class="fa fa-external-link-square"></i></a>.</p>
 </div>
 
