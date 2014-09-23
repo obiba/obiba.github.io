@@ -1,61 +1,65 @@
 <div class="container">
-    <nav class="navbar navbar-default navbar-fixed-top obiba-navbar" role="navigation">
-        <div class="container">
-            <div class="row obiba-row">
-                <div class="col-sm-2 col-md-2">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-ex1-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div>
-                        <a class="obiba-navbar obiba-logo text-center" href="{{ HOME_PATH }}"><img
-                                src="/assets/themes/bootstrap/img/obiba-logo-small.png"/></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-10 col-md-10" style="padding-left: 0">
-                    <div class="collapse navbar-collapse navbar-ex1-collapse">
-                        <ul class="nav navbar-nav pull-right">
-                            {% assign pages_list = site.pages %}
-                            {% assign group = 'navigation' %}
-                            {% for node in pages_list %}
-                                {% assign menu = node.menu %}
-                                {% if node.title != null %}
-                                    {% if group == null or group == node.group %}
-                                        {% if menu != null %}
-                                            {% for item in menu %}
-                                                {% unless item[0] contains 'submenu_' %}
-                                                    <li><a href="{{item[0]}}" class="active">{{item[1]}}</a></li>
-                                                {% else %}
-                                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{item[1].title}}<b
-                                                            class="caret"></b></a>
-                                                        <ul class="dropdown-menu" role="menu">
-                                                            {% for subitem in item[1].items %}
-                                                                {% unless subitem[0] contains 'divider' %}
-                                                                <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
-                                                                {% else %}
-                                                                <li class="nav-divider"></li>
-                                                                {% endunless %}
-                                                            {% endfor %}
-                                                        </ul>
-                                                    </li>
-                                                {% endunless %}
-                                            {% endfor %}
-                                        {% endif %}
-                                    {% endif %}
-                                {% endif %}
-
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
+  <nav class="navbar navbar-default navbar-fixed-top obiba-navbar" role="navigation">
+    <div class="container">
+      <div class="row obiba-row">
+        <div class="col-sm-2 col-md-2">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div>
+            <a class="obiba-navbar obiba-logo text-center" href="{{ HOME_PATH }}"><img
+                src="/assets/themes/bootstrap/img/obiba-logo-small.png"/></a>
             </div>
+          </div>
         </div>
-    </nav>
+
+        <div class="col-xs-12 col-sm-10 col-md-10" style="padding-left: 0">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav pull-right">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% for node in pages_list %}
+                {% assign menu = node.menu %}
+                {% if node.title != null %}
+                  {% if group == null or group == node.group %}
+                    {% if menu != null %}
+                      {% for item in menu %}
+                        {% unless item[0] contains 'submenu_' %}
+                          {% unless item[1] contains 'Careers' and site.data.jobs.size > 0 %}
+                          <li><a href="{{item[0]}}" class="active">{{item[1]}}</a></li>
+                          {% else %}
+                          <li><a href="{{item[0]}}" class="active">{{item[1]}} <span class="badge">{{site.data.jobs.size}}</span></a></li>
+                          {% endunless %}
+                        {% else %}
+                          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{item[1].title}}<b
+                              class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                              {% for subitem in item[1].items %}
+                                {% unless subitem[0] contains 'divider' %}
+                                <li><a href="{{subitem[0]}}">{{subitem[1]}}</a></li>
+                                {% else %}
+                                <li class="nav-divider"></li>
+                                {% endunless %}
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% endunless %}
+                      {% endfor %}
+                    {% endif %}
+                  {% endif %}
+                {% endif %}
+
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </div>
 
