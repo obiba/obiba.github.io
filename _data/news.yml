@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2014-11-13
+    title: Mica 9.2 Released
+    url: release/mica/9.2/
+    summary: This release fixes bugs, security updates and includes several new features
   - date: 2014-03-21
     title: Opal 2.0 Released
     url: release/opal/2.0/
