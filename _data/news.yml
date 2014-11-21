@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2014-11-21
+    title: BBMRI-LPC website launched
+    url: bbmri-lpc
+    summary: Launch of the new BBMRI-LPC Exposure Data Library powered by Mica.
   - date: 2014-11-13
     title: Mica 9.2 Released
     url: release/mica/9.2/
