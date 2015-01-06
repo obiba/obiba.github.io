@@ -8,6 +8,14 @@ data:
     title: Mica 9.2 Released
     url: release/mica/9.2/
     summary: This release fixes bugs, security updates and includes several new features
+  - date: 2014-05-14
+    title: Opal 2.2 Released
+    url: release/opal/2.2/
+    summary: Improved python and javascript tool boxes.
+  - date: 2014-04-07
+    title: Opal 2.1 Released
+    url: release/opal/2.1/
+    summary: DataSHIELD parallel computation is the main feature of this release.
   - date: 2014-03-21
     title: Opal 2.0 Released
     url: release/opal/2.0/
