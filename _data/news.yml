@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2015-02-26
+    title: Opal 2.3 Released
+    url: release/opal/2.3/
+    summary: Improved R integration and taxonomies addition.
   - date: 2014-11-21
     title: BBMRI-LPC website launched
     url: bbmri-lpc
