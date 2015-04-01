@@ -1,0 +1,38 @@
+<ul class="visible-xs obiba-news-list">
+    {% for item in include.list %}
+    <li class="text-center">
+        <a class="obiba-product-link" href="{{item.url}}" target="_blank">
+            <img title="{{item.title}}"
+                 src="{{ ASSET_PATH }}bootstrap/img/{{item.img}}"
+                 class="obiba-img-responsive-padded"
+                 alt="Responsive image">
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<span class="hidden-xs">
+{% assign mod = include.list.size | modulo:4 %}
+{% assign rows = include.list.size | divided_by:4 | plus:mod | minus:1 %}
+{% assign margin = '' %}
+{% for r in (0..rows) %}
+    {% if r > 0 %}
+        {% assign margin = 'obiba-large-top-margin' %}
+    {% endif %}
+
+    <div class="row">
+        {% for i in (0..3) %}
+        {% assign index = r | times:3 | plus:i %}
+        {% assign item = include.list[index] %}
+        <div class="col-xs-3 text-center {{margin}}">
+            <a class="obiba-product-link text-center" href="{{item.url}}" target="_blank">
+                <img title="{{item.title}}"
+                     src="{{ ASSET_PATH }}bootstrap/img/{{item.img}}"
+                     class="obiba-img-responsive-padded"
+                     alt="Responsive image">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+</span>
