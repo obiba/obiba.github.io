@@ -3,7 +3,19 @@
 <p>To install Opal Python Client: </p>
 <pre>sudo yum install opal-python-client</pre>
 <div class="alert alert-warning" role="alert">
-    <span class="glyphicon glyphicon-warning-sign"></span> On CentOS, install the package <code>epel-release</code> which will add repositories that provide some required packages, e.g. <code>protobuf-python</code>, <code>R</code>, etc.
+    <span class="glyphicon glyphicon-warning-sign"></span>
+    On CentOS, install the package <code>epel-release</code> which will add repositories that provide some required packages, e.g. <code>protobuf-python</code>, <code>R</code>, etc.
+</div>
+<div class="alert alert-warning" role="alert">
+    <span class="glyphicon glyphicon-warning-sign"></span>
+  On CentOS 6.x the following Opal Python Client dependencies must be installed manually:
+  <div class="obiba-small-top-margin">
+    <ul class="obiba-carret-list-warning">
+      <li>Python 2.7</li>
+      <li>protobuf-python 2.5 or higher</li>
+      <li>python-pycurl</li>
+    </ul>
+  </div>
 </div>
 <!-- TODO uncomment once the packages are generated
 <p>To install R Server configured for Opal: </p>
