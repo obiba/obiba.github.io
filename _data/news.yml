@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2015-09-24
+    title: Opal 2.4 Released
+    url: release/opal/2.4/
+    summary: This release includes PostgreSQL support and a new SQL data schema enabling import/export of plain SQL tables.
   - date: 2015-02-26
     title: Opal 2.3 Released
     url: release/opal/2.3/
