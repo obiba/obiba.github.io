@@ -1,8 +1,17 @@
 <p>To install Mica: </p>
 <pre>
-sudo yum install mica
-sudo yum apache2 reload
-sudo service mica-solr start
+sudo yum install mica2
 </pre>
-
+<p>To install Mica Python Client: </p>
+<pre>sudo yum install mica-python-client</pre>
+<div class="alert alert-warning" role="alert">
+  On CentOS 6.x the following Mica Python Client dependencies must be installed manually:
+  <div class="obiba-small-top-margin">
+    <ul class="obiba-carret-list-warning">
+      <li>Python 2.7</li>
+      <li>protobuf-python 2.5 or higher</li>
+      <li>python-pycurl</li>
+    </ul>
+  </div>
+</div>
 <p>See <a href="http://wiki.obiba.org/display/MICADOC" target="_blank">Mica Documentation <i class="fa fa-external-link-square"></i></a> for more information.</p>
