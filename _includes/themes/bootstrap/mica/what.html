@@ -1,14 +1,16 @@
-<p>Mica is a powerful software application used to create rapidly web portals for large-scale single epidemiology
-  studies or multiple-study consortia. Mica helps studies to provide scientifically robust data visibility and web
-  presence without significant information technology effort.</p>
 
-<p>Written as an integrated suite of modules for the Drupal open source content management system, Mica provides a
-  structured description of studies, annotated and searchable data dictionaries, query interfaces for aggregated and
-  de-identified data, data access request management and common page structures for publication lists and research
-  events.
+<p>Mica2 is a powerful software application used to create data web portals for large-scale epidemiological studies or multiple-study consortia. Mica2 is the successor of Mica.</p>
+
+<p>
+Mica2 helps studies to provide scientifically robust data visibility and web presence without significant information technology effort. Mica2 provides a
+  structured description of consortia, studies, annotated and searchable data dictionaries, and data access request management.
 </p>
 
-<p>Each module can be managed through Drupal’s standard administration screens. Drupal modules from other sources can be
-  installed alongside those provided by Mica to build an online personalized data portal.</p>
+<p>It is built upon a multitier architecture consisting of a RESTful application server and clients for instance: 
+<ul>
+	<li>The <em>Mica Web Application</em> from which one can edit information pertaining to indiviudal studies and datasets, and administer secure connections to the other applications of OBiBa software stack. </li>
+	<li>The <em>Mica Drupal Client</em> is used to create and display web data portals. It is built upon the <a href="http://drupal.org">Drupal</a> content management system by means of Drupal modules.</li>
+<ul>
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/mica-server-home.png' header='Mica Home Page' caption='From the Mica Web Application, the user can administer the information partaining to studies, networks, datasets and data access requests.' %}
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/mica-client-home.png' header='Mica Home Page' caption='Thanks to the Mica Drupal Client, an entire web data portal can be easily customised to meet specific studies or consortia requirements.' %}
 
-{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/mica-home.png' header='Mica Home Page' caption='Thanks to the Drupal platform, the entire website can be easily customised to meet specific consortia requirements.' %}
