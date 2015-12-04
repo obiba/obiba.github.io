@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2015-12-04
+    title: Onyx 1.10 Released
+    url: release/onyx/1.10/
+    summary: Upgrade to Java8 and advanced cache support.
   - date: 2015-09-24
     title: Opal 2.4 Released
     url: release/opal/2.4/
