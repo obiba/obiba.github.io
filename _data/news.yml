@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2015-12-14
+    title: Agate 1.0 Released
+    url: release/agate/1.0/
+    summary: First official release of Agate
   - date: 2015-12-04
     title: Mica2 1.0 Released
     url: release/mica2/1.0/
