@@ -15,10 +15,10 @@ sudo service rserver restart
     packaging bug jeopardizing data folders upon removal: </p>
 
 <pre>
-/etc/init.d/opal stop
-rpm -e opal-server --noscripts
-/etc/init.d/rserver stop
-rpm -e rserver-admin --noscripts
+sudo /etc/init.d/opal stop
+sudo rpm -e opal-server --noscripts
+sudo /etc/init.d/rserver stop
+sudo rpm -e rserver-admin --noscripts
 </pre>
 
 </div>
