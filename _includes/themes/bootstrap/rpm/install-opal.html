@@ -9,17 +9,5 @@ sudo service rserver restart
 </pre>
 <p>See <a href="http://wiki.obiba.org/display/OPALDOC" target="_blank">Opal Documentation <i
   class="fa fa-external-link-square"></i></a> for more information.</p>
-<div class="alert alert-warning" role="alert">
-  <p class="obiba-small-bottom-padding">To safely upgrade Opal <= 2.4.8 or rserver-admin <= 1.2.0, please remove the
-    current installations as shown in the steps below before installing the new versions. The following releases address a
-    packaging bug jeopardizing data folders upon removal: </p>
 
-<pre>
-sudo /etc/init.d/opal stop
-sudo rpm -e opal-server --noscripts
-sudo /etc/init.d/rserver stop
-sudo rpm -e rserver-admin --noscripts
-</pre>
-
-</div>
 
