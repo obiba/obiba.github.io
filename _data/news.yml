@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2016-05-04
+    title: Agate 1.1 Released
+    url: release/agate/1.1/
+    summary: OAuth2 and OpenID Connect support added.
   - date: 2015-12-15
     title: Mica2 1.1 Released
     url: release/mica2/1.1/
