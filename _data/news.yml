@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2016-05-16
+    title: Opal 2.5 Released
+    url: release/opal/2.5/
+    summary: Improved performance and taxonomy management.
   - date: 2016-05-04
     title: Agate 1.1 Released
     url: release/agate/1.1/
