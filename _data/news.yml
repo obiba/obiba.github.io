@@ -2,7 +2,7 @@ summary: 3
 data:
   - date: 2016-06-01
     title: Mica 1.2 Released
-    url: release/mica/1.2/
+    url: release/mica2/1.2/
     summary: New search interface.
   - date: 2016-05-16
     title: Opal 2.5 Released
