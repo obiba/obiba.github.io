@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2016-07-20
+    title: Mica 1.3 Released
+    url: release/mica2/1.3/
+    summary: "New document type: Research Project."
   - date: 2016-06-01
     title: Mica 1.2 Released
     url: release/mica2/1.2/
