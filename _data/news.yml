@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2016-09-07
+    title: Agate 1.2 Released
+    url: release/agate/1.2/
+    summary: "Multi-language support added."
   - date: 2016-07-20
     title: Mica 1.3 Released
     url: release/mica2/1.3/
