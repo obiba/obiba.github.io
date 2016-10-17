@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2016-10-14
+    title: Mica 1.4 Released
+    url: release/mica2/1.4/
+    summary: "Multi-language support. Data Access Request form improvements."
   - date: 2016-09-07
     title: Agate 1.2 Released
     url: release/agate/1.2/
