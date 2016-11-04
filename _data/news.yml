@@ -3,7 +3,7 @@ data:
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/
-    summary: Improved performance, tabular SQL as identifiers database, R/DataSHIELD workspaces and much more.
+    summary: Improved performance, tabular SQL as identifiers database, MariaDB, R/DataSHIELD workspaces and much more.
   - date: 2016-10-14
     title: Mica 1.4 Released
     url: release/mica2/1.4/
