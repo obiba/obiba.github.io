@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2017-01-04
+    title: Mica 2.0 Released
+    url: release/mica2/2.0/
+    summary: "Fully configurable document fields."
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/

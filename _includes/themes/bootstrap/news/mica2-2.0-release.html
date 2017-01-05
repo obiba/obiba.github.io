@@ -1,0 +1,23 @@
+<p>We are pleased to announce that Mica2 2.0 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for biobanks.</p>
+
+<p>Mica 2.0 now offers the possibility to configure the data model of the documents (network, study, datasets) that are published in the data portal. This is a major improvement that has many consequences on the data and the web portal.</p>
+
+<ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><strong>document type configuration</strong>: network, study, datasets fields can be configured using a <a href="http://schemaform.io/" target="_blank">schemaform <i class="fa fa-external-link-square"></i></a> specification. This is an extension of what was already available for the research projects and the data access requests.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><strong>document search criteria configuration</strong>: as the document fields can be customized, it is now possible to configure the associated taxonomy so that proposed search criteria match the custom document fields.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><strong>document portal template</strong>: as the document fields can be customized, the web portal (i.e. Drupal) templates must also match the modified data models.
+    </li>
+</ul>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+	<strong>Upgrade with authentication on MongoDB</strong>.
+	The connection settings to MongoDB have been changed for a <a href="https://docs.mongodb.com/manual/reference/connection-string/" target="_blank">standard connection string <i class="fa fa-external-link-square"></i></a>. Administrators having defined a user/password to connect to MongoDB (this is recommended) should read the <a href="https://wiki.obiba.org/display/MICADOC/Mica+Configuration+Files#MicaConfigurationFiles-MongoDBServerConfiguration" target="_blank">MongoDB configuration documentation <i class="fa fa-external-link-square"></i></a>  before upgrading the Mica server.
+</div>
+
+<p class="obiba-top-margin">
+  Make sure to backup your installation as Mica2 server upgrade from 1.5 will affect the data: the server will automatically upgrade the data model and re-index the published documents. Default configuration is the data model specified and used by <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>. For the Mica Drupal modules and theme, see <a href="http://wiki.obiba.org/display/MICADOC/Mica+Drupal+Client+Installation+Guide#MicaDrupalClientInstallationGuide-DrupalModulesandThemeUpgrade" target="_blank">upgrade instructions <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p>See also <a href="http://wiki.obiba.org/display/MICADOC" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
