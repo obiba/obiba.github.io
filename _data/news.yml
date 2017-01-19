@@ -1,9 +1,5 @@
 summary: 3
 data:
-  - date: 2017-01-19
-    title: Opal 2.7 Released
-    url: release/opal/2.7/
-    summary: "Multilines support in CSV, SPSS and SQL."
   - date: 2017-01-04
     title: Mica 2.0 Released
     url: release/mica2/2.0/
