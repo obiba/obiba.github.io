@@ -1,0 +1,35 @@
+<p>We are pleased to announce that Opal 2.6 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>The main new features are related to a better support of time series and longitudinal data both at import/export time and when deriving variables. The multilines are represented in data sources with tabular format (CSV, SPSS and SQL) and having multiple lines per entity:</p>
+<ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>import: when several lines per entity are detected, the variables are considered to be "repeatables" and extracted data are value sequences,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>export: when some variables are "repeatables" (i.e. associated data are value sequences), one line per entity/sequence occurrence is written at exportation time,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>derivation: if a variable is defined in more than one of the tables joined in a view, the value extracted from this variable will be a value sequence. Many derivation script methods have been added or improved to facilitate value sequences handling.
+    </li>
+</ul>
+
+<p class="obiba-top-margin">A presentation explains what the multilines term refers to:</p>
+
+<iframe src="//slides.com/yannickmarcon/opal-multilines/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p class="obiba-top-margin">Other notable changes are:</p>
+<ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>file download: it is now possible to specify an encryption key when downloading a file or a folder. Downloaded content can be decrypted using the <a href="http://www.7-zip.org/" target="_blank">7-zip <i class="fa fa-external-link-square"></i></a> open source program available for free on all systems. This is a lightweight data protection convenient for data exchange on secure platforms,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>files and folders can be renamed,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the embedded web server Jetty has been upgraded to version 9 for improved security (tested with <a href="https://testssl.sh/" target="_blank">testssl <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>Maelstrom Research variable taxonomies download now requires a <a href="https://taxonomies.maelstrom-research.org" target="_blank">registration key <i class="fa fa-external-link-square"></i></a> and the acceptance of the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">associated license <i class="fa fa-external-link-square"></i></a>.
+    </li>
+</ul>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+    <strong>Reminder: Java 8 is a requirement</strong>.
+    As Java 7 support by Oracle has ended a while ago and because Java 8 is much better at handling collections (parallelization of computations for instance), all OBiBa softwares now require Java 8. See Java instructions specific to your system for upgrading.
+</div>
+
+<p>See <a href="http://wiki.obiba.org/display/OPALDOC" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
