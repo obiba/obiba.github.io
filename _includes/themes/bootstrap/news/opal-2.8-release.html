@@ -1,0 +1,49 @@
+<p>We are pleased to announce that Opal 2.8 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+
+<h4>R integration</h4>
+
+<p>This release is the continuation of version 2.7: the support of time series and longitudinal data in R has been improved (one line per event occurrence in the assigned data frame).</p>
+
+<p>Opal will also rely on <a href="http://tidyverse.org" target="_blank">tidyverse <i class="fa fa-external-link-square"></i></a>, a collection of R packages that follow the <a href="http://r4ds.had.co.nz/" target="_blank">R for Data Science <i class="fa fa-external-link-square"></i></a> recommendations, to provide the following functionalities:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>import/export of data in SAS, SPSS or Stata format, by using the R package <a href="http://tidyverse.org" target="_blank">haven <i class="fa fa-external-link-square"></i></a>,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>import of R data frames (more specifically <a href="https://github.com/tidyverse/tibble" target="_blank">tibble <i class="fa fa-external-link-square"></i></a> data frames) as tables in Opal, allowing to perform data cleansing, derivation and harmonization in R.
+    </li>
+</ul></p>
+
+<p>This Opal server release is to be used in combination with the latest <a href="https://wiki.obiba.org/display/OPALDOC/R+Server+Installation+Guide" target="_blank">Opal R server <i class="fa fa-external-link-square"></i></a> package, that will install on the server side the required R and system packages:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><a href="http://tidyverse.org" target="_blank">tidyverse <i class="fa fa-external-link-square"></i></a> for the previously mentioned functionalities,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><a href="http://rmarkdown.rstudio.com/" target="_blank">rmarkdown <i class="fa fa-external-link-square"></i></a> along with <a href="http://pandoc.org/" target="_blank">pandoc <i class="fa fa-external-link-square"></i></a> for generating reports in PDF format.
+    </li>
+</ul></p>
+
+<p>On the client side, the latest release of the <a href="https://wiki.obiba.org/display/OPALDOC/Opal+R+User+Guide" target="_blank">opal R package <i class="fa fa-external-link-square"></i></a> will give access to the <a href="http://tidyverse.org" target="_blank">tidyverse <i class="fa fa-external-link-square"></i></a> related functionalities and will also allow full management of files in Opal (upload, download, create directory, move, copy etc.).</p>
+
+<h4>View join tables</h4>
+
+<p>This release of Opal improves the join of tables in a view:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the entities of a "inner" join table will not be added to the set of entities of the view, introducing a new way to specify the entities of a view,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the join tables can be ordered, affecting the order of the value sequences when a variable is defined in several of these tables.
+    </li>
+</ul></p>
+
+<p class="obiba-top-margin">This presentation explains the new features:</p>
+
+<iframe src="//slides.com/yannickmarcon/opal-28/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+    <strong>Reminder: Java 8 is a requirement</strong>.
+    As Java 7 support by Oracle has ended a while ago and because Java 8 is much better at handling collections (parallelization of computations for instance), all OBiBa softwares now require Java 8. See Java instructions specific to your system for upgrading.
+</div>
+
+<p>See <a href="http://wiki.obiba.org/display/OPALDOC" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>

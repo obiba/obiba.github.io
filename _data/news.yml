@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2017-03-13
+    title: Opal 2.8 Released
+    url: release/opal/2.8/
+    summary: "Integration with R tidyverse. View inner join tables."
   - date: 2017-01-19
     title: Opal 2.7 Released
     url: release/opal/2.7/
