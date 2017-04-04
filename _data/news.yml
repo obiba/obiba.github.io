@@ -12,10 +12,10 @@ data:
     title: Opal 2.7 Released
     url: release/opal/2.7/
     summary: "Multilines support in CSV, SPSS and SQL."
-  - date: 2017-01-04
-    title: Mica 2.0 Released
-    url: release/mica2/2.0/
-    summary: "Fully configurable document fields."
+  - date: 2017-03-30
+    title: Mica 2.1 Released
+    url: release/mica2/2.1/
+    summary: "View a draft document in Mica portal."
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/

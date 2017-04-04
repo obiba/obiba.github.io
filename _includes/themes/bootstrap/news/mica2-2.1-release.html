@@ -1,0 +1,16 @@
+<p>We are pleased to announce that Mica2 2.1 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and networks.</p>
+
+<p>As with version 2.0, this release offers the possibility to fully configure the data model of the documents (network, study, datasets) that are published in the data portal.</p>
+
+<p>The main feature of Mica2 2.1 is the ability to preview a draft document before its approval and publication in a Mica web portal.</p>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+	<strong>Upgrade with authentication on MongoDB</strong>.
+	The connection settings to MongoDB have been changed for a <a href="https://docs.mongodb.com/manual/reference/connection-string/" target="_blank">standard connection string <i class="fa fa-external-link-square"></i></a>. Administrators having defined a user/password to connect to MongoDB (this is recommended) should read the <a href="https://wiki.obiba.org/display/MICADOC/Mica+Configuration+Files#MicaConfigurationFiles-MongoDBServerConfiguration" target="_blank">MongoDB configuration documentation <i class="fa fa-external-link-square"></i></a>  before upgrading the Mica server.
+</div>
+
+<p class="obiba-top-margin">
+  Make sure to backup your installation as Mica2 server upgrade from 1.5 will affect the data: the server will automatically upgrade the data model and re-index the published documents. Default configuration is the data model specified and used by <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>. For the Mica Drupal modules and theme, see <a href="http://wiki.obiba.org/display/MICADOC/Mica+Drupal+Client+Installation+Guide#MicaDrupalClientInstallationGuide-DrupalModulesandThemeUpgrade" target="_blank">upgrade instructions <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p>See also <a href="http://wiki.obiba.org/display/MICADOC" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
