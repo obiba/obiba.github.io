@@ -1,5 +1,13 @@
 summary: 3
 data:
+  - date: 2017-04-18
+    title: Opal 2.9 Released
+    url: release/opal/2.9/
+    summary: "Genotypes data integration."
+  - date: 2017-03-30
+    title: Mica 2.1 Released
+    url: release/mica2/2.1/
+    summary: "View a draft document in Mica portal."
   - date: 2017-03-13
     title: Agate 1.3 Released
     url: release/agate/1.3/
@@ -12,10 +20,6 @@ data:
     title: Opal 2.7 Released
     url: release/opal/2.7/
     summary: "Multilines support in CSV, SPSS and SQL."
-  - date: 2017-03-30
-    title: Mica 2.1 Released
-    url: release/mica2/2.1/
-    summary: "View a draft document in Mica portal."
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/
