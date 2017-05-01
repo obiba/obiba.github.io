@@ -1,14 +1,6 @@
-- title: Maelstrom Research
-  img: maelstrom.png
-  url: http://www.maelstrom-research.org/
-
 - title: Ontario Institute for Cancer Research
   img: oicr.png
   url: http://www.oicr.on.ca/
-
-- title: Biobank Standardisation and Harmonisation for Research Excellence in the European Union
-  img: BioSHaRE.png
-  url: http://www.bioshare.eu/
 
 - title: Canadian Longitudinal Study on Aging
   img: clsa.png
@@ -17,7 +9,3 @@
 - title: Public Population Genomics
   img: p3g.png
   url: http://www.p3g.org/
-
-- title: Ministère de l'Économie, de l'Innovation et des Exportations
-  img: meie.png
-  url: http://www.economie.gouv.qc.ca
