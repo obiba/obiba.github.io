@@ -7,15 +7,16 @@
 
   <ul class="obiba-carret-list">
     <li>Store data on an unlimited number of variables,</li>
-    <li>Support </b><a href="http://www.mongodb.org" target="_blank">MongoDB <i class="fa fa-external-link-square"></i></a> (recommended) and <a href="http://www.mysql.com" target="_blank">Mysql <i class="fa fa-external-link-square"></i></a> as database software backend,</li>
-    <li>Customized variable dictionaries.</li>
-    <li>Import data from CSV, SPSS and Opal XML file formats,</li>
+    <li>Support </b><a href="http://www.mongodb.org" target="_blank">MongoDB <i class="fa fa-external-link-square"></i></a>, <a href="http://www.mysql.com" target="_blank">Mysql <i class="fa fa-external-link-square"></i></a>, <a href="https://mariadb.org/" target="_blank">MariaDB <i class="fa fa-external-link-square"></i></a> and <a href="https://www.postgresql.org/" target="_blank">PostgreSQL <i class="fa fa-external-link-square"></i></a> as database software backend,</li>
+    <li>Customized variable dictionaries,</li>
+    <li>Import data from CSV, SPSS, SAS, Stata files and from SQL databases,</li>
+    <li>Export data to CSV, SPSS, SAS, Stata files and to SQL databases,</li>
     <li>Incremental data importation,</li>
-    <li>Connect directly to multiple data source software such as SQL databases and LimeSurvey,</li>
+    <li>Connect directly to multiple data source software such as SQL databases and <a href="https://www.limesurvey.org/" target="_blank">LimeSurvey <i class="fa fa-external-link-square"></i></a>,</li>
     <li>Store data about any type of "entity", such as subject, sample, geographic area, etc.,</li>
     <li>Store data of any type (e.g., texts, numbers, geo-localisation, images, videos, etc.),</li>
-    <li>Advanced indexing functionality using <a href="http://www.elasticsearch.org" target="_blank">ElasticSearch <i
-            class="fa fa-external-link-square"></i></a>.</li>
+    <li>Import and store genotype data as VCF files (<a href="https://en.wikipedia.org/wiki/Variant_Call_Format" target="_blank">Variant Call format <i class="fa fa-external-link-square"></i></a>),</li>
+    <li>Advanced indexing functionality using <a href="http://www.elasticsearch.org" target="_blank">ElasticSearch <i class="fa fa-external-link-square"></i></a>.</li>
   </ul>
 </div>
 
@@ -78,6 +79,23 @@
 </div>
 
 <div class="obiba-top-margin">
+  <div class="obiba-vertical-margin">
+    <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Genotypes</h4>
+  </div>
+
+  <p>Genotyping data can be stored in Opal as VCF files (<a href="https://en.wikipedia.org/wiki/Variant_Call_Format" target="_blank">Variant Call format <i class="fa fa-external-link-square"></i></a>). Main features are:</p>
+
+  <ul class="obiba-carret-list">
+    <li>Support of VCF and BCF formats,</li>
+    <li>Basic statistics,</li>
+    <li>Sample-participant mapping,</li>
+    <li>Extraction of VCF files combined with phenotypes criteria.</li>
+  </ul>
+
+  <p><a href="https://wiki.obiba.org/display/OPALDOC/Project+Genotypes" target="_blank">Learn more <i class="fa fa-external-link-square"></i></a></p>
+</div>
+
+<div class="obiba-top-margin">
     <div class="obiba-vertical-margin">
         <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> R Interface</h4>
     </div>
@@ -88,7 +106,11 @@
         <li>R server monitoring from Opal,</li>
         <li>Secured data access from R,</li>
         <li>Opal R package,</li>
-        <li><a href="/pages/products/datashield">DataSHIELD</a> R packages.</li>
+        <li><a href="/pages/products/datashield">DataSHIELD</a> R packages,</li>
+        <li>Import R dataset into Opal,</li>
+        <li>Export Opal dataset into R,</li>
+        <li>Opal files management from R,</li>
+        <li>R server workspaces can be saved and restored.</li>
     </ul>
 
     <p><a href="http://wiki.obiba.org/display/OPALDOC/Opal+R+User+Guide" target="_blank">Learn more <i
