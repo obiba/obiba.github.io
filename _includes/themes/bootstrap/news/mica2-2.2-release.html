@@ -1,0 +1,24 @@
+<p>We are pleased to announce that Mica2 2.2 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and networks.</p>
+
+<p>As with version 2.0, this release offers the possibility to fully configure the data model of the documents (network, study, datasets) that are published in the data portal.</p>
+
+<p>This release contains the following features and improvements:</p>
+<ul class="obiba-no-style-list">
+	<li><i class="fa fa-caret-right obiba-small-right-margin"></i>possibility of hiding search criteria,
+	</li>
+	<li><i class="fa fa-caret-right obiba-small-right-margin"></i>better ordering of search results: datasets are ordered chronologically and variables are ordered by their corresponding study, population and data collection dates as well as their order in the source questionnaire,
+	</li>
+	<li><i class="fa fa-caret-right obiba-small-right-margin"></i>better ordering of documents listing: sorting networks by the number of studies and sorting study datasets chronologically.
+	</li>
+</ul>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+	<strong>Upgrade with authentication on MongoDB</strong>.
+	The connection settings to MongoDB have been changed for a <a href="https://docs.mongodb.com/manual/reference/connection-string/" target="_blank">standard connection string <i class="fa fa-external-link-square"></i></a>. Administrators having defined a user/password to connect to MongoDB (this is recommended) should read the <a href="https://wiki.obiba.org/display/MICADOC/Mica+Configuration+Files#MicaConfigurationFiles-MongoDBServerConfiguration" target="_blank">MongoDB configuration documentation <i class="fa fa-external-link-square"></i></a>  before upgrading the Mica server.
+</div>
+
+<p class="obiba-top-margin">
+  Make sure to backup your installation as Mica2 server upgrade from 1.5 will affect the data: the server will automatically upgrade the data model and re-index the published documents. Default configuration is the data model specified and used by <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>. For the Mica Drupal modules and theme, see <a href="http://wiki.obiba.org/display/MICADOC/Mica+Drupal+Client+Installation+Guide#MicaDrupalClientInstallationGuide-DrupalModulesandThemeUpgrade" target="_blank">upgrade instructions <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p>See also <a href="http://wiki.obiba.org/display/MICADOC" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
