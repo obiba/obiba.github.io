@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2017-08-29
+    title: Mica 3.0 Released
+    url: release/mica2/3.0/
+    summary: "Harmonization Study: new epidemiological study type"
   - date: 2017-05-30
     title: Mica 2.2 Released
     url: release/mica2/2.2/
@@ -24,6 +28,10 @@ data:
     title: Opal 2.7 Released
     url: release/opal/2.7/
     summary: "Multilines support in CSV, SPSS and SQL."
+  - date: 2017-01-04
+    title: Mica 2.0 Released
+    url: release/mica2/2.0/
+    summary: "Fully configurable document fields."
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/

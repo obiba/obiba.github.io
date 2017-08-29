@@ -1,0 +1,64 @@
+<p>We are pleased to announce that Mica2 3.0 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and networks.</p>
+
+<p>To address specific research questions Mica 3.0 introduces a new epidemiological concept, the Harmonization Study, a research project harmonizing data across individual studies.</p>
+
+<p>The main features are:</p>
+
+<ul class="obiba-no-style-list">
+	<li><i class="fa fa-caret-right obiba-small-right-margin"></i>Creating and managing Harmonization Study documents.
+	</li>
+	<li><i class="fa fa-caret-right obiba-small-right-margin"></i>Renaming of the following documents to better integrate the Harmonization Study concept:
+		<ul>
+			<li>Study to Individual Study.</li>
+			<li>Study Dataset to Collected Dataset.</li>
+			<li>Study Variable to Collected Variable.</li>
+			<li>Harmonization Dataset to Harmonized Dataset.</li>
+			<li>Harmonization Variable to Harmonized Variable.</li>
+		</ul>
+	</li>
+</ul>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+    <h4>Mica upgrade</h4>
+	<p>Before upgrading to Mica 3.0 it is imperative to first upgrade to <strong>Mica 2.2.2</strong> for proper data migration to take place. In addition, the following taxonomy changes can affect the current installations.
+        To prevent conflicts or loss of data make sure your taxonomy vocabularies do not match the ones listed below. A possible safeguard against taxonomy conflicts is to prefix (do not use '.')
+    custom vocabulary keys so future updates do not override them.</p>
+    </br>
+    <p><strong>New Study taxonomy vocabularies</strong></p>
+	<ul class="obiba-no-style-list">
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>className: denoting the type of study document (Individual or Harmonization)
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>harmonizationDesign
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-id
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-name
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-description
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-dataCollectionEvents-id
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-dataCollectionEvents-name
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-dataCollectionEvents-start
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-dataCollectionEvents-end
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populations-dataCollectionEvents-description
+		</li>
+	</ul>
+    </br>
+    <p><strong>New variable taxonomy vocabularies</strong></p>
+	<ul class="obiba-no-style-list">
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>studyId
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>populationId
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>dceId
+		</li>
+	</ul>
+    </br>
+    After upgrading, it is highly recommended to clear the Mica cache and rebuild all server indices for the search engine to work correctly.
+</div>
+
+<p>See also <a href="http://wiki.obiba.org/display/MICADOC" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
