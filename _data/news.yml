@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2017-11-01
+    title: Opal 2.10 Released
+    url: release/opal/2.10/
+    summary: "Advanced search pages and web services."
   - date: 2017-08-29
     title: Mica 3.0 Released
     url: release/mica2/3.0/
