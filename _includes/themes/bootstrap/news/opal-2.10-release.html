@@ -1,0 +1,48 @@
+<p>We are pleased to announce that Opal 2.10 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>This release introduces new pages and web services to perform advanced search both on variables and entities:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>variables can be searched using controlled vocabularies (as specified by the taxonomies) and/or full-text search; found variables can be added to a cart for further processing,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>a specific entity can be searched by its type and identifier,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>entities matching variable criteria (from different tables) can be counted and listed; a view can be created to match these filtered entities.
+    </li>
+</ul></p>
+
+<p class="obiba-top-margin">A variable cart can be filled-in by the user for further processing:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>variables can be added to the cart by individual or group selection when browsing table dictionaries, or by selecting the variables resulting of a search operation,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>variables from the cart can be used to make a view, build variable criteria of an entities search operation, or apply/remove controlled vocabulary (taxonomy) annotations in batch.
+    </li>
+</ul></p>
+
+<p class="obiba-top-margin">Other notable features are:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the variable attributes handling and rendering has been improved by using the controlled vocabularies,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the search engine implementation (based on <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch <i class="fa fa-external-link-square"></i></a>) has been wrapped in a plugin,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the plugins can be managed from the Administration page based on a plugin repository (configurable, default is <a href="https://plugins.obiba.org/stable/" target="_blank">OBiBa plugins repository <i class="fa fa-external-link-square"></i></a>).
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>addition of new python commands to backup and restore annotations (<a href="https://wiki.obiba.org/display/OPALDOC/Export+Annotations+Command" target="_blank">export-annot <i class="fa fa-external-link-square"></i></a> and <a href="https://wiki.obiba.org/display/OPALDOC/Import+Annotations+Command" target="_blank">import-annot <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>addition of new javascript methods to handle longitudinal and repeated measures data (<a href="https://wiki.obiba.org/display/OPALDOC/filter+method" target="_blank">filter <i class="fa fa-external-link-square"></i></a>, <a href="https://wiki.obiba.org/display/OPALDOC/subset+method" target="_blank">subset <i class="fa fa-external-link-square"></i></a>, <a href="https://wiki.obiba.org/display/OPALDOC/trimmer+method" target="_blank">trimmer <i class="fa fa-external-link-square"></i></a> and <a href="https://wiki.obiba.org/display/OPALDOC/insertAt+method" target="_blank">insertAt <i class="fa fa-external-link-square"></i></a>),
+    </li>    
+</ul></p>
+
+<p class="obiba-top-margin">This presentation explains the new features:</p>
+
+<iframe src="//slides.com/yannickmarcon/opal-210/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+    <strong>Opal Search Plugin note</strong>.
+    As search engine implementation is now available from a plugin, Opal will automatically download (when installing or upgrading from previous versions) the Opal Search ES 1.0.x plugin (based on <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch <i class="fa fa-external-link-square"></i></a> 2.4.5) from the <a href="https://plugins.obiba.org/stable/" target="_blank">OBiBa plugins repository <i class="fa fa-external-link-square"></i></a>. If the plugins repository cannot be reached (due to network restrictions for instance), the search capability of Opal will not be available. The plugin can be installed afterwards; see <a href="http://wiki.obiba.org/display/OPALDOC/Opal+Plugins+Installation+Guide" target="_blank">Opal Plugins Installation documentation <i class="fa fa-external-link-square"></i></a>.
+</div>
+
+<p class="obiba-top-margin">See <a href="http://wiki.obiba.org/display/OPALDOC" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
