@@ -3,7 +3,7 @@ data:
   - date: 2017-11-06
     title: Opal 2.10 Released
     url: release/opal/2.10/
-    summary: "Advanced search pages and web services."
+    summary: "Advanced search pages and web services"
   - date: 2017-08-29
     title: Mica 3.0 Released
     url: release/mica2/3.0/
@@ -15,27 +15,27 @@ data:
   - date: 2017-04-18
     title: Opal 2.9 Released
     url: release/opal/2.9/
-    summary: "Genotypes data integration."
+    summary: "Genotypes data integration"
   - date: 2017-03-30
     title: Mica 2.1 Released
     url: release/mica2/2.1/
-    summary: "View a draft document in Mica portal."
+    summary: "View a draft document in Mica portal"
   - date: 2017-03-13
     title: Agate 1.3 Released
     url: release/agate/1.3/
-    summary: "Python commands. Maintenance release."
+    summary: "Python commands. Maintenance release"
   - date: 2017-03-13
     title: Opal 2.8 Released
     url: release/opal/2.8/
-    summary: "Integration with R tidyverse. View inner join tables."
+    summary: "Integration with R tidyverse. View inner join tables"
   - date: 2017-01-19
     title: Opal 2.7 Released
     url: release/opal/2.7/
-    summary: "Multilines support in CSV, SPSS and SQL."
+    summary: "Multilines support in CSV, SPSS and SQL"
   - date: 2017-01-04
     title: Mica 2.0 Released
     url: release/mica2/2.0/
-    summary: "Fully configurable document fields."
+    summary: "Fully configurable document fields"
   - date: 2016-11-01
     title: Opal 2.6 Released
     url: release/opal/2.6/
@@ -43,15 +43,15 @@ data:
   - date: 2016-10-14
     title: Mica 1.4 Released
     url: release/mica2/1.4/
-    summary: "Multi-language support. Data Access Request form improvements."
+    summary: "Multi-language support. Data Access Request form improvements"
   - date: 2016-09-07
     title: Agate 1.2 Released
     url: release/agate/1.2/
-    summary: "Multi-language support added."
+    summary: "Multi-language support added"
   - date: 2016-07-20
     title: Mica 1.3 Released
     url: release/mica2/1.3/
-    summary: "New document type: Research Project."
+    summary: "New document type: Research Project"
   - date: 2016-06-01
     title: Mica 1.2 Released
     url: release/mica2/1.2/
