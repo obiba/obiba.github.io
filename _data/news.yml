@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2018-01-23
+    title: Mica 3.2 Released
+    url: release/mica2/3.2/
+    summary: "New search user interface for the metadata catalogue"
   - date: 2017-11-21
     title: Mica 3.1 Released
     url: release/mica2/3.1/
