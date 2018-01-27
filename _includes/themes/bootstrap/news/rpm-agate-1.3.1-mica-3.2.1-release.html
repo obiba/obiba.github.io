@@ -1,0 +1,11 @@
+<p>Please note that Agate RPM packages prior to <code>1.3.1</code> and Mica RPM packages prior to <code>3.2.1</code> had an upgrade error 
+	breaking your subsequent installations. If you have an older version of Agate and Mica, you must run <a href="https://download.obiba.org/tools/rpm/safely-remove-agate-package-before-1.3.1.sh.gz" target="_blank">this script <i class="fa fa-download"></i></a>
+	before installing the new version. The script removes the older version safely and backs up your config files under <code>/usr/obiba_archives</code>. 
+	Once you install the new version of Agate and Mica, you can retrieve all your config files manually. 
+</p>
+
+<p>Any updates made after installing Agate <code>1.3.1</code> and Mica <code>3.2.1</code> do not require this fix.</p>
+
+<p class="obiba-small-vertical-padding obiba-small-horizontal-padding bg-warning obiba-bg-primary-border">
+	This fix applies only to RPM packages on CentOS/Fedora, they do not apply to Debian packages.
+</p>
