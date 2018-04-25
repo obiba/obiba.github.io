@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2018-04-25
+    title: Mica 3.3 Released
+    url: release/mica2/3.3/
+    summary: "Variables cart, participants count, R API"
   - date: 2018-01-23
     title: RPM Upgrade Fix
     url: release/rpm-agate-mica/
@@ -7,7 +11,7 @@ data:
   - date: 2018-01-23
     title: Mica 3.2 Released
     url: release/mica2/3.2/
-    summary: "New search user interface for the metadata catalogue"   
+    summary: "New search user interface for the metadata catalogue"
   - date: 2017-11-21
     title: Mica 3.1 Released
     url: release/mica2/3.1/
@@ -179,4 +183,3 @@ data:
   - date: 2012-06-20
     title: CLSA Data Collection Site Using Onyx
     url: event/clsa/1.15.0/
-
