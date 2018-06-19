@@ -1,10 +1,10 @@
 <p>This is the RPM package repository of OBiBa software to automate installation and upgrade. To add this repository locally run the following command:</p>
-<pre>yum-config-manager --add-repo http://rpm.obiba.org/obiba-stable.repo</pre>
+<pre>
+  wget https://bintray.com/obiba/rpm/rpm -O bintray-obiba-rpm.repo
+  sudo mv bintray-obiba-rpm.repo /etc/yum.repos.d/
+</pre>
 <p>To verify that the repository has been added run:</p>
-<pre>yum list installed | grep obiba-stable</pre>
-<div class="alert alert-warning" role="alert">
-    If the <code>yum-config-manager</code> command is not available, install package <code>yum-utils</code>
-</div>
+<pre>yum list installed | grep bintray-obiba-rpm</pre>
 <div class="alert alert-warning" role="alert">
     On CentOS, install the package <code>epel-release</code> which will add repositories that provide some required packages, e.g. <code>protobuf-python</code>, <code>R</code>, etc.
 </div>
