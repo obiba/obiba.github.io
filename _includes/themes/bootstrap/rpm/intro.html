@@ -4,7 +4,7 @@
   sudo mv bintray-obiba-rpm.repo /etc/yum.repos.d/
 </pre>
 <p>To verify that the repository has been added run:</p>
-<pre>yum list installed | grep bintray-obiba-rpm</pre>
+<pre>yum repolist | grep obiba</pre>
 <div class="alert alert-warning" role="alert">
     On CentOS, install the package <code>epel-release</code> which will add repositories that provide some required packages, e.g. <code>protobuf-python</code>, <code>R</code>, etc.
 </div>
