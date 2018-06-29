@@ -2,9 +2,9 @@
   img: logo-jet-brains.png
   url: http://www.jetbrains.com/
 
-- title: Atlassian
-  img: logo-atlassian.png
-  url: http://www.atlassian.com
+- title: Artifactory
+  img: logo-artifactory.png
+  url: https://jfrog.com/artifactory/
 
 - title: YourKit
   img: yklogo.png
