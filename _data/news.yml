@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2018-06-29
+    title: Infrastructure Migration
+    url: event/infra/
+    summary: "Repositories, development pipeline"
   - date: 2018-04-25
     title: Mica 3.3 Released
     url: release/mica2/3.3/
@@ -106,7 +110,7 @@ data:
     summary: Improved R integration and taxonomies addition.
   - date: 2014-11-21
     title: BBMRI-LPC website launched
-    url: bbmri-lpc
+    url: event/bbmri-lpc
     summary: Launch of the new BBMRI-LPC Exposure Data Library powered by Mica.
   - date: 2014-11-13
     title: Mica 9.2 Released
