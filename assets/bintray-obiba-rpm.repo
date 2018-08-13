@@ -1,0 +1,8 @@
+#bintray--obiba-rpm - packages by  from Bintray
+[bintray--obiba-rpm]
+name=bintray--obiba-rpm
+baseurl=https://dl.bintray.com/obiba/rpm
+gpgcheck=0
+repo_gpgcheck=1
+gpgkey=https://bintray.com/user/downloadSubjectPublicKey?username=bintray
+enabled=1
