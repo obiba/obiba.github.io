@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2018-09-25
+    title: Agate 1.4.0 Released
+    url: release/agate/1.4/
+    summary: "Data access request amendments notifications"
   - date: 2018-06-29
     title: Infrastructure Migration
     url: event/infra/
