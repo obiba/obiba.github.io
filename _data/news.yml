@@ -1,7 +1,11 @@
 summary: 3
 data:
+  - date: 2018-09-26
+    title: Opal 2.12 Released
+    url: release/opal/2.12/
+    summary: "Datasource plugins, improved R API"
   - date: 2018-09-25
-    title: Agate 1.4.0 Released
+    title: Agate 1.4 Released
     url: release/agate/1.4/
     summary: "Data access request amendments notifications"
   - date: 2018-06-29

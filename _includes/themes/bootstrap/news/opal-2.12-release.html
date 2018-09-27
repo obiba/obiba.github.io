@@ -1,0 +1,28 @@
+<p>We are pleased to announce that Opal 2.12 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>Thanks to the support of the <a href="https://www.canarie.ca/" target="_blank">Canarie <i class="fa fa-external-link-square"></i></a> program, this release introduces a <a href="https://github.com/obiba/opal/tree/master/opal-spi/src/main/java/org/obiba/opal/spi/datasource"target="_blank">datasource plugin service interface <i class="fa fa-external-link-square"></i></a> that allows to import data:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from a file (for instance <a href="https://github.com/obiba/opal-datasource-spss" target="_blank">SPSS <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from a database (for instance <a href="https://github.com/obiba/opal-datasource-limesurvey" target="_blank">Limesurvey <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from an application web services (for instance <a href="https://github.com/obiba/opal-datasource-redcap" target="_blank">REDCap <i class="fa fa-external-link-square"></i></a>).
+    </li>
+</ul></p>
+
+<p class="obiba-top-margin">Plugins are available from our <a href="https://plugins.obiba.org/" target="_blank"> plugin repository <i class="fa fa-external-link-square"></i></a>. Please contact us if you want to develop and refer a new plugin.</p>
+
+<p class="obiba-top-margin">Other notable features are:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the identifier mapping (at import and export) applies to variable values declared as being entity identifiers (<code>referenced entity type</code> property),</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>SPSS missing discrete values and ranges are now mapped to missing categories, both at import and export,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>system log files can be downloaded from the administration pages,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>users with "Add table" permission can import data,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>SSL connection with MongoDB is now supported,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>user ban policy has been added (temporary ban after several login failures).</li>
+</ul></p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
