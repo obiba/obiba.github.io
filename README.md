@@ -14,10 +14,10 @@ index file:
 
     ---
     layout: product
-    wiki: http://wiki.obiba.org/display/OPALDOC/Home
+    wiki: http://opaldoc.obiba.org
     download: http://download.obiba.org/opal/stable/
     github: http://github.com/obiba/opal
-    demo: http://wiki.obiba.org/pages/viewpage.action?pageId=22544438
+    demo: https://opal-demo.obiba.org
     title: Store with Opal
     ---
     {% include JB/setup %}
