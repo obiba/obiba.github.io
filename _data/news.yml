@@ -3,7 +3,7 @@ data:
   - date: 2018-10-15
     title: Mica 3.4 Released
     url: release/mica2/3.4/
-    summary: "Data Access Amendments"
+    summary: "Data Access Request Amendments"
   - date: 2018-09-26
     title: Opal 2.12 Released
     url: release/opal/2.12/
