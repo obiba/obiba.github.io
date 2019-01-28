@@ -1,0 +1,29 @@
+<p>We are pleased to announce that Opal 2.13 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>Thanks to the support of the <a href="https://www.canarie.ca/" target="_blank">Canarie <i class="fa fa-external-link-square"></i></a> program, this release extends the
+  <a href="https://github.com/obiba/opal/tree/master/opal-spi/src/main/java/org/obiba/opal/spi/datasource"target="_blank">datasource plugin service interface <i class="fa fa-external-link-square"></i></a>
+  with plugins using the R server to import or export data:</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from/to a delimited format file (<a href="https://github.com/obiba/opal-datasource-readr" target="_blank">ReadR <i class="fa fa-external-link-square"></i></a>
+      based on <a href="https://www.rdocumentation.org/packages/readr" target="_blank">readr <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from/to a Excel file (<a href="https://github.com/obiba/opal-datasource-readxl" target="_blank">ReadXL <i class="fa fa-external-link-square"></i></a>
+      based on <a href="https://www.rdocumentation.org/packages/readxl" target="_blank">readxl <i class="fa fa-external-link-square"></i></a>
+      and on <a href="https://www.rdocumentation.org/packages/writexl" target="_blank">writexl <i class="fa fa-external-link-square"></i></a>),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>from a Google Sheet (<a href="https://github.com/obiba/opal-datasource-googlesheets4" target="_blank">GoogleSheets <i class="fa fa-external-link-square"></i></a>
+      based on <a href="https://googlesheets4.tidyverse.org/" target="_blank">googlesheets4 <i class="fa fa-external-link-square"></i></a>).
+    </li>
+</ul></p>
+
+<p>A new <a href="https://github.com/obiba/opal/tree/master/opal-spi/src/main/java/org/obiba/opal/spi/analysis"target="_blank">analysis plugin service interface <i class="fa fa-external-link-square"></i></a>
+  has also been added to integrate in the user interface data/meta-data analysis routines. The analyses are designed like a per-table test suite with a output report.
+  As a proof of concept the plugin <a href="https://github.com/obiba/opal-analysis-validate" target="_blank">Validate <i class="fa fa-external-link-square"></i></a>
+  based on the R package <a href="https://www.rdocumentation.org/packages/validate" target="_blank">validate <i class="fa fa-external-link-square"></i></a> has been developed.</p>
+
+<p class="obiba-top-margin">Plugins are available from our <a href="https://plugins.obiba.org/" target="_blank"> plugin repository <i class="fa fa-external-link-square"></i></a>.
+  Please contact us if you want to develop and refer a new plugin. Using R packages to import/export and analyse data opens a lot of possibilities!</p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>

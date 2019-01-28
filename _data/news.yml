@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-01-28
+    title: Opal 2.13 Released
+    url: release/opal/2.13/
+    summary: "R datasource and analysis plugins"
   - date: 2018-10-15
     title: Mica 3.4 Released
     url: release/mica2/3.4/
