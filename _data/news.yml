@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-02-27
+    title: OBiBa in the CRAN
+    url: event/infra/cran
+    summary: "Opal and Mica R packages in the CRAN"
   - date: 2019-01-28
     title: Opal 2.13 Released
     url: release/opal/2.13/

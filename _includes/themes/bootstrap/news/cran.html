@@ -1,0 +1,35 @@
+<p>OBiBa R packages are now published in the official Comprehensive R Archive Network (CRAN):</p>
+
+<p>
+	<ul class="obiba-no-style-list">
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+			<b>opalr</b> is the Opal R client with DataSHIELD utils,
+		</li>
+		<li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+			<b>micar</b> is the Mica R client.
+		</li>
+	</ul>
+</p>
+
+<p class="obiba-top-margin">We will keep the <a href="https://cran.obiba.org" target="_blank">OBiBa's CRAN <i class="fa fa-external-link-square"></i></a>
+	 active for the DataSHIELD packages.</p>
+
+<h4>opalr</h4>
+
+<a href="https://cran.r-project.org/package=opalr" target="_blank">https://cran.r-project.org/package=opalr <i class="fa fa-external-link-square"></i></a>
+
+<p class="obiba-top-margin">This new Opal R package depends on a more recent and modern cURL library binding (httr in place of RCurl which
+	is not maintained any more). This is the recommended package for performing plain R operations (backward compatible with the original
+	'opal' R package), e.g. when performing data harmonization with R.</p>
+
+<p class="obiba-top-margin">Please note that this package is not suitable for DataSHIELD operations (only the functions for the configuration
+	 of DataSHIELD in Opal are available). The reason of this is that the DataSHIELD operations (login, assign, aggregate etc) are in the process
+	 to be moved to a DataSHIELD Interface generic package (in order to prepare the ability to connect to other data repositories).</p>
+
+<h4>micar</h4>
+
+<a href="https://cran.r-project.org/package=micar" target="_blank">https://cran.r-project.org/package=micar <i class="fa fa-external-link-square"></i></a>
+
+<p class="obiba-top-margin">This package allows to connect to the Mica administration server (distinct from the public web portal) and make
+	studies, variables etc. extractions (combined with search queries). Data access requests can also be retrieved. Reporting with R on Mica
+	data is now possible.</p>
