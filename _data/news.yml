@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-03-27
+    title: Mica 3.5 Released
+    url: release/mica2/3.5/
+    summary: "Variable Docuemnt Lists"
   - date: 2019-02-27
     title: OBiBa in the CRAN
     url: event/infra/cran
