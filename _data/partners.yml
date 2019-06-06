@@ -2,10 +2,14 @@
   img: logo-maelstrom.png
   url: https://www.maelstrom-research.org/
 
-- title: Canadian Longitudinal Study on Aging
-  img: clsa.png
-  url: http://www.clsa-elcv.ca/
+- title: Epigeny
+  img: epigeny.png
+  url: https://epigeny.io/
 
-- title: Public Population Genomics
-  img: p3g.png
-  url: http://www.p3g.org/
+- title: Canarie
+  img: canarie.png
+  url: https://www.canarie.ca/
+
+- title: EUCAN-Connect
+  img: eucanconnect.png
+  url: https://www.eucanconnect.eu/
