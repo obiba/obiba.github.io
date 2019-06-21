@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-06-21
+    title: Mica 3.6 Released
+    url: release/mica2/3.6/
+    summary: "Individual Study's Access section and Opal View Generation"
   - date: 2019-03-27
     title: Mica 3.5 Released
     url: release/mica2/3.5/
