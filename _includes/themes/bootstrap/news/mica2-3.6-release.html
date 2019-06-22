@@ -1,0 +1,46 @@
+<p xmlns="http://www.w3.org/1999/html">We are pleased to announce that Mica2 3.6 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and networks.</p>
+
+<p>This release introduces the following:</p>
+
+<ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Individual Study Model</b>, the Access section has been extended to capture more details regarding data sharing and dissemination.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Opal Views Download</b>, this feature permits Mica users to generated and archive importable Opal Views based on variable lists.
+    </li>
+</ul>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+
+  <p>Only users wishing to update their <code>Individual Study</code> model to have the new <code>Access</code> section must follow the following data migration steps:</p>
+  </br>
+
+  <ul class="obiba-no-style-list">
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>Stop Mica database.</li>
+    <li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i><strong>Backup</strong> Mica database.</li>
+    <li>
+    <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Go to <code>Administration > Individual Study Configuration</code> and update your current <emphasis>schema</emphasis> and <emphasis>definition</emphasis> using this <a href="https://github.com/obiba/mica2/blob/master/mica-core/src/main/resources/config/study-form/collection-schema.json" target="_blank">schema</a> and <a href="https://github.com/obiba/mica2/blob/master/mica-core/src/main/resources/config/study-form/collection-definition.json" target="_blank">definition</a> and save the changes.
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Unzip <a href="https://github.com/obiba/mica2/releases/download/3.6.0/access-section-update-migration.zip">access-section-update-migration.zip</a> and run the migration script <code>./access_migration.sh</code>.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Restart Mica server
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Go to <code>Administration > Individual Study Configuration > Search (TAB)</code> and save so the <code>Individual Study</code> taxonomies get re-indexed.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Go to <code>Administration > Indexing</code> and index Studies.
+    </li>
+  </ul>
+</div>
+
+<p class="obiba-top-margin">See <a href="http://micadoc.obiba.org" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
