@@ -3,6 +3,7 @@ data:
   - date: 2019-01-28
     title: Opal 2.14 Released
     url: release/opal/2.14/
+    summary: Performance, OpenID Connect, new data formats, datashield4j
   - date: 2019-06-21
     title: Mica 3.6 Released
     url: release/mica2/3.6/
