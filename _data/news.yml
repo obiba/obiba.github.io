@@ -1,6 +1,6 @@
 summary: 3
 data:
-  - date: 2019-01-28
+  - date: 2019-07-01
     title: Opal 2.14 Released
     url: release/opal/2.14/
     summary: Performance, OpenID Connect, new data formats, datashield4j
