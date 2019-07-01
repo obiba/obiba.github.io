@@ -1,0 +1,42 @@
+<p>We are pleased to announce that Opal 2.14 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>
+  Thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN Connect <i class="fa fa-external-link-square"></i></a> program, this release
+  greatly improves the speed of the import and export of datasets, as well as their assignment to R. Thanks to reduced memory needs, much larger datasets can be handled
+  (tested with a dataset of 200M data points and a 8G opal server).
+</p>
+
+<p>
+  This release also supports external identity providers based on the <a href="https://openid.net/connect/" target="_blank">OpenID Connect <i class="fa fa-external-link-square"></i></a>
+  protocol for a better integration with the hosting institution's authentication system. The implementation is based on the excellent
+  <a href="https://connect2id.com/products/nimbus-oauth-openid-connect-sdk" target="_blank">Nimbus OAuth 2.0 SDK <i class="fa fa-external-link-square"></i></a>.
+  This has been tested with <a href="https://www.keycloak.org/" target="_blank">Keycloak <i class="fa fa-external-link-square"></i></a>, but should work with any
+  identity provider system exposing an OpenID Connect configuration discovery entry point.
+</p>
+
+<p>
+  Additional features implemented:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>refresh of a project (reload data and meta-data from the database),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>a project can have default settings (preferred export folder and identifiers mapping),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>views can now be backed up and restored from the web interface (a feature that is still available
+      using the Opal Python commands). The views restore action is also to be used when importing Opal Views downloaded from a <a href="../../mica2/3.6/">Mica server (3.6)</a>,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>support of SAS Transport, compressed SPSS, and compressed CSV data formats,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>support of SPSS ranges and missing values specifications are handled at import and export,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the R option <code>datashield.seed</code> is systematically applied at DataSHIELD server-side R session creation.
+      It is specific to an Opal instance and immutable and will be used by DataSHIELD server side functions for consistent random numbers generation,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>DataSHIELD platform base classes (configuration and R parser) have been extracted from Opal into an external
+      library, <a href="https://github.com/obiba/datashield4j" target="_blank">datashield4j <i class="fa fa-external-link-square"></i></a>, so that other data repositories can implement the DataSHIELD platform.
+    </li>
+</ul></p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
