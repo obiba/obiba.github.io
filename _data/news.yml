@@ -177,7 +177,7 @@ data:
     url: release/mica/8.0/
   - date: 2013-04-22
     title: Opal 1.14.0 Released
-    utl: release/opal/1.14.0/
+    url: release/opal/1.14.0/
   - date: 2013-03-26
     title: Opal 1.13.0 released
     url: release/opal/1.13.0/
