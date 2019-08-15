@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-08-15
+    title: Opal 2.15 Released
+    url: release/opal/2.15/
+    summary: Personal access tokens, R server packages management
   - date: 2019-08-14
     title: Agate 1.5 Released
     url: release/agate/1.5/
