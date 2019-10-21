@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2019-08-17
+    title: Mica 3.7 Released
+    url: release/mica2/3.7/
+    summary: "Use Agate's OpenID Connect Realms"
   - date: 2019-08-15
     title: Opal 2.15 Released
     url: release/opal/2.15/
