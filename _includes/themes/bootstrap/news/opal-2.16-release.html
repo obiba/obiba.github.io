@@ -1,0 +1,23 @@
+<p>We are pleased to announce that Opal 2.16 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core database application
+    for biobanks.</p>
+
+<p>This release facilitates the documentation of the harmonization process by reading directly the variable properties from the column attributes of the R data.frame/tibble objects. Thus harmonization algorithms can be implemented along with their documentation in the metadata of the datasets. This approach has been successfully applied by the <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a> group. As a complement, the
+<a href="https://cran.r-project.org/package=opalr" target="_blank">opalr <i class="fa fa-external-link-square"></i></a> R package provides some new utility functions (since version 1.3.0) for retrieving datasets from Opal into the local R session, annotating the harmonized datasets with taxonomy terms, applying data dictionary, and saving back the datasets as Opal tables.
+</p>
+
+<p>
+  Additional features implemented:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the data summary of temporal (date/datetime), geospatial (point/linestring/polygon) and text variables has been improved to support case of continuous data with only categories describing missing values,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the data dictionary of an imported dataset can be optionaly merged into the existing destination table (default behavior is still override).
+    </li>
+</ul></p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="http://www.mindmap-cities.eu/" target="_blank">MINDMAP <i class="fa fa-external-link-square"></i></a> and the <a href="http://www.bristol.ac.uk/alspac/" target="_blank">ALSPAC <i class="fa fa-external-link-square"></i></a> programs.
+</p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
