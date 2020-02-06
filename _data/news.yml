@@ -1,5 +1,13 @@
 summary: 3
 data:
+  - date: 2020-01-05
+    title: Mica 3.8 Released
+    url: release/mica2/3.8/
+    summary: New Data Access Request functionalities
+  - date: 2020-01-05
+    title: Agate 1.6 Released
+    url: release/agate/1.6/
+    summary: New and updated Data Access Request templates
   - date: 2019-12-10
     title: Opal 2.16 Released
     url: release/opal/2.16/
