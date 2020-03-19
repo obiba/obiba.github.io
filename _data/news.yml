@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2020-03-19
+    title: Mica 3.9 Released
+    url: release/mica2/3.9/
+    summary: Search engine can now use Elasticsearch 7
   - date: 2020-01-05
     title: Mica 3.8 Released
     url: release/mica2/3.8/
