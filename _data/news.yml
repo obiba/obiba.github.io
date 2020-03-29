@@ -1,5 +1,13 @@
 summary: 3
 data:
+  - date: 2020-03-29
+    title: Mica 4.0 Released
+    url: release/mica2/4.0/
+    summary: Template-based public pages
+  - date: 2020-03-29
+    title: Agate 2.0 Released
+    url: release/agate/2.0/
+    summary: Template-based public pages
   - date: 2020-03-19
     title: Mica 3.9 Released
     url: release/mica2/3.9/

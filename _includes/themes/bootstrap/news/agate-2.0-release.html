@@ -1,0 +1,46 @@
+<p>We are pleased to announce that Agate 2.0 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<h4>Public Pages</h4>
+
+<p>
+  Agate now proposes template-based public pages for a better integration with institution's environment. The theme is based on the excellent <a href="https://adminlte.io/" target="_blank">AdminLTE <i class="fa fa-external-link-square"></i></a> framework which itself uses <a href="https://getbootstrap.com/" target="_blank">Bootstrap <i class="fa fa-external-link-square"></i></a> toolkit. This gives a modern and clean style to default Agate public pages, see <a href="https://agate-demo.obiba.org" target="_blank">Agate demo <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p>The public pages are based on templates that can be:</p>
+
+<ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Configured</b>,
+      by modifying the global Agate configuration, or by altering settings variables in a template file,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Extended</b>,
+      by including new content in the base template files or by defining new pages,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Overridden</b>,
+      by overridding the base template files.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Styled</b>,
+      by altering the stylesheets or by defining a custom build of the AdminLTE distribution.
+    </li>
+</ul>
+
+<h4>Data Access Request</h4>
+
+<p>This release introduces new and updated Data Access Feasibility templates related to changes in <a href="/pages/news/release/mica2/4.0/">Mica 4.0</a>.</p>
+
+<div class="alert alert-warning obiba-top-margin" role="alert">
+  <div><strong>Important notes</strong></div>
+  <ul>
+    <li>
+      Some features have not been implemented in Agate's public pages: signup with SQL database realm or LDAP/ActiveDirectory realms. The recommended alternative is to use the User Storage Federation feature of <a href="https://www.keycloak.org/" target="_blank">Keycloak <i class="fa fa-external-link-square"></i></a> (which is more advanced than what Agate could ever propose) and to interface Agate and Keycloak using OpenID Connect.
+    </li>
+    <li>
+      Email templates format has changed, to match the one of the public pages. The template syntax is simpler than the one of the previous format. See <a href="http://agatedoc.obiba.org/en/latest/admin/configuration.html#notification-emails" target="_blank">Notification Emails documentation <i class="fa fa-external-link-square"></i></a> for the configuration instructions.
+    </li>
+  </ul>
+</div>
+
+<p class="obiba-top-margin">See also <a href="http://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. Note that a <a href="http://agatedoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a> section has been added.</p>
