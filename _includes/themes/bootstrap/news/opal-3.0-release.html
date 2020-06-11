@@ -1,0 +1,34 @@
+<p>We are pleased to announce that Opal 3.0 is now available. <a href="http://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  This release introduces a new major feature called <a href="http://opaldoc.obiba.org/en/latest/resources.html" target="_blank">Resources <i class="fa fa-external-link-square"></i></a> which is a novel way of interacting with existing data repositories: instead of importing data in a database that is managed by Opal, it is now possible to simply declare how to access the data (or a computation unit) with a formal representation called a resource. The access to the resource's data then happens directly in the R server managed by Opal. This feature uses the <a href="https://github.com/obiba/resourcer" target="_blank">resourcer R package <i class="fa fa-external-link-square"></i></a> also developped by OBiBa and fully integrated with the <a href="http://datashield.ac.uk" target="_blank">DataSHIELD <i class="fa fa-external-link-square"></i></a> federated analysis platform. The resources open the possibility to make federated analysis of big data, complex and domain specific data structures (omics, geospatial etc.), using existing high performance computing facilities.
+</p>
+
+<p>
+  <img alt="Resources" src="http://opaldoc.obiba.org/en/latest/_images/opal-resources.png">
+</p>
+
+<p>
+  Additional features implemented:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><a href="http://opaldoc.obiba.org/en/latest/python-user-guide/project/index.html" target="_blank">new Project python commands <i class="fa fa-external-link-square"></i></a> for creating/deleting a project and backup/restore its content have been added,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>user and group name auto-completion when adding permissions,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>integration wih <a href="http://bioconductor.org" target="_blank">Bioconductor <i class="fa fa-external-link-square"></i></a> R packages repository.
+    </li>
+</ul></p>
+
+<p>
+  No breaking changes are expected with this release. It is even simpler to set up a new Opal system as no database is required when using only resources.
+</p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. We recommend to have a look at the section about <a href="http://opaldoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a>.
+</p>
