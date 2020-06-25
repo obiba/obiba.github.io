@@ -10,6 +10,14 @@
   img: canarie.png
   url: https://www.canarie.ca/
 
+- title: CanPath
+  img: canpath.png
+  url: https://canpath.ca/
+
 - title: EUCAN-Connect
   img: eucanconnect.png
   url: https://www.eucanconnect.eu/
+
+- title: SYNCHROS
+  img: synchros.png
+  url: https://www.synchros.eu/
