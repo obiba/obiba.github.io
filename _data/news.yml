@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2020-07-14
+    title: Mica 4.2 Released
+    url: release/mica2/4.2/
+    summary: Revisions comparison and statistics summary
   - date: 2020-06-11
     title: Opal 3.0 Released
     url: release/opal/3.0/
