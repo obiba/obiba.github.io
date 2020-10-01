@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2020-10-01
+    title: Mica 4.3 Released
+    url: release/mica2/4.3/
+    summary: Crosstab, Cart, Contact Us pages, Search graphics, Files browser, Variables classifications, context path
   - date: 2020-09-30
     title: Agate 2.1 Released
     url: release/agate/2.1/
