@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2020-12-15
+    title: Mica 4.4 Released
+    url: release/mica2/4.4/
+    summary: Lists, search configuration, data access request archive and more
   - date: 2020-10-01
     title: Mica 4.3 Released
     url: release/mica2/4.3/
