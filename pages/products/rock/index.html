@@ -1,0 +1,26 @@
+---
+layout: product
+title: Analyze with Rock
+menu:
+  wiki:
+    href: https://rockdoc.obiba.org
+    target: _blank
+  download:
+    href: "#download"
+    target: _self
+  demo:
+    href: "#demo"
+    target: _self
+  github:
+    href: http://github.com/obiba/rock
+    target: _blank
+---
+{% include JB/setup %}
+{% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Rock?" sectionBody="themes/bootstrap/rock/what.html" %}
+{% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/rock/features.html" %}
+<section class="obiba-fix-navbar-section" id="download">
+    {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Download" sectionBody="themes/bootstrap/rock/download.html" %}
+</section>
+<section id="demo">
+    {% include themes/bootstrap/section.html icon="fa-play-circle" sectionTitle="Try Rock" sectionBody="themes/bootstrap/rock/demo.html" %}
+</section>
