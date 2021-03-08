@@ -1,7 +1,7 @@
 <p>This is the RPM package repository of OBiBa software to automate installation and upgrade. To add this repository locally run the following command:</p>
 <pre>
-  wget https://www.obiba.org/assets/bintray-obiba-rpm.repo -O bintray-obiba-rpm.repo
-  sudo mv bintray-obiba-rpm.repo /etc/yum.repos.d/
+  wget https://www.obiba.org/assets/obiba-rpm.repo -O obiba-rpm.repo
+  sudo mv obiba-rpm.repo /etc/yum.repos.d/
 </pre>
 <p>To verify that the repository has been added run:</p>
 <pre>yum repolist | grep obiba</pre>
@@ -12,7 +12,7 @@
   On CentOS 6.x the following Python Clients dependencies must be installed manually:
   <div class="obiba-small-top-margin">
     <ul class="obiba-carret-list-warning">
-      <li>Python 2.7</li>
+      <li>Python 3</li>
       <li>protobuf-python 2.5 or higher</li>
       <li>python-pycurl</li>
     </ul>

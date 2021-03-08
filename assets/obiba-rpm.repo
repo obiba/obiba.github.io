@@ -1,0 +1,8 @@
+#obiba-rpm - packages by OBiBa
+[obiba-rpm]
+name=obiba-rpm
+baseurl=https://obiba.jfrog.io/artifactory/rpm-local/repodata
+gpgcheck=0
+repo_gpgcheck=1
+gpgkey=https://obiba.jfrog.io/artifactory/rpm-local/repodata/repomd.xml.key
+enabled=1
