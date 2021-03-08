@@ -1,0 +1,34 @@
+<p>We are pleased to announce that Opal 4.0 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  This release of Opal integrates with the <a href="https://www.obiba.org/pages/products/rock/">Rock R server</a> which is a modern implementation of a R server with a REST API, built-in security and the capability of scaling horizontaly: Opal can connect with multiple R servers, grouped in a cluster. This allows to balance the load of the analysis between multiple computation nodes. This fully integrates with the <a href="https://datashield.ac.uk" target="_blank">DataSHIELD <i class="fa fa-external-link-square"></i></a> federated analysis platform.
+</p>
+
+<p>
+  <img alt="R servers" src="https://opaldoc.obiba.org/en/latest/_images/opal-rock-scalability.png" width="800">
+</p>
+
+<p>
+  Additional features implemented:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>import/export data in RDS format (single serialized R object, see <a href="https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/readRDS" target="_blank">base::readRDS <i class="fa fa-external-link-square"></i></a> documentation), also available as import/export python commands,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>new <a href="https://opaldoc.obiba.org/en/latest/python-user-guide/permission/index.html" target="_blank">Resource permissions python commands <i class="fa fa-external-link-square"></i></a> for adding/deleting permissions on a project's resources,
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>R markdown report additional files (R script to source, subsection of R markdown, images etc.) are supported for building complex reports.
+    </li>
+</ul></p>
+
+<p>
+  No breaking changes are expected with this release. Opal is backward compatible with the legacy R servers. R based plugins will be automatically updated (requires internet connection).
+</p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. We recommend to have a look at the section about <a href="http://opaldoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a>.
+</p>

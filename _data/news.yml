@@ -1,6 +1,10 @@
 summary: 3
 data:
   - date: 2021-03-08
+    title: Opal 4.0 Released
+    url: release/opal/4.0/
+    summary: Cluster of Rock R servers, RDS import/export
+  - date: 2021-03-08
     title: Rock 1.0 Released
     url: release/rock/1.0/
     summary: R server with REST API
