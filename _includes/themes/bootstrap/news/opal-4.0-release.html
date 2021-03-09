@@ -18,13 +18,26 @@
     </li>
     <li><i class="fa fa-caret-right obiba-small-right-margin"></i>new <a href="https://opaldoc.obiba.org/en/latest/python-user-guide/permission/index.html" target="_blank">Resource permissions python commands <i class="fa fa-external-link-square"></i></a> for adding/deleting permissions on a project's resources,
     </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>the R REST API now returns either binary serialized R objects (as before) or JSON serialized R objects, which makes the Opal's R service usable by non-R clients,
+    </li>
     <li><i class="fa fa-caret-right obiba-small-right-margin"></i>R markdown report additional files (R script to source, subsection of R markdown, images etc.) are supported for building complex reports.
     </li>
 </ul></p>
 
 <p>
-  No breaking changes are expected with this release. Opal is backward compatible with the legacy R servers. R based plugins will be automatically updated (requires internet connection).
+  <b>Breaking changes</b>
 </p>
+
+<p>
+  Despite Opal is backward compatible with the legacy R servers, some breaking changes are expected with this release:.
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>R based plugins need to be upgraded. This will be done automatically by Opal (requires internet connection),
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i><a href="https://github.com/obiba/opalr" target="_blank">opalr <i class="fa fa-external-link-square"></i></a> needs to be upgraded to its latest version (otherwise JSON serialized R objects will be returned).
+    </li>
+</ul></p>
 
 <p>
   This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
