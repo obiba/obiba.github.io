@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2021-05-10
+    title: Agate 2.3 Released
+    url: release/agate/2.3/
+    summary: Clients IP, embedded font
   - date: 2021-04-27
     title: Opal 4.1 Released
     url: release/opal/4.1/
