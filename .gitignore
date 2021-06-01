@@ -1,6 +1,7 @@
 _site/*
 _theme_packages/*
 .idea/*
+.history
 
 Thumbs.db
 .DS_Store
