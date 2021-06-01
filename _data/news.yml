@@ -3,7 +3,7 @@ data:
   - date: 2021-06-01
     title: Mica 4.5 Released
     url: release/mica2/4.5/
-    summary: Opal Personal Token, Improved document listing public pages
+    summary: Improved document listing public pages, Opal Personal Access Token
   - date: 2021-05-10
     title: Agate 2.3 Released
     url: release/agate/2.3/
