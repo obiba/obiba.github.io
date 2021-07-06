@@ -1,0 +1,81 @@
+<p>We are pleased to announce that Opal 4.2 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  This release of Opal now supports multiple clusters of <a href="https://www.obiba.org/pages/products/rock/">Rock R servers</a>. This allows to have different R environments: different R versions and different R packages installed.
+</p>
+
+<p>
+  <img alt="R servers clusters" src="https://opaldoc.obiba.org/en/latest/_images/opal-rock-profiles.png" width="800">
+</p>
+
+<p>
+  This fully integrates with the <a href="https://www.datashield.org" target="_blank">DataSHIELD <i class="fa fa-external-link-square"></i></a> federated analysis platform by introducing DataSHIELD profiles:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>profile links to a specific R execution environment (R version, R packages installed),</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>profile can be enabled/disabled,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>profile usage can be restricted to users with proper permissions,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>profile configuration (allowed aggregation/assignment functions, R options) can be amended,</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>profile can be associated to a specific DataSHIELD R parser version.</li>
+</ul></p>
+
+<p>
+  <img alt="DataSHIELD profiles" src="https://opaldoc.obiba.org/en/latest/_images/opal-datashield-profiles.png" width="800">
+</p>
+
+<p>
+  Additional changes:
+</p>
+
+<p><ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i> <a href="https://opaldoc.obiba.org/en/latest/web-user-guide/administration/identity-providers.html" target="_blank">OpenID Connect providers <i class="fa fa-external-link-square"></i></a> username and groups extraction process can be configured.</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i> variable annotation user interface can manage taxonomies with thousands of terms.</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i> user with table/view addition permission can now remove the tables/views created and update data dictionaries in batch.</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i> operations are faster thanks to an improved permissions cache.</li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i> DataSHIELD R parser updated by DataSHIELD team with new rules: subset syntax (using <code>[]</code>) is not permitted anymore.</li>
+</ul></p>
+
+<p>
+  <b>Breaking changes</b>
+</p>
+
+<p>
+  This Opal release is backward compatible: no breaking changes are expected. The only issue that DataSHIELD users may encounter is that the new DataSHIELD R parser (designed by the DataSHIELD team) is a bit more restrictive. Contact the DataSHIELD team for an alternative to the subset syntax (or <a href="https://www.obiba.org/opalr/reference/dsadmin.profile_rparser.html">apply former DataSHIELD R parser version to the DataSHIELD profile</a>).
+</p>
+
+<p>
+  <b>R and DataSHIELD packages</b>
+</p>
+
+<p>
+  These packages have been updated and are backward compatible:
+</p>
+
+<pre>
+# opal R client, with profiles support
+install.packages("opalr")
+# DataSHIELD interface, with profiles support
+install.packages("DSI")
+# DataSHIELD interface Opal implementation
+install.packages("DSOpal")
+</pre>
+
+<p>
+  <b>Documentation</b>
+</p>
+
+<p class="obiba-top-margin">See <a href="http://opaldoc.obiba.org" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. We recommend to have a look at the section about <a href="http://opaldoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p class="obiba-top-margin">See also <a href="https://www.obiba.org/opalr/" target="_blank">Opal R package documentation <i class="fa fa-external-link-square"></i></a> which contains useful articles for managing Opal system and data from R.
+</p>
+
+<p>
+  <b>Aknowledgements</b>
+</p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
