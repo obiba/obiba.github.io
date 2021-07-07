@@ -47,9 +47,6 @@
 <p>
   <ul class="obiba-no-style-list">
     <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      The New Relic dependency has been removed. If you have modified the <code>/etc/default/opal</code> file, make sure to remove <code>-Dnewrelic.config.file=$OPAL_HOME/conf/newrelic.yml -javaagent:$OPAL_DIST/lib/newrelic-agent-@newrelic_version@.jar</code> arguments from the <a href="https://github.com/obiba/opal/blob/4.2.0/opal-server/src/main/deb/default/opal#L32" target="_blank">JAVA_ARGS</a> line otherwise startup will fail.
-    </li>
-    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
       DataSHIELD users may encounter some issues because the new DataSHIELD R parser (designed by the DataSHIELD team) is a bit more restrictive. Contact the DataSHIELD team for an alternative to the subset syntax (or <a href="https://www.obiba.org/opalr/reference/dsadmin.profile_rparser.html">apply former DataSHIELD R parser version to the DataSHIELD profile</a>).
     </li>
   </ul>
