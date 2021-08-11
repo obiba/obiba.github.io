@@ -1,5 +1,8 @@
 summary: 3
 data:
+  - date: 2021-08-11
+    title: Agate 2.4 Released
+    url: release/agate/2.4/
   - date: 2021-07-05
     title: Opal 4.2 Released
     url: release/opal/4.2/
