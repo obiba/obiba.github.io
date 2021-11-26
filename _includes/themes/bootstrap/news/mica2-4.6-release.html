@@ -1,0 +1,58 @@
+<p xmlns="http://www.w3.org/1999/html">We are pleased to announce that Mica2 4.6 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and networks.</p>
+
+<p>This release introduces the following features:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Use of <a href="" target="">Plotly Graphing Library <i class="fa fa-external-link-square"></i></a> in document and search pages.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Added <code>Start Day</code> and <code>End Day</code> fields in Data Collection Event when data collections occur several times in a month (bi-weekly).
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Batch publishing/indexing of datasets that are directly related to a study.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Data access request forms (main, feasibility and amendment) have revisions: it is now possible to modify a form without affecting the older data access requests. Forms must be published after being modified to be operational.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    A list of variables can be attached to a Data access request form. This list can be modified while the request is opened. These variables can then be download as Opal views to facilitate the requested data extractions.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    The cart can now contain studies and networks. Documents can be added when navigation in each study/network page, or from the search result. From these carts, documents' full description can be downloaded for internal usage (content analysis).
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Several studies (resp. networks) can be compared with each other: one column per study (resp. network), one row per field of interest. This comparision page can be fully configurable. The comparision can be launched from the search page or from the cart page.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">The following main templates have been modified:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>data-access-form.ftl</b>: addition of the attached variables.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>data-access-amendment-form.ftl</b>: addition of the attached variables.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>data-access-feasibility-form.ftl</b>: addition of the attached variables.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>cart.ftl</b>: addition of the cart of studies and of networks.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>variable.ftl</b>: addition of link to the data access request.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>study.ftl</b>: addition of the cart button.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>network.ftl</b>: addition of the cart button.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>search.ftl</b>: modification of the download and the cart buttons, addition of the comparision button.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">See <a href="http://micadoc.obiba.org" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. Note that a <a href="http://micadoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a> section has been added.</p>
