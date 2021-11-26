@@ -1,0 +1,25 @@
+<p>We are pleased to announce that Opal 4.3 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  This is mainly a maintenance release, that enhances the security of the server:
+</p>
+
+<p><ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Strong password policy</b>: strong password is now required for new users (min/max length, upper/lower case, digit, special character).
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Cookies</b>: have <code>Secure</code>, <code>HttpOnly</code> and <code>SameSite</code> flags.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>CSRF</b>: <a href="https://owasp.org/www-community/attacks/csrf" target="_blank">Cross Site Request Forgery</a> attempts are detected and blocked.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Plain R service</b>: a setting allows to permanently block the plain R service. The DataSHIELD service is still available and is the recommended one to operate on the R server side.
+  </li>
+</ul></p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
