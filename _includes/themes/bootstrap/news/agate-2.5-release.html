@@ -1,0 +1,29 @@
+<p>We are pleased to announce that Agate 2.5 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<p>
+  In this release:
+</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Strong password policy</b>: strong password is now required for new users (min/max length, upper/lower case, digit, special character).
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Redirect</b>: requests with redirect parameter are verified.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Cookies</b>: have <code>Secure</code>, <code>HttpOnly</code> and <code>SameSite</code> flags.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>CSRF</b>: <a href="https://owasp.org/www-community/attacks/csrf" target="_blank">Cross Site Request Forgery</a> attempts are detected and blocked.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Content sanitization</b>: user provided content (from profile) has been sanitized to protect from malicious code.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN Connect <i class="fa fa-external-link-square"></i></a> (<a href="https://www.eucanconnect.eu/coral-docker-stack-deployment/" target="_blank">Coral</a> integration) program, and to the contribution of <a href="https://www.cartagene.qc.ca/" target="_blank">CARTaGENE <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p class="obiba-top-margin">See also <a href="http://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. Note that a <a href="http://agatedoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a> section has been added.</p>
