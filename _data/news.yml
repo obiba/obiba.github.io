@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2022-05-30
+    title: Agate 2.6 Released
+    url: release/agate/2.6/
+    summary: Two-factor authentication, Multi-domain OIDC setup
   - date: 2022-05-03
     title: Opal 4.4 Released
     url: release/opal/4.4/
