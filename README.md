@@ -67,6 +67,8 @@ You need the following tools:
 * **grunt**
 * **jekyll**
 
+See [Installation](Jekyll on Ubuntu) of Jekyll on Ubuntu
+
 To start the development follow these steps:
 
 * open two Terminal TABs or windows
