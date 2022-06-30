@@ -69,6 +69,11 @@ You need the following tools:
 
 See [Installation](https://jekyllrb.com/docs/installation/ubuntu/) of Jekyll on Ubuntu
 
+> In case of errors you may want to install the following gem (see link above about .bashrc setting):
+```
+gem install github-pages
+```
+
 To start the development follow these steps:
 
 * open two Terminal TABs or windows
@@ -86,8 +91,16 @@ To view the website locally go to [http://localhost:4000](http://localhost:4000)
 
 You can change the port alternativaly by adding a **--port <number>** to the **jekyll** commandline:
 
+```    
+$>jekyll serve -w --port 4001
+```
 
-    $>jekyll serve -w --port 4001
+Or 
+
+```
+$>bundle exec jekyll serve -w --port 4001
+```
+
 
 
 ## Website Issues
