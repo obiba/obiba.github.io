@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2022-06-30
+    title: Mica 5.0 Released
+    url: release/mica2/5.0/
+    summary: Introduction of Harmonization Initiative and Protocol
   - date: 2022-05-30
     title: Agate 2.6 Released
     url: release/agate/2.6/
