@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2022-09-05
+    title: Agate 2.7 Released
+    url: release/agate/2.7/
+    summary: Database driver upgrade, Single sign-out support
   - date: 2022-06-30
     title: Mica 5.0 Released
     url: release/mica2/5.0/

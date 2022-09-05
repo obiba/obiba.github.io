@@ -1,0 +1,23 @@
+<p>We are pleased to announce that Agate 2.7 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<p>
+  In this release:
+</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>MongoDB driver upgrade</b>: latest java driver is used (4.7 at the time of release). No database upgrade is required, as this driver is backward compatible with older versions (see <a href="https://www.mongodb.com/docs/drivers/java/sync/current/compatibility/" target="_blank">MongoDB Java Driver Compatibility Matrix <i class="fa fa-external-link-square"></i></a>)
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>OAuth2 Logout Endpoint</b>: this can be triggered to perform single sign-out (following <a href="https://openid.net/specs/openid-connect-session-1_0-17.html#RPLogout" target="_blank">OpenID Connect's specification <i class="fa fa-external-link-square"></i></a>). It is described by the key "end_session_endpoint" in the OpenID Connect discovery object (see <a href="https://agate-demo.obiba.org/.well-known/openid-configuration" target="_blank">agate-demo's one <i class="fa fa-external-link-square"></i></a>).
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Many library dependencies upgraded, fixing some potential security issues.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN Connect <i class="fa fa-external-link-square"></i></a> (<a href="https://www.eucanconnect.eu/coral-docker-stack-deployment/" target="_blank">Coral</a> integration) program.
+</p>
+
+<p class="obiba-top-margin">See also <a href="http://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. Note that a <a href="http://agatedoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a> section has been added.</p>
