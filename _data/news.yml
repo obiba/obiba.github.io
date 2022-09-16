@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2022-09-16
+    title: Opal 4.5 Released
+    url: release/opal/4.5/
+    summary: Database drivers upgrade, Single sign-out support, Logout redirection
   - date: 2022-09-05
     title: Agate 2.7 Released
     url: release/agate/2.7/
