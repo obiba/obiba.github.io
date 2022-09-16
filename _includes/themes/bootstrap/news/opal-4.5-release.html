@@ -1,0 +1,34 @@
+<p>We are pleased to announce that Opal 4.5 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  In this release:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>MongoDB driver upgrade</b>: latest java driver is used (4.7 at the time of release). No database upgrade is required, as this driver is backward compatible with older versions (see <a href="https://www.mongodb.com/docs/drivers/java/sync/current/compatibility/" target="_blank">MongoDB Java Driver Compatibility Matrix <i class="fa fa-external-link-square"></i></a>)
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>SQL drivers upgrade</b>: latest java drivers are used for MySQL, MariaDB and PostgreSQL databases. No database upgrade is required.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Logout with OpenID Connect</b>: the sign-out procedure now cascades the logout action to the external Identity Providers. For instance, if a user authenticates in Opal via an external ID provider (using OpenID Connect), this ID provider session's will be automatically ended after the Opal's one is ended.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Logout redirection</b>: it is now possible to specify where the user should be redirected after logout (for instance the institution's home page).
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Many library dependencies upgraded, fixing some potential security issues.
+    </li>
+  </ul>
+</p>
+
+<p>
+  This release is expected to be fully backward compatible.
+</p>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
