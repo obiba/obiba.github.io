@@ -1,0 +1,27 @@
+---
+layout: product
+title: Collect with Amber
+menu:
+  download:
+    href: "#download"
+    target: _self
+  demo:
+    href: "#demo"
+    target: _self
+  wiki:
+    href: http://amberdoc.obiba.org
+    target: _blank
+  github:
+    href: https://github.com/obiba/amber
+    target: _blank
+
+---
+{% include JB/setup %}
+{% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Amber?" sectionBody="themes/bootstrap/amber/what.html" %}
+{% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/amber/features.html" %}
+<section class="obiba-fix-navbar-section" id="download">
+  {% include themes/bootstrap/section.html icon="fa-download" sectionTitle="Download" sectionBody="themes/bootstrap/amber/download.html" %}
+</section>
+<section id="demo">
+  {% include themes/bootstrap/section.html icon="fa-play-circle" sectionTitle="Try Amber" sectionBody="themes/bootstrap/amber/demo.html" %}
+</section>
