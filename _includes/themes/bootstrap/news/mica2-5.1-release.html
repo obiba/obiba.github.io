@@ -1,0 +1,39 @@
+<p xmlns="http://www.w3.org/1999/html">We are pleased to announce that Mica2 5.1 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and harmonization initiatives.</p>
+
+<p class="obiba-top-margin">This release includes the following data access requests new features:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Preliminary form</b> is a new type of form to be enabled for providing most of the research project information and to get a formal approval before its funding is secured. The main form is then to update these information once the funding process is finalized.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Collaborators</b> can be added by the applicant to the data access request. Each collaborator gets read-only access to the form(s) and receives related email notifications.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>End-user agreement</b> is a new type of form to be enabled for adding separated agreements to the data access request: each collaborator and the applicant must fill-in their personal end-user agreement.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">Note that the new data access request forms require an upgrade of the Agate server (2.8+) so that the corresponding notification emails are defined.</p>
+
+<p>
+  This release also includes some security updates:
+</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>MongoDB driver upgrade</b>: latest java driver is used (4.7 at the time of release). No database upgrade is required, as this driver is backward compatible with older versions (see <a href="https://www.mongodb.com/docs/drivers/java/sync/current/compatibility/" target="_blank">MongoDB Java Driver Compatibility Matrix <i class="fa fa-external-link-square"></i></a>)
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Sign-out</b>: the sign-out procedure now cascades the logout action to the external Identity Providers. For instance, if a user authenticates in Mica via an external ID provider (using OpenID Connect), this ID provider session's will be automatically ended after the Mica's one is ended.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Many library dependencies upgraded, fixing some potential security issues.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN Connect <i class="fa fa-external-link-square"></i></a> (<a href="https://www.eucanconnect.eu/coral-docker-stack-deployment/" target="_blank">Coral</a> integration) program, and to the contribution of <a href="https://www.mirec-canada.ca/" target="_blank">MIREC <i class="fa fa-external-link-square"></i></a> and <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p class="obiba-top-margin">See <a href="http://micadoc.obiba.org" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>

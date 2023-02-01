@@ -1,5 +1,13 @@
 summary: 3
 data:
+  - date: 2023-02-01
+    title: Mica 5.1 Released
+    url: release/mica2/5.1/
+    summary: Preliminary and End-user Agreement forms, Database driver upgrade, Single sign-out support
+  - date: 2023-02-01
+    title: Agate 2.8 Released
+    url: release/agate/2.8/
+    summary: Preliminary and End-user Agreement notification email templates
   - date: 2022-09-16
     title: Opal 4.5 Released
     url: release/opal/4.5/
