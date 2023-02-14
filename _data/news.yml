@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2023-02-14
+    title: OBiBa in the PyPi
+    url: event/infra/pypi
+    summary: "Opal, Mica and Agate Python packages in the PyPi"
   - date: 2023-02-01
     title: Mica 5.1 Released
     url: release/mica2/5.1/
