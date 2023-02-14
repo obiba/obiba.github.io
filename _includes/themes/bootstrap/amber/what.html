@@ -1,65 +1,18 @@
-<p>Amber is a web-based application that manages case reports. As depicted in the figure below, it is a three tier system which components are:</p>
-
-<ol class="obiba-carret-list">
-  <li>
-    <b>Presentation tier</b>
-    <ul class="obiba-carret-list">
-      <li><b>Amber Studio</b> is a front-end application that runs locally in the client's browser. It manages the users and the case report forms (design and access controls).</li>
-      <li><b>Amber Collect</b> is a front-end application that runs locally in the client's browser or a mobile phone. It collects case reports data based on the enabled case report forms.</li>
-    </ul>
-  </li>
-  <li>
-    <b>Application tier</b>
-    <ul class="obiba-carret-list">
-      <li><b>Amber Server</b> is the core logic application that applies the data collection and authentication/authorization rules.</li>
-    </ul>
-  </li>
-  <li>
-    <b>Data tier</b>
-    <ul class="obiba-carret-list">
-      <li><b>MongoDB</b> is a the database used for storing the user profiles, the designed case report forms and the collected data (optionally encrypted).</li>
-    </ul>
-  </li>
-</ol>
+<p>Amber is a web-based applications system that collect case reports data based on forms. This system is composed of the Amber Server application and of several frontend applications with different purposes (content administration or data collection).</p>
 
 {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-architecture.png' header='Amber architecture' caption='Amber is a server application that centralizes case report data collected on-site.' %}
 
-<p>Onyx controls both the order and availability of the interview stages (for example, no stages are available prior to
-  the informed consent is signed) and captures many administrative parameters such as the starting and ending times of
-  each stage. Onyx also manages a participant appointment list and reception of participants, as well as data
-  filtering and encryption prior to export to a central study database (see <a href="/pages/products/opal">Opal</a>).
+<p>
 </p>
 
-<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> What Onyx Can Do for You</h4>
+<h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> What Amber Can Do for You</h4>
 
-<p>Onyx is designed to ensure that data is collected in an automated, efficient and secure way in order to minimize
-  human errors and interview length. Onyx can optimize the workflow of your baseline interviews by:</p>
-<ul class="obiba-carret-list">
-  <li>Managing appointment lists and walk-ins.</li>
-  <li>Controlling stage availability and dependencies (examples: requiring consent before an interview can proceed;
-    dependent measurements).
-  </li>
-  <li>Capturing administrative parameters such as starting and ending times of each stage.</li>
-  <li>Managing participant consents (electronic and handwritten).</li>
-  <li>Administering health questionnaires electronically.</li>
-  <li>Facilitating collection of biosamples (barcode scanning).</li>
-  <li>Automating physical measurements.</li>
-  <li>Producing personalized reports for participants.</li>
-  <li>Exporting encrypted data to multiple destinations.</li>
-</ul>
+<p>Amber is designed to ensure that data is collected in an automated, efficient and secure way in order to minimize human errors. Forms can be designed, internationalized and revised without requiring programming skills.</p>
 
 <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> A Highly Customizable Software Solution</h4>
 
-<p> Onyx is modular as shown in the figure below. The Onyx engine is a backbone to which independent data collection
-  components
-  can be connected in order to manage the various interview stages. Studies can configure Onyx for their own specific
-  stages and data collection software. </p>
+<p>Amber look and feel can be adapted to your institution's needs. Additional features can be developed and maintained in the long-term with the community support.</p>
 
-<div class="obiba-image-holder text-center">
-  {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/onyx-what-fig2.png' header='Onyx Engine' caption='The Onyx engine provides the main functionalities (shown in green). Onyx modules (orange) collect data for the different stages of an interview.' %}
-</div>
-
-<p>To learn how Onyx could be adapted to your needs, read the <a
-  href="http://wiki.obiba.org/display/ONYXDOC/Onyx+Documentation+Homel">documentation  <i class="fa fa-external-link-square"></i></a> or write to us at <a
+<p>To learn how Amber could be adapted to your needs, read the <a href="https://amberdoc.obiba.org/">Amber documentation <i class="fa fa-external-link-square"></i></a> or write to us at <a
   href="mailto:info@obiba.org">info@obiba.org</a>.
 </p>
