@@ -1,0 +1,72 @@
+<p>Amber consists of an application engine and several web application for managing, collecting and analyzing the data. </p>
+
+<div class="obiba-vertical-margin">
+  <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber Server</h4>
+</div>
+
+<p>The Amber Server engine is in charge of the core logic, data storage and access controls:</p>
+
+<ul class="obiba-carret-list">
+  <li><b>Web services API</b>: all Amber functionalities are available through web services allowing various usage from multiple client applications.</li>
+  <li><b>Authentication</b>: signin, signup, password recovery, email validation, two-factor authentication, access token with inactivaty and expiration timeouts.</li>
+  <li><b>Authorization</b>: role-based and access control lists.</li>
+  <li><b>Database encryption</b>: critical content (individual records) are encrypted in the database.</li>
+  <li><b>Scalable</b>: multiple server instances can be deployed with a load balancer to support heavy usage.</li>
+</ul>
+
+<div class="obiba-vertical-margin">
+  <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber Studio</h4>
+</div>
+
+<p>Amber Studio is a web application for managing Amber system content:</p>
+
+<ul class="obiba-carret-list">
+  <li><b>Dashboard</b>: basic activity metrics.</li>
+  <li><b>User/groups management</b>: add/delete/validate users, assign roles, grant specific permissions.</li>
+  <li><b>Studies</b>: basically a group of forms and records.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-studio-dashboard-users.png' header='Amber Studio' caption='Amber Studio dashboard and users management.' %}
+
+<ul class="obiba-carret-list">
+  <li><b>Form builder</b>: create new forms with a user-friendly interface and minimal programming. Multi-languages and left-right support. Rich form items: choices, open text entries, dropdowns, image selection, autocomplete, sliders, ratings, geographic features (points, lines, polygons) and more. Complex forms can be handled with skip logic, data validation and computed fields.</li>
+  <li><b>Form version control</b>: modify forms without interfering with on-going data collection. Always associate a record with the form revision used. Safely revert to a previous revision.</li>
+  <li><b>Form import/export</b>: export the complete form design and import it in another Amber system.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-studio-form-builder.png' header='Amber Studio' caption='Amber Studio form builder with item preview and live testing.' %}
+
+<ul class="obiba-carret-list">
+  <li><b>Case report form access control</b>: enable a CRF and restrict its access to specific users/groups.</li>
+  <li><b>Case report records</b>: filter records (by date, form and revision), visualize and modify them afterwards. Export in multiple formats (CSV, Excel, JSON), including full data dictionary as converted from the form.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-studio-records.png' header='Amber Studio' caption='Amber Studio case report records.' %}
+
+<div class="obiba-vertical-margin">
+  <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber Collect</h4>
+</div>
+
+<p>Amber Collect is a web application for collecting case reports:</p>
+
+<ul class="obiba-carret-list">
+  <li><b>Secure</b>: authentication is required and authorizations apply. Two-factor authentication is supported.</li>
+  <li><b>Efficient</b>: interface is deliberatly minimal to focus on data collection.</li>
+  <li><b>Multi-languages</b>: when the form is designed in several languages, the user can easily switch to another language, with the corresponding character set and left-right layout is automatically detected and applied.</li>
+  <li><b>Offline-first design</b>: in case the network in not accessible, collected data are stored encrypted locally. When connection is restored, data are automatically sent to the Amber Server for permanent storage.</li>
+  <li><b>Progressive web app</b>: a PWA is an installable web application, facilitating its deployment on mobile devices (no app store required). See <a href="https://web.dev/what-are-pwas/">What are Progressive Web Apps? <i class="fa fa-external-link-square"></i></a>.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-collect-screenshots.png' header='Amber Collect' caption='Amber Collect is dedicated at collecting case reports.' %}
+
+<div class="obiba-vertical-margin">
+  <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber R</h4>
+</div>
+
+<p>The <b>Amber R</b> package can be used to automate operations on Amber:</p>
+
+<ul class="obiba-carret-list">
+  <li><b>Secure</b>: authentication is required and proper authorizations apply.</li>
+  <li><b>R data frames</b>: integrates with the R ecosystem for statistical analysis and advanced reporting.</li>
+  <li><b>Data dictionaries</b>: extracted data are fully documented with the meta data of the form used when collecting data.</li>
+</ul>
