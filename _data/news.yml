@@ -3,7 +3,7 @@ data:
   - date: 2023-03-10
     title: Sponsor OBiBa
     url: event/sponsor
-    summary: "How to sponsor OBiBa development?"
+    summary: "How to contribute to OBiBa development?"
   - date: 2023-02-14
     title: OBiBa in the PyPi
     url: event/infra/pypi
