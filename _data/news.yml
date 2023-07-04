@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2023-07-10
+    title: Mica 5.2 Release
+    url: release/mica2/5.2/
+    summary: Removed Opal dependency as the main data provider, annotation of Individual Studies by taxonomy vocabularies
   - date: 2023-03-10
     title: Sponsor OBiBa
     url: event/sponsor
