@@ -91,16 +91,20 @@ To view the website locally go to [http://localhost:4000](http://localhost:4000)
 
 You can change the port alternativaly by adding a **--port <number>** to the **jekyll** commandline:
 
-```    
+```
 $>jekyll serve -w --port 4001
 ```
 
-Or 
+Or
 
 ```
 $>bundle exec jekyll serve -w --port 4001
 ```
 
+Building using Docker:
+```
+docker run --rm --volume="$PWD:/srv/jekyll:Z" --publish [::1]:4000:4000 jekyll/jekyll   jekyll serve
+```
 
 
 ## Website Issues
