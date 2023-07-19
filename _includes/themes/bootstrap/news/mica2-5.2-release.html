@@ -1,0 +1,55 @@
+<p xmlns="http://www.w3.org/1999/html">We are pleased to announce that Mica2 5.2 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and harmonization initiatives.</p>
+
+<p class="obiba-top-margin">This release includes the following new features:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Removal of Opal dependency </b> as the main data provider:
+    <ul class="">
+      <li>
+        <b>Collected Datasets and Harmonization Protocols </b> can now import their data from files or a generic data schema definition.
+      </li>
+      <li>
+        <b>Taxonomies</b> can now be imported from YAML files.
+      </li>
+    </ul>
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Individual Studies</b> that do not have any associated variables can be annotated by taxonomy vocabularies.
+  </li>
+</ul>
+
+<p class="obiba-top-margin">The following main templates have been modified:</p>
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>libs/annotations.ftl</b>: contains a collection of macros required to list annotations.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>study.ftl</b>: addition of annotations section for individual studies only.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>network.ftl</b>: addition of annotations section with .
+  </li>
+</ul>
+
+<div class="alert alert-info obiba-top-margin" role="alert">
+  <p>A quick note on <code>entityAnnotations</code> macro:</p>
+  <p class="obiba-top-margin">Parameters to pass:</p>
+  <ul class="obiba-no-style-list">
+    <li><i class="obiba-small-right-margin"></i>
+      <b>annotations</b>: list of annotations provided by the server.
+    </li>
+    <li><i class="obiba-small-right-margin"></i>
+      <b>showCount</b>: each annotation is comlpemented by the count of its corresponding individual studies (only useful in network pages).
+    </li>
+  </ul>
+  <p class="obiba-top-margin">Here is a snippet to be used in the <code>network.ftl</code>:</p>
+  <pre>&lt;#if annotations?size gt 0&gt;&lt;@entityAnnotations annotations=annotations showCount=true/&gt;&lt;/#if&gt;</pre>
+</div>
+
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the funding of the <a href="https://www.nfdi4health.de/en/" target="_blank">NFDI4Health<i class="fa fa-external-link-square"></i></a>, and to the development contributions of Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p class="obiba-top-margin">See <a href="http://micadoc.obiba.org" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
