@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2023-06-25
+    title: Opal 4.6 Released
+    url: release/opal/4.6/
+    summary: DataSHIELD logging and activity tracking
   - date: 2023-07-17
     title: Mica 5.2 Release
     url: release/mica2/5.2/

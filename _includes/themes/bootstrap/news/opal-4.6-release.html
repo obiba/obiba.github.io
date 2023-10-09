@@ -1,0 +1,43 @@
+<p>We are pleased to announce that Opal 4.6 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  In this release:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>DataSHIELD logging</b>: all function calls preprocessing and evaluation are logged with details for later analysis.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>DataSHIELD activity tracking</b>: effective R execution time, count of DataSHIELD sessions are recorded per user.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      Many library dependencies upgraded, fixing some potential security issues.
+    </li>
+  </ul>
+</p>
+
+<p>
+  This release is expected to be fully backward compatible.
+</p>
+
+<p>
+  Upgrade actions: Opal upgrade itself automatically except for the configuration files. This release introduces a DataSHIELD logging format and the logger tool needs to be confugred accordingly. See <a href="https://github.com/obiba/opal/blob/4.6.0/opal-server/src/main/conf/logback.xml#L61-L77" target="_blank">the default configuration for the DataSHIELD logging <i class="fa fa-external-link-square"></i></a>. The change simply consists of changing the log "encoder":
+</p>
+<div>
+<pre>
+  &lt;appender name="datashield" class="ch.qos.logback.core.rolling.RollingFileAppender"&gt;
+    ...
+    &lt;encoder class="net.logstash.logback.encoder.LogstashEncoder"&gt;
+      &lt;excludeMdcKeyName&gt;method&lt;/excludeMdcKeyName&gt;
+      &lt;excludeMdcKeyName&gt;created&lt;/excludeMdcKeyName&gt;
+    &lt;/encoder&gt;
+  &lt;/appender&gt;
+</pre>
+</div>
+
+<p>
+  This release was possible thanks to the funding of the <a href="https://www.eucanconnect.eu/" target="_blank">EUCAN-Connect <i class="fa fa-external-link-square"></i></a> program.
+</p>
