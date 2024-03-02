@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2024-03-02
+    title: Agate 2.9 Released
+    url: release/agate/2.9/
+    summary: Sign up emails black/while lists 
   - date: 2023-11-14
     title: Mica 5.3 Released
     url: release/mica2/5.3/
