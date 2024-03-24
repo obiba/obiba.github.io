@@ -43,6 +43,14 @@
 
 {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-studio-records.png' header='Amber Studio' caption='Amber Studio case report records.' %}
 
+<ul class="obiba-carret-list">
+  <li><b>Interview design</b>: an interview is a sequence of interdependent forms, designed with advanced logical rules: completing one form can enable or disable subsequent interview steps.</li>
+  <li><b>Participant management</b>: participants are grouped in campaigns managed by investigators. Eligibility of a participant can be controlled by date range and status. Campaign progress can be followed using a dashboard and automated periodic reports.</li>
+  <li><b>Interview records</b>: filter records (by date, campaign and participant), visualize and modify them afterwards. Export in multiple formats (CSV, Excel, JSON), including full data dictionary as converted from the forms.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-studio-campaigns-participants.png' header='Amber Studio' caption='Amber Studio interview campaign and participants management.' %}
+
 <div class="obiba-vertical-margin">
   <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber Collect</h4>
 </div>
@@ -55,18 +63,33 @@
   <li><b>Multi-languages</b>: when the form is designed in several languages, the user can easily switch to another language, with the corresponding character set and left-right layout is automatically detected and applied.</li>
   <li><b>Offline-first design</b>: in case the network in not accessible, collected data are stored encrypted locally. When connection is restored, data are automatically sent to the Amber Server for permanent storage.</li>
   <li><b>Progressive web app</b>: a PWA is an installable web application, facilitating its deployment on mobile devices (no app store required). See <a href="https://web.dev/what-are-pwas/">What are Progressive Web Apps? <i class="fa fa-external-link-square"></i></a>.</li>
+  <li><b>Themes</b>: style the app with your institution/study name, logo and colors.</li>
 </ul>
 
 {% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-collect-screenshots.png' header='Amber Collect' caption='Amber Collect is dedicated at collecting case reports.' %}
+
+<p>Amber Visit is a web application for conducting participant interviews:</p>
+
+<ul class="obiba-carret-list">
+  <li><b>Secure</b>: authentication is required and authorizations apply. Two-factor authentication is supported.</li>
+  <li><b>Efficient</b>: interface is deliberatly minimal to focus on data collection.</li>
+  <li><b>Multi-languages</b>: when an interview is designed in several languages, the user can easily switch to another language, with the corresponding character set and left-right layout is automatically detected and applied.</li>
+  <li><b>Offline-first design</b>: in case the network in not accessible, collected data are stored encrypted locally. When connection is restored, data are automatically sent to the Amber Server for permanent storage.</li>
+  <li><b>Themes</b>: style the app with your institution/study name, logo and colors.</li>
+</ul>
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-visit-mobile-screenshot.png' header='Amber Visit' caption='Amber Visit interview application: login and home pages.' %}
+
+{% include themes/bootstrap/image-item.html src='/assets/themes/bootstrap/img/amber-visit-tablet-screenshot.png' header='Amber Visit' caption='Amber Visit interview application: questionnaire page.' %}
 
 <div class="obiba-vertical-margin">
   <h4><i class="fa fa-hand-o-right obiba-small-right-margin"></i> Amber R</h4>
 </div>
 
-<p>The <b>Amber R</b> package can be used to automate operations on Amber:</p>
+<p>The <b>Amber R</b> package (see <a href="https://cran.r-project.org/package=amberr" target="_blank">amberr on CRAN</a>) can be used to automate operations on Amber:</p>
 
 <ul class="obiba-carret-list">
   <li><b>Secure</b>: authentication is required and proper authorizations apply.</li>
-  <li><b>R data frames</b>: integrates with the R ecosystem for statistical analysis and advanced reporting.</li>
+  <li><b>R data frames</b>: case report and interview extractions integrate with the R ecosystem for statistical analysis and advanced reporting.</li>
   <li><b>Data dictionaries</b>: extracted data are fully documented with the meta data of the form used when collecting data.</li>
 </ul>
