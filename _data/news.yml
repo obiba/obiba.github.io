@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2024-03-27
+    title: Agate 2.10 Released
+    url: release/agate/2.10/
+    summary: 2FA enforcement
   - date: 2024-03-17
     title: Rock 2.0 Released
     url: release/rock/2.0/

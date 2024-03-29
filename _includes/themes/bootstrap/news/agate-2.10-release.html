@@ -1,0 +1,26 @@
+<p>We are pleased to announce that Agate 2.10 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<p>
+  This release offers the possibility to enforce users to set up their two-factor authentication (2FA) secret key. Two enforcement policies are available:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Authenticator app only</b>: user must register its secret key in an authenticator app. This is the recommended policy as authentication requires separate devices.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Authenticator app or code sent by email</b>: the temporary code is sent at user's email address until its 2FA secret key has been registered in an authenticator app. This policy can be used as a transition phase until the 2FA procedure is fully enforced.
+    </li>
+  </ul>
+</p>
+
+<p>
+  Note: 2FA enforcement policy does not apply to accounts defined in delegated OpenID Connect realms (e.g. case of Agate delegating authentication to a Keycloak server).
+</p>
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the funding of the <a href="https://www.lumc.nl/" target="_blank">Leiden University Medical Center - LUMC <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+<p class="obiba-top-margin">See also <a href="http://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions. Note that a <a href="http://agatedoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker Image Installation <i class="fa fa-external-link-square"></i></a> section has been added.</p>
