@@ -1,9 +1,13 @@
 summary: 3
 data:
+  - date: 2024-03-17
+    title: Rock 2.0 Released
+    url: release/rock/2.0/
+    summary: Java 21 required
   - date: 2024-03-02
     title: Agate 2.9 Released
     url: release/agate/2.9/
-    summary: Sign up emails black/while lists 
+    summary: Sign up emails black/while lists
   - date: 2023-11-14
     title: Mica 5.3 Released
     url: release/mica2/5.3/

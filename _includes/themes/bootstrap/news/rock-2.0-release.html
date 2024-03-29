@@ -1,0 +1,37 @@
+<p>We are pleased to announce that Rock 2.0 is now available. <a href="/pages/products/rock/">Rock</a> is OBiBa’s R computation engine.</p>
+
+<p>
+  This Rock 2.0 release requires <b>Java 21</b>.
+</p>
+
+<p>
+  <b>Upgrade actions</b> - If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file <code>/etc/default/rock</code>, and restart the <code>rock</code> service.
+</p>
+
+<p>
+  As an example:
+</p>
+
+<div>
+<pre>
+# location of java
+JAVA=/usr/lib/jvm/java-21-openjdk-amd64/bin/java
+</pre>
+</div>
+
+<p>
+  Additional notes:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      No upgrade action required when Rock is deployed with Docker, just pull the latest image.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      The Rock API has NOT been modified: it will seamlessly integrate with <b>Opal</b>.
+    </li>
+  </ul>
+</p>
+
+<p class="obiba-top-margin">See also <a href="http://rockdoc.obiba.org/" target="_blank">Rock documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
