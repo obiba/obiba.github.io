@@ -1,6 +1,10 @@
 summary: 3
 data:
   - date: 2024-03-29
+    title: Opal 4.7 Released
+    url: release/opal/4.7/
+    summary: 2FA enforcement
+  - date: 2024-03-29
     title: Mica 5.4 Released
     url: release/mica2/5.4/
     summary: 2FA enforcement, Data Access download in Word
