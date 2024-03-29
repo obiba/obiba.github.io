@@ -1,6 +1,10 @@
 summary: 3
 data:
   - date: 2024-03-29
+    title: Mica 5.4 Released
+    url: release/mica2/5.4/
+    summary: 2FA enforcement, Data Access download in Word
+  - date: 2024-03-29
     title: Agate 3.0 Released
     url: release/agate/3.0/
     summary: Java 21 required
