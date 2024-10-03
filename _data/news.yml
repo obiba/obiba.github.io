@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2024-09-18
+    title: Rock 2.1 Released
+    url: release/rock/2.1/
+    summary: Performance improved
   - date: 2024-03-29
     title: Opal 4.7 Released
     url: release/opal/4.7/
