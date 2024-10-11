@@ -1,0 +1,62 @@
+<p>We are pleased to announce that Opal 5.0 is now available. <a href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+    for biobanks.</p>
+
+<p>
+  This Opal 5.0 release requires <b>Java 21</b>.
+</p>
+
+<p>
+  <b>Upgrade actions</b> - If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file <code>/etc/default/opal</code>, and restart the <code>opal</code> service.
+</p>
+
+<p>
+  In this release, some features are not supported anymore:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>"Opal SQL" database schema type</b>: deprecated in Opal 4.7, it is not supported anymore. Transfer data to "Tabular SQL" or MongoDB databases before upgrading.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Reporting</b>: since reports or dashboards can be easily done outside of Opal using the Python or the R API, and in order to prevent a potential security issue, the reporting feature has been removed from this release. Report template files are still accessible.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Table values are not indexed</b>: when indexing a table, only the variable statistic summaries are computed and stored, for further retrieval (by Mica). There is no more dependency on the Search plugin using Elasticsearch.
+    </li>
+  </ul>
+</p>
+
+<p>
+  There are also new features and improvements:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>R/DataSHIELD packages installation disabled</b>: since it is not a good practice to install R packages from Opal (because of security consideration and of the having a reproducible analysis environment: using Docker images is recommended), the R packages installation is disabled by default. A system setting can enable it, typically for R packages developers.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>User permissions</b>: by visiting a user's profile, an administrator can see also its permissions: either the ones granted directly or inherited from the groups he/she belongs to.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Graphical user interface</b>: the web application interface has been completly rewritten in a modern and reactive way. If any feature is missing (most likely associated to variable derivation), please let us know.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Performance</b>: Java 21 is notably faster than Java 8, and the new Opal version is more efficient in terms of memory usage.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Security</b>: all dependencies have been updated to the latest versions, and the code has been reviewed to prevent any security issue.
+    </li>
+  </ul>
+</p>
+
+<p>
+  Note: R/DataSHIELD and Pyhton libraries are fully compatible with this new version.
+</p>
+
+<p>
+  This release was possible thanks to the funding of the 
+  <a href="https://www.lumc.nl/" target="_blank">Leiden University Medical Center - LUMC <i class="fa fa-external-link-square"></i></a> and
+  <a href="http://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+</p>

@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2024-10-11
+    title: Opal 5.0 Released
+    url: release/opal/5.0/
+    summary: Java 21 and a brand new UI
   - date: 2024-09-18
     title: Rock 2.1 Released
     url: release/rock/2.1/
