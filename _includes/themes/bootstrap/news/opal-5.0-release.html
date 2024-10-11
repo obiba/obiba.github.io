@@ -6,7 +6,18 @@
 </p>
 
 <p>
-  <b>Upgrade actions</b> - If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file <code>/etc/default/opal</code>, and restart the <code>opal</code> service.
+  <b>Upgrade actions</b>:
+</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Java runtime</b>: If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file <code>/etc/default/opal</code>, and restart the <code>opal</code> service.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <b>Plugins</b>: go to the plugins administration page, download the updated version of the plugins and restart Opal.
+    </li>
+  </ul>
 </p>
 
 <p>
@@ -37,7 +48,7 @@
       <b>R/DataSHIELD packages installation disabled</b>: since it is not a good practice to install R packages from Opal (because of security consideration and of the having a reproducible analysis environment: using Docker images is recommended), the R packages installation is disabled by default. A system setting can enable it, typically for R packages developers.
     </li>
     <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      <b>User permissions</b>: by visiting a user's profile, an administrator can see also its permissions: either the ones granted directly or inherited from the groups he/she belongs to.
+      <b>User permissions</b>: by visiting a user's profile, an administrator can see all its permissions: the ones granted directly and the ones inherited from the groups he/she belongs to.
     </li>
     <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
       <b>Graphical user interface</b>: the web application interface has been completly rewritten in a modern and reactive way. If any feature is missing (most likely associated to variable derivation), please let us know.
