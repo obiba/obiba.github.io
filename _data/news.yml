@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2024-12-12
+    title: Agate 3.2 Released
+    url: release/agate/3.2/
+    summary: Realm groups per application
   - date: 2024-10-11
     title: Opal 5.0 Released
     url: release/opal/5.0/
