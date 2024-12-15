@@ -1,6 +1,6 @@
 <p xmlns="http://www.w3.org/1999/html">
   We are pleased to announce that Mica2 6.0 is now available.
-  <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and harmonization initiatives.
+  <a href="/pages/products/mica/">Mica</a> is OBiBa's data web portal for epidemiological studies and harmonization initiatives.
 </p>
 
 <p class="obiba-top-margin">This Mica 6.0 release requires Java 21.</p>
@@ -32,30 +32,52 @@
 
 <ul class="obiba-no-style-list">
   <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Added configurable roles mapping from groups.</li>
-  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Support for no search engine when Mica is used for data access request workflows only.</li>
-  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Different levels of variable summary visibility.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Support for no search engine when using Mica solely for data access workflows.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Addition of new permissions for different levels of variable summary visibility.</li>
 </ul>
 
 <p class="obiba-top-margin"><b>Additional notes</b>:</p>
 
 <ul class="obiba-no-style-list">
-  <li>
-    <i class="fa fa-caret-right obiba-small-right-margin"></i>
-    Mica 6.0 requires Elasticsearch 8.16.1, older versions are no longer supported.
-  </li>
-  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> No upgrade action required when Mica is deployed with Docker, just pull the latest image.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Mica 6.0 requires Elasticsearch 8.16.1, older versions are no longer supported.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> No upgrade actions required when Mica is deployed with Docker, just pull the latest image.</li>
   <li><i class="fa fa-caret-right obiba-small-right-margin"></i> The Mica API has NOT been modified: it will seamlessly integrate with <b>MicaR</b> and <b>Mica Python Client</b>.</li>
   <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Mica 6.0 is compatible with older versions of <b>Opal</b> and <b>Agate</b>.</li>
 </ul>
+
+<div
+  class="alert alert-warning obiba-top-margin"
+  role="alert"
+>
+  <h4>Mica 6.0 Search Engine</h4>
+  <p>By default, <code>Mica 6.0</code> requires an <code>Elasticsearch 8.16.1</code> server unless it is configured to manage Data Access Requests only.</p>
+  <p>
+    Refer to
+    <a
+      href="https://www.elastic.co/guide/en/elasticsearch/reference/8.16/docker.html"
+      target="_blank"
+      >Install Elasticsearch with Docker</a
+    >
+    <i class="fa fa-external-link-square"></i>
+    for the recommended installation instructions or
+    <a
+      href="https://www.elastic.co/guide/en/elasticsearch/reference/8.16/install-elasticsearch.html"
+      target="_blank"
+      >Elastic's installation guide</a
+    >
+    <i class="fa fa-external-link-square"></i>
+    for all types of server installation instructions.
+  </p>
+</div>
 
 <p class="obiba-top-margin">
   This release was possible thanks to the development contributions of
   <a
     href="https://www.maelstrom-research.org"
     target="_blank"
-    >Maelstrom Research</a
-  >
-  <i class="fa fa-external-link-square"></i>.
+    >Maelstrom Research <i class="fa fa-external-link-square"></i
+  ></a>
+  .
 </p>
 
 <p class="obiba-top-margin">
