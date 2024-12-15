@@ -1,7 +1,6 @@
 <p xmlns="http://www.w3.org/1999/html">
   We are pleased to announce that Mica2 6.0 is now available.
-  <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for
-  epidemiological studies and harmonization initiatives.
+  <a href="/pages/products/mica/">Mica</a> is OBiBa’s data web portal for epidemiological studies and harmonization initiatives.
 </p>
 
 <p class="obiba-top-margin">This Mica 6.0 release requires Java 21.</p>
@@ -11,24 +10,19 @@
 <ul class="obiba-no-style-list">
   <li>
     <i class="fa fa-caret-right obiba-small-right-margin"></i>
-    <b>Java runtime</b>: If the default Java installed in your system is not
-    Java 21, you must install Java 21 (any vendor), update the path to the
-    <em>java</em> executable in the file <code>/etc/default/mica2</code>, and
-    restart the <code>mica2</code> service.
+    <b>Java runtime</b>: If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file
+    <code>/etc/default/mica2</code>, and restart the <code>mica2</code> service.
   </li>
   <li>
     <i class="fa fa-caret-right obiba-small-right-margin"></i> <b>Plugins</b>:
     <ul>
       <li>
-        <b>Mica Search Plugin</b>: The latest Mica search plugin is downloaded
-        on the first run of Mica 6.0. Update settings like
-        <code>clusterName</code> and <code>transportAddresses</code> in
+        <b>Mica Search Plugin</b>: The latest Mica search plugin is downloaded on the first run of Mica 6.0. Update settings like <code>clusterName</code> and <code>transportAddresses</code> in
         <code>site.properties</code>.
       </li>
       <li>
-        <b>Mica Tables SPSS</b> and <b>Mica Taxonomies Files</b>: Unzip the
-        latest versions as directories under <code>MICA_HOME/plugins</code> and
-        update their <code>site.properties</code> settings accordingly.
+        <b>Mica Tables SPSS</b> and <b>Mica Taxonomies Files</b>: Unzip the latest versions as directories under <code>MICA_HOME/plugins</code> and update their <code>site.properties</code> settings
+        accordingly.
       </li>
     </ul>
   </li>
@@ -37,38 +31,22 @@
 <p class="obiba-top-margin"><b>Other new features</b>:</p>
 
 <ul class="obiba-no-style-list">
-  <li>
-    <i class="fa fa-caret-right obiba-small-right-margin"></i> Added
-    configurable roles mapping from groups
-  </li>
-  <li>
-    <i class="fa fa-caret-right obiba-small-right-margin"></i> Support for no
-    search engine and es8 dev helpers
-  </li>
-  <li>
-    <i class="fa fa-caret-right obiba-small-right-margin"></i> Different levels
-    of variable summary visibility
-  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Added configurable roles mapping from groups.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Support for no search engine when Mica is used for data access request workflows only.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Different levels of variable summary visibility.</li>
 </ul>
 
 <p class="obiba-top-margin"><b>Additional notes</b>:</p>
 
-<p>
-  <ul class="obiba-no-style-list">
-    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      Mica 6.0 requires Elasticsearch 8.16.1, older versions are no longer supported.
-    </li>
-    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      No upgrade action required when Mica is deployed with Docker, just pull the latest image.
-    </li>
-    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      The Mica API has NOT been modified: it will seamlessly integrate with <b>MicaR</b> and <b>Mica Python Client</b>.
-    </li>
-    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
-      Mica 6.0 is compatible with older versions of <b>Opal</b> and <b>Agate</b>.
-    </li>
-  </ul>
-</p>
+<ul class="obiba-no-style-list">
+  <li>
+    <i class="fa fa-caret-right obiba-small-right-margin"></i>
+    Mica 6.0 requires Elasticsearch 8.16.1, older versions are no longer supported.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> No upgrade action required when Mica is deployed with Docker, just pull the latest image.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> The Mica API has NOT been modified: it will seamlessly integrate with <b>MicaR</b> and <b>Mica Python Client</b>.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Mica 6.0 is compatible with older versions of <b>Opal</b> and <b>Agate</b>.</li>
+</ul>
 
 <p class="obiba-top-margin">
   This release was possible thanks to the development contributions of
