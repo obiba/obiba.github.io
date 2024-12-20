@@ -1,0 +1,106 @@
+<p xmlns="http://www.w3.org/1999/html">
+  We are pleased to announce that Mica2 6.0 is now available.
+  <a href="/pages/products/mica/">Mica</a> is OBiBa's data web portal for epidemiological studies and harmonization initiatives.
+</p>
+
+<p class="obiba-top-margin">This Mica 6.0 release requires Java 21.</p>
+
+<p><b>Upgrade actions</b>:</p>
+
+<ul class="obiba-no-style-list">
+  <li>
+    <i class="fa fa-caret-right obiba-small-right-margin"></i>
+    <b>Java runtime</b>: If the default Java installed in your system is not Java 21, you must install Java 21 (any vendor), update the path to the <em>java</em> executable in the file
+    <code>/etc/default/mica2</code>, and restart the <code>mica2</code> service.
+  </li>
+  <li>
+    <i class="fa fa-caret-right obiba-small-right-margin"></i> <b>Plugins</b>:
+    <ul>
+      <li>
+        <b>Mica Search Plugin</b>: The latest Mica search plugin is downloaded on the first run of Mica 6.0. Update settings like <code>clusterName</code> and <code>transportAddresses</code> in
+        <code>site.properties</code> file.
+      </li>
+      <li>
+        <b>Mica Tables SPSS</b> and <b>Mica Taxonomies Files</b>: Unzip the latest versions as directories under <code>MICA_HOME/plugins</code> and update their <code>site.properties</code> settings
+        accordingly.
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p class="obiba-top-margin"><b>Other new features</b>:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Added configurable roles mapping from groups.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Support for no search engine when using Mica solely for data access workflows.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Addition of new permissions for different levels of variable summary visibility.</li>
+</ul>
+
+<p class="obiba-top-margin"><b>Additional notes</b>:</p>
+
+<ul class="obiba-no-style-list">
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Mica 6.0 requires Elasticsearch 8.16.1, older versions are no longer supported.</li>
+  <li>
+    <i class="fa fa-caret-right obiba-small-right-margin"></i> When deploying Mica with Docker, use Elasticsearch 8.16.1 as a Docker container for easy setup. See
+    <a
+      href="https://micadoc.obiba.org/en/latest/admin/installation.html#docker-image-installation"
+      target="b_blanck"
+      >Docker Image Installation <i class="fa fa-external-link-square"></i
+    ></a>
+    for details.
+  </li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> The Mica API has NOT been modified: it will seamlessly integrate with <b>MicaR</b> and <b>Mica Python Client</b>.</li>
+  <li><i class="fa fa-caret-right obiba-small-right-margin"></i> Mica 6.0 is compatible with older versions of <b>Opal</b> and <b>Agate</b>.</li>
+</ul>
+
+<div
+  class="alert alert-warning obiba-top-margin"
+  role="alert"
+>
+  <h4>More on Elasticsearch Installation</h4>
+  <p>
+    <ul>
+      <li>
+        <a
+          href="https://www.elastic.co/guide/en/elasticsearch/reference/8.16/docker.html"
+          target="_blank"
+          >As Docker Image <i class="fa fa-external-link-square"></i></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.elastic.co/guide/en/elasticsearch/reference/8.16/deb.html"
+          target="_blank"
+          >As Debian package <i class="fa fa-external-link-square"></i></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.elastic.co/guide/en/elasticsearch/reference/8.16/rpm.html"
+          target="_blank"
+          >As RPM  package <i class="fa fa-external-link-square"></i></a
+        >
+      </li>
+    </ul>
+  </p>
+</div>
+
+<p class="obiba-top-margin">
+  This release was possible thanks to the development contributions of
+  <a
+    href="https://www.maelstrom-research.org"
+    target="_blank"
+    >Maelstrom Research <i class="fa fa-external-link-square"></i
+  ></a>
+  .
+</p>
+
+<p class="obiba-top-margin">
+  See
+  <a
+    href="http://micadoc.obiba.org"
+    target="_blank"
+    >Mica documentation <i class="fa fa-external-link-square"></i
+  ></a>
+  for installation and operation instructions.
+</p>
