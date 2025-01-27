@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-01-27
+    title: Agate 3.3 Released
+    url: release/agate/3.3/
+    summary: New administration UI
   - date: 2024-12-12
     title: Agate 3.2 Released
     url: release/agate/3.2/
