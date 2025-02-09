@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-02-08
+    title: Mica 6.0 Released
+    url: release/mica2/6.0/
+    summary: Java 21 required
   - date: 2025-02-03
     title: Opal 5.1 Released
     url: release/opal/5.1/
