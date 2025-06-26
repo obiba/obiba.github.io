@@ -3,6 +3,8 @@
 {% case site.JB.analytics.provider %}
 {% when "simpleanalytics" %}
   {% include JB/analytics-providers/simpleanalytics %}
+{% when "umami" %}
+  {% include JB/analytics-providers/umami %}
 {% when "google" %}
   {% include JB/analytics-providers/google %}
 {% when "googleUA" %}

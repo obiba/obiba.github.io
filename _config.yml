@@ -105,6 +105,8 @@ JB :
   analytics :
     provider : simpleanalytics
     simpleanalytics :
+    umami :
+        site_id : '72c14d95-5d61-4bc8-8730-2b41a3d69d7a'
     google :
         tracking_id : 'UA-***'
     googleUA :
