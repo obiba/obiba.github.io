@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-08-14
+    title: Agate 3.6 Released
+    url: release/agate/3.6/
+    summary: ReCaptcha optional, security improvements
   - date: 2025-02-08
     title: Mica 6.0 Released
     url: release/mica2/6.0/
