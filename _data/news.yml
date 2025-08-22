@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-08-21
+    title: Opal 5.2 Released
+    url: release/opal/5.2/
+    summary: Kubernetes support
   - date: 2025-08-14
     title: Agate 3.6 Released
     url: release/agate/3.6/
