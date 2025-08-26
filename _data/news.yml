@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-08-26
+    title: Mica 6.1 Released
+    url: release/mica2/6.1/
+    summary: Default language support
   - date: 2025-08-21
     title: Opal 5.2 Released
     url: release/opal/5.2/
