@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-10-15
+    title: Opal 5.3 Released
+    url: release/opal/5.3/
+    summary: SQL Server, Kubernetes support
   - date: 2025-09-29
     title: Mica 6.2 Released
     url: release/mica2/6.2/
