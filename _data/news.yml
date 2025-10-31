@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-10-31
+    title: Agate 4.0 Released
+    url: release/agate/4.0/
+    summary: AdminLTE 4 & Bootstrap 5
   - date: 2025-10-15
     title: Opal 5.3 Released
     url: release/opal/5.3/
