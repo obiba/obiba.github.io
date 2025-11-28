@@ -1,0 +1,49 @@
+<p>We are pleased to announce that Agate 4.1 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<p>
+  This release adds OAuth2 authentication for email sending, providing enhanced security and ensuring compatibility with modern email providers.
+</p>
+
+<p>
+  <strong>Features</strong>:
+  <ul class="obiba-no-style-list">
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>OAuth2 Support</strong>: Secure token-based email authentication for Microsoft 365, Gmail, and other OAuth2-compatible providers.
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Dynamic Token Refresh</strong>: Automatic token refresh based on provider-specific expiration times, ensuring uninterrupted email delivery.
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>100% Backward Compatible</strong>: Existing SMTP configurations continue to work without modification.
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Easy Configuration</strong>: Simple opt-in via <code>MICA_HOME/conf/application-prod.yml</code>:
+    </li>
+  </ul>
+</p>
+<pre>
+auth-type: oauth2
+...
+# OAuth2 configuration - only used when auth-type: oauth2
+oauth2:
+user:                # Email address that will send emails
+client-id:           # OAuth2 application client ID
+client-secret:       # OAuth2 application client secret
+tenant-id:           # Tenant/directory ID (provider-specific)
+refresh-token:       # OAuth2 refresh token (obtain via authorization flow)
+token-uri:           # Token endpoint (e.g., https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/token)
+scope:               # Required scope (e.g., https://outlook.office365.com/SMTP.Send)
+</pre>
+
+<p><strong>Important:</strong> Microsoft is <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-to-retire-basic-auth-for-client-submission-smtp-auth/4114750" target="_blank">retiring Basic Authentication for SMTP <i class="fa fa-external-link-square"></i></a> in Exchange Online.</p>
+
+<p>
+  This release was possible thanks to the development contributions of of <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+
+<p class="obiba-top-margin">See also <a href="http://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
