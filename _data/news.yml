@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-12-01
+    title: Agate 4.1 Released
+    url: release/agate/4.1/
+    summary: OAuth2 support in Email service, security improvements
   - date: 2025-11-09
     title: Agate 4.0 Released
     url: release/agate/4.0/
