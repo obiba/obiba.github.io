@@ -1,11 +1,12 @@
 <p>We are pleased to announce that Agate 4.1 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
 
+<h4>OAuth2 Authentication in Email Service</h4>
+
 <p>
   This release adds OAuth2 authentication for email sending, providing enhanced security and ensuring compatibility with modern email providers.
 </p>
 
 <p>
-  <strong>Features</strong>:
   <ul class="obiba-no-style-list">
     <li>
       <i class="fa fa-caret-right obiba-small-right-margin"></i>
@@ -41,8 +42,22 @@ scope:               # Required scope (e.g., https://outlook.office365.com/SMTP.
 
 <p><strong>Important:</strong> Microsoft is <a href="https://techcommunity.microsoft.com/blog/exchange/exchange-online-to-retire-basic-auth-for-client-submission-smtp-auth/4114750" target="_blank">retiring Basic Authentication for SMTP <i class="fa fa-external-link-square"></i></a> in Exchange Online.</p>
 
+<h4>Security Improvements</h4>
+
 <p>
-  This release was possible thanks to the development contributions of of <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+  <strong>User re-authentication</strong> is now requested when sensitive profile information is accessed or modified, enhancing overall security.
+  Default session timeout before re-authentication is configurable and is set to 5 minutes by default. Critical actions requiring 
+  re-authentication include user profile updates and password changes by default. Additional actions can be configured as needed.
+</p>
+
+<p>
+  <strong>Cross-site Resource Forgery (CSRF)</strong> protection has been improved by enforcing CSRF tokens on all state-changing requests, following the 
+  <a href="https://owasp.org/www-community/attacks/csrf" target="_blank">OWASP recommendations <i class="fa fa-external-link-square"></i></a>, 
+  ensuring robust defense against CSRF attacks.
+</p>
+
+<p>
+  This release was possible thanks to the development contributions of <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a> and the support of the <a href="https://www.lumc.nl/" target="_blank">Leiden University Medical Center - LUMC <i class="fa fa-external-link-square"></i></a>.
 </p>
 
 
