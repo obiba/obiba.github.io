@@ -1,0 +1,28 @@
+<p>We are pleased to announce that Opal 5.4 is now available. <a
+    href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+  for biobanks.</p>
+
+<p>This release introduces security improvements, to conform best practices:</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>User re-authentication</strong> is now requested when sensitive profile information is accessed or modified, enhancing overall security.
+      Default session timeout before re-authentication is configurable and is set to 5 minutes by default. Critical actions requiring 
+      re-authentication include user profile updates and password changes by default. Additional actions can be configured as needed.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Cross-site Resource Forgery (CSRF)</strong> protection has been improved by enforcing CSRF tokens on all state-changing requests, following the 
+      <a href="https://owasp.org/www-community/attacks/csrf" target="_blank">OWASP recommendations <i class="fa fa-external-link-square"></i></a>, 
+      ensuring robust defense against CSRF attacks.
+    </li>
+  </ul>
+</p>
+
+<p>
+  Note: Make sure you are using the latest <a href="https://www.obiba.org/opalr/" target="_blank">opalr R client <i class="fa fa-external-link-square"></i></a> (version 3.5.1 or higher) to benefit from the new CSRF protection.
+</p>
+
+<p>
+  This release was possible thanks to the support of the <a href="https://www.lumc.nl/" target="_blank">Leiden University Medical Center - LUMC <i class="fa fa-external-link-square"></i></a>.
+</p>

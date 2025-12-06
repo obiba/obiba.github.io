@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2025-12-05
+    title: Opal 5.4 Released
+    url: release/opal/5.4/
+    summary: Security improvements
   - date: 2025-12-01
     title: Agate 4.1 Released
     url: release/agate/4.1/
