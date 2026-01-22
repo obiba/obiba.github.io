@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2026-01-22
+    title: Opal 5.5 Released
+    url: release/opal/5.5/
+    summary: API documentation, User info tracking, security improvements
   - date: 2025-12-05
     title: Opal 5.4 Released
     url: release/opal/5.4/
