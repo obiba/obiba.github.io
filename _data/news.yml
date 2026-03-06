@@ -1,5 +1,13 @@
 summary: 3
 data:
+  - date: 2026-03-06
+    title: Agate 4.2 Released
+    url: release/agate/4.2/
+    summary: Maintenance, security improvements
+  - date: 2026-03-05
+    title: Opal 6.0 Released
+    url: release/opal/6.0/
+    summary: Maintenance, security improvements
   - date: 2026-01-22
     title: Opal 5.5 Released
     url: release/opal/5.5/
