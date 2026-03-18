@@ -1,0 +1,42 @@
+<p>We are pleased to announce that Mica 6.3 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa's data web portal for epidemiological studies and harmonization initiatives.
+
+<p>
+  This release modernizes the UI stack with <code>AdminLTE 4</code> (RC4) built on <code>Bootstrap 5</code>, bringing improved performance and updated design patterns.
+</p>
+
+<p><strong>Breaking Change:</strong> If you have customized Mica's public pages, template revisions are required. <code>Bootstrap 4</code> classes must be converted to their <code>Bootstrap 5</code> equivalents. Key changes include updated implementations for popovers and modals. <code>AdminLTE 3</code> layout structure has also changed significantly, with renamed classes and a revised page layout hierarchy. Please refer to the AdminLTE upgrade guide in the resources below for the full list of changes.</p>
+
+<p>Additionally, Mica's portal JavaScript has been migrated from <code>Vue 2</code> to <code>Vue 3</code>. If you have overridden Mica's JavaScript files or written custom Vue 2 components, updates will be required. Key changes include: filters removed (use computed properties instead), <code>v-model</code> now uses <code>modelValue</code>/<code>update:modelValue</code>, <code>Vue.set()</code>/<code>Vue.delete()</code> removed, lifecycle hooks <code>beforeDestroy</code>/<code>destroyed</code> renamed to <code>beforeUnmount</code>/<code>unmounted</code>, and the Events API (<code>$on</code>, <code>$off</code>, <code>$once</code>) removed.</p>
+
+<p><strong>Important:</strong> While <code>jQuery</code> is still included in this release for backward compatibility, it will be removed in a future version. Please migrate your customizations to use <code>Bootstrap 5</code>'s native JavaScript API rather than relying on <code>jQuery</code>.</p>
+
+<p>The <a href="https://github.com/obiba/mica2" target="_blank">Mica source repository <i class="fa fa-external-link-square"></i></a> can serve as a reference for real-world migration examples.</p>
+
+<p>
+  Please refer to these resources for migration guidance:
+  <ul class="obiba-no-style-list">
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i> <a href="https://getbootstrap.com/docs/5.3/migration/" target="_blank">
+        Bootstrap 4 to 5 Migration Guide <i class="fa fa-external-link-square"></i>
+      </a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i> <a href="https://adminlte.io/blog/adminlte-upgrading-from-v3-to-v4/" target="_blank">
+        AdminLTE v3 to v4 Upgrade Guide <i class="fa fa-external-link-square"></i>
+      </a>
+    </li>
+    <li>
+      <i class="fa fa-caret-right obiba-small-right-margin"></i> <a href="https://v3-migration.vuejs.org/" target="_blank">
+        Vue 3 Migration Guide <i class="fa fa-external-link-square"></i>
+      </a>
+    </li>
+  </ul>
+</p>
+
+<p>
+  This release was possible thanks to the development contributions of <a href="https://www.maelstrom-research.org/" target="_blank">Maelstrom Research <i class="fa fa-external-link-square"></i></a>.
+</p>
+
+
+<p class="obiba-top-margin">See also <a href="https://micadoc.obiba.org//" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
+

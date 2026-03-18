@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2026-03-19
+    title: Mica 6.3 Released
+    url: release/mica2/6.3/
+    summary: AdminLTE 4 & Bootstrap 5
   - date: 2026-03-06
     title: Agate 4.2 Released
     url: release/agate/4.2/
