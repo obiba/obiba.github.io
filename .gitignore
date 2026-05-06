@@ -15,3 +15,7 @@ Thumbs.db
 Gemfile.lock
 
 vendor
+
+# MkDocs
+site/
+venv/
