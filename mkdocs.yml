@@ -50,3 +50,8 @@ nav:
     - Amber: products/amber/index.md
     - Onyx: products/onyx/index.md
     - DataSHIELD: products/datashield/index.md
+  - Documentation: documentation/index.md
+  - Support: support/index.md
+  - About: about/index.md
+  - Publications: publications/index.md
+  - Stories: stories/index.md

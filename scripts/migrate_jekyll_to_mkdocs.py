@@ -191,6 +191,70 @@ class JekyllToMkDocsConverter:
         
         logger.info(f"Converted {converted} product pages")
         return converted
+    
+    def convert_static_page(self, page_name: str) -> bool:
+        """Convert a Jekyll static page to MkDocs markdown"""
+        source_file = JEKYLL_PAGES / page_name / 'index.html'
+        target_file = MKDOCS_DOCS / page_name / 'index.md'
+        
+        if not source_file.exists():
+            logger.warning(f"Static page not found: {source_file}")
+            return False
+        
+        logger.info(f"Converting static page: {page_name}")
+        
+        # Read source file
+        with open(source_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Parse frontmatter
+        frontmatter, body = self.parse_frontmatter(content)
+        
+        # Extract title
+        title = frontmatter.get('title', page_name.capitalize())
+        
+        # Convert HTML body to markdown
+        markdown_body = self.convert_html_to_markdown(body)
+        
+        # Build MkDocs frontmatter
+        mkdocs_frontmatter = {
+            'title': title
+        }
+        
+        # Build markdown content
+        markdown_content = '---\n'
+        markdown_content += yaml.dump(mkdocs_frontmatter, default_flow_style=False)
+        markdown_content += '---\n\n'
+        markdown_content += f"# {title}\n\n"
+        markdown_content += markdown_body
+        
+        # Ensure target directory exists
+        target_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Write target file
+        with open(target_file, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        
+        logger.info(f"Converted: {source_file} -> {target_file}")
+        
+        # Record URL mapping
+        old_url = f'/pages/{page_name}/index.html'
+        new_url = f'{page_name}/index.md'
+        self.url_mappings[old_url] = new_url
+        
+        return True
+    
+    def convert_all_static_pages(self) -> int:
+        """Convert all static pages"""
+        pages = ['documentation', 'support', 'about', 'stories', 'publications']
+        converted = 0
+        
+        for page in pages:
+            if self.convert_static_page(page):
+                converted += 1
+        
+        logger.info(f"Converted {converted} static pages")
+        return converted
 
 def main():
     """Main migration function"""
@@ -200,6 +264,10 @@ def main():
     # Convert product pages
     logger.info("Converting product pages...")
     converter.convert_all_products()
+    
+    # Convert static pages
+    logger.info("Converting static pages...")
+    converter.convert_all_static_pages()
     
     logger.info("Migration complete")
 
