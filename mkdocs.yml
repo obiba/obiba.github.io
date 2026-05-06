@@ -41,3 +41,12 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Products:
+    - products/index.md
+    - Opal: products/opal/index.md
+    - Mica: products/mica/index.md
+    - Agate: products/agate/index.md
+    - Rock: products/rock/index.md
+    - Amber: products/amber/index.md
+    - Onyx: products/onyx/index.md
+    - DataSHIELD: products/datashield/index.md
