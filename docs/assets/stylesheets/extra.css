@@ -1,0 +1,162 @@
+/**
+ * OBiBa Custom Styles for MkDocs Material
+ */
+
+/* Brand Colors */
+:root {
+  --obiba-primary: #0066cc;
+  --obiba-accent: #ff6600;
+  --obiba-light: #f5f7fa;
+}
+
+/* Override Material theme colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--obiba-primary);
+  --md-accent-fg-color: var(--obiba-accent);
+}
+
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.product-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  background: var(--md-default-bg-color);
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+}
+
+.product-card h2 {
+  margin-top: 0;
+  color: var(--md-primary-fg-color);
+}
+
+.product-card p {
+  color: var(--md-default-fg-color--light);
+  line-height: 1.6;
+}
+
+/* Product Links */
+.product-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.product-links .md-button {
+  margin: 0;
+}
+
+/* Home Page Hero */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, var(--obiba-primary) 0%, #004999 100%);
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+/* Feature Highlights */
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  padding: 1rem;
+  text-align: center;
+}
+
+.feature-item h3 {
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Blog Enhancements */
+.md-typeset article {
+  max-width: 800px;
+}
+
+.md-typeset .md-content__button {
+  display: none;
+}
+
+/* Improved Tables */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--obiba-light);
+  font-weight: 600;
+}
+
+/* Code Blocks */
+.md-typeset code {
+  background-color: var(--md-code-bg-color);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.3em;
+}
+
+/* Custom Admonitions */
+.md-typeset .admonition.tip {
+  border-left-color: var(--obiba-accent);
+}
+
+/* Footer Customization */
+.md-footer-meta {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Navigation Improvements */
+.md-nav__title {
+  font-weight: 600;
+}
+
+.md-nav__link--active {
+  color: var(--obiba-primary);
+  font-weight: 600;
+}
