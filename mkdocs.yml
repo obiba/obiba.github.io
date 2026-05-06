@@ -29,7 +29,28 @@ theme:
         name: Switch to light mode
 
 plugins:
-  - search
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: medium
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{date}/{slug}"
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      post_slugify_separator: "-"
+      categories_allowed:
+        - releases
+        - events
+        - announcements
+      authors_file: "{blog}/.authors.yml"
+  
+  - tags:
+      tags_file: tags.md
   
 markdown_extensions:
   - admonition
@@ -51,6 +72,7 @@ nav:
     - Onyx: products/onyx/index.md
     - DataSHIELD: products/datashield/index.md
   - Documentation: documentation/index.md
+  - News: blog/index.md
   - Support: support/index.md
   - About: about/index.md
   - Publications: publications/index.md
