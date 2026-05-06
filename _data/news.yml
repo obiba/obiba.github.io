@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2026-05-06
+    title: Opal 5.7 Released
+    url: release/opal/5.7/
+    summary: File bundle support, security improvements
   - date: 2026-03-19
     title: Mica 6.3 Released
     url: release/mica2/6.3/
