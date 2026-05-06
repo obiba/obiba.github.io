@@ -1,8 +1,12 @@
 prepare:
-	bundle install
+	pip install --upgrade pip
+	pip install -r requirements.txt --break-system-packages
+
+build:
+	mkdocs build
 
 run:
-	bundle exec jekyll serve
+	mkdocs serve
 
 clean:
-	rm -rf _site
+	rm -rf site
