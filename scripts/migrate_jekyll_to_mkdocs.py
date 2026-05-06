@@ -255,6 +255,57 @@ class JekyllToMkDocsConverter:
         
         logger.info(f"Converted {converted} static pages")
         return converted
+    
+    def migrate_assets(self) -> bool:
+        """Migrate assets from Jekyll to MkDocs"""
+        import shutil
+        
+        jekyll_assets = JEKYLL_ROOT / 'assets'
+        mkdocs_assets = MKDOCS_DOCS / 'assets'
+        
+        if not jekyll_assets.exists():
+            logger.warning("Jekyll assets directory not found")
+            return False
+        
+        logger.info("Migrating assets...")
+        
+        # Create assets directory structure
+        (mkdocs_assets / 'images').mkdir(parents=True, exist_ok=True)
+        (mkdocs_assets / 'stylesheets').mkdir(parents=True, exist_ok=True)
+        (mkdocs_assets / 'javascripts').mkdir(parents=True, exist_ok=True)
+        
+        # Copy images
+        jekyll_images = jekyll_assets / 'images'
+        if jekyll_images.exists():
+            for image_file in jekyll_images.rglob('*'):
+                if image_file.is_file():
+                    rel_path = image_file.relative_to(jekyll_images)
+                    target = mkdocs_assets / 'images' / rel_path
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(image_file, target)
+                    logger.debug(f"Copied image: {rel_path}")
+        
+        # Copy themes/bootstrap assets if they exist
+        jekyll_themes = JEKYLL_ROOT / 'assets' / 'themes'
+        if jekyll_themes.exists():
+            for asset_file in jekyll_themes.rglob('*'):
+                if asset_file.is_file() and asset_file.suffix in ['.css', '.js', '.png', '.jpg', '.svg']:
+                    rel_path = asset_file.relative_to(jekyll_themes)
+                    
+                    # Determine target based on file type
+                    if asset_file.suffix == '.css':
+                        target = mkdocs_assets / 'stylesheets' / asset_file.name
+                    elif asset_file.suffix == '.js':
+                        target = mkdocs_assets / 'javascripts' / asset_file.name
+                    else:
+                        target = mkdocs_assets / 'images' / asset_file.name
+                    
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(asset_file, target)
+                    logger.debug(f"Copied asset: {asset_file.name}")
+        
+        logger.info("Asset migration complete")
+        return True
 
 def main():
     """Main migration function"""
@@ -268,6 +319,10 @@ def main():
     # Convert static pages
     logger.info("Converting static pages...")
     converter.convert_all_static_pages()
+    
+    # Migrate assets
+    logger.info("Migrating assets...")
+    converter.migrate_assets()
     
     logger.info("Migration complete")
 
