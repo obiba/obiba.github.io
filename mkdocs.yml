@@ -7,26 +7,54 @@ copyright: Copyright &copy; OBiBa
 
 theme:
   name: material
+  custom_dir: overrides
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
+  
   features:
+    # Navigation
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    
+    # Table of Contents
+    - toc.follow
+    
+    # Search
     - search.suggest
     - search.highlight
+    - search.share
+    
+    # Content
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+    
   palette:
+    # Light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    
+    # Dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 plugins:
   - search:
@@ -49,9 +77,7 @@ plugins:
         - announcements
       authors_file: "{blog}/.authors.yml"
   
-  - tags:
-      tags_file: tags.md
-  
+  - tags
   
   - redirects:
       redirect_maps:
@@ -167,16 +193,69 @@ plugins:
         pages/publications/index.html: publications/index.md
         pages/stories/index.html: stories/index.md
         pages/support/index.html: support/index.md
+  
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
 markdown_extensions:
+  # Python Markdown extensions
+  - abbr
   - admonition
-  - pymdownx.superfences
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - attr_list
-  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  # analytics:
+  #   provider: custom
+  #   property: umami
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/obiba
+      name: OBiBa on GitHub
+  generator: false
 
 extra_css:
   - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
 
 nav:
   - Home: index.md
