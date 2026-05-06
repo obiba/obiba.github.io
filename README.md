@@ -1,8 +1,65 @@
 # OBiBa Website
+
 #### Open Source Software for BioBanks
 ### License [GPL3](http://www.gnu.org/copyleft/gpl.html#gnu-license)
 
-## Website Structure
+## Overview
+
+This website is built with [MkDocs](https://www.mkdocs.org/) using the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
+
+## Development Setup
+
+### Prerequisites
+
+- Python 3.x
+- pip
+
+### Installation
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Local Development
+
+1. Start the development server:
+```bash
+mkdocs serve
+```
+
+2. Open your browser to [http://localhost:8000](http://localhost:8000)
+
+The site will automatically reload when you make changes to the content.
+
+### Building the Site
+
+To build the static site:
+
+```bash
+mkdocs build
+```
+
+The generated site will be in the `site/` directory.
+
+## Content Structure
+
+- `docs/` - All content files (Markdown)
+  - `index.md` - Home page
+  - `products/` - Product pages (Opal, Mica, Agate, etc.)
+  - `blog/` - News and release announcements
+  - `documentation/` - Documentation index
+  - `about/` - About page
+  - `support/` - Support information
+  - `publications/` - Publications listing
+  - `stories/` - Success stories
+  - `assets/` - Images, CSS, JavaScript
+
+- `mkdocs.yml` - Site configuration
+
+## Website Structure (Legacy Jekyll)
+
+> **Note**: The information below is for historical reference. The site has been migrated from Jekyll to MkDocs.
 
 In order to have clean URLs, each section of the site has its own directory under pages. For example the link to Opal
 page will be:
