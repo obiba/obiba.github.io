@@ -96,12 +96,112 @@ class JekyllToMkDocsConverter:
         markdown = markdown.strip()
         
         return markdown
+    
+    def convert_product_page(self, product_name: str) -> bool:
+        """Convert a Jekyll product page to MkDocs markdown"""
+        # Check for both .html and .md source files
+        html_source = JEKYLL_PAGES / 'products' / product_name / 'index.html'
+        md_source = JEKYLL_PAGES / 'products' / product_name / 'index.md'
+        
+        if html_source.exists():
+            source_file = html_source
+        elif md_source.exists():
+            source_file = md_source
+        else:
+            logger.warning(f"Product page not found: {html_source} or {md_source}")
+            return False
+        
+        target_file = MKDOCS_DOCS / 'products' / product_name / 'index.md'
+        
+        logger.info(f"Converting product page: {product_name}")
+        
+        # Read source file
+        with open(source_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Parse frontmatter
+        frontmatter, body = self.parse_frontmatter(content)
+        
+        # Extract product information
+        title = frontmatter.get('title', product_name.capitalize())
+        menu = frontmatter.get('menu', {})
+        wiki = menu.get('wiki', {}).get('href', '') if isinstance(menu.get('wiki'), dict) else ''
+        download = menu.get('download', {}).get('href', '') if isinstance(menu.get('download'), dict) else ''
+        github = menu.get('github', {}).get('href', '') if isinstance(menu.get('github'), dict) else ''
+        demo = menu.get('demo', {}).get('href', '') if isinstance(menu.get('demo'), dict) else ''
+        
+        # Convert HTML body to markdown
+        markdown_body = self.convert_html_to_markdown(body)
+        
+        # Build MkDocs frontmatter
+        mkdocs_frontmatter = {
+            'title': title
+        }
+        
+        # Build markdown content
+        markdown_content = '---\n'
+        markdown_content += yaml.dump(mkdocs_frontmatter, default_flow_style=False)
+        markdown_content += '---\n\n'
+        markdown_content += f"# {title}\n\n"
+        
+        # Add product links if they exist
+        links = []
+        # Only add external links (not internal anchors like #download)
+        if wiki and not wiki.startswith('#'):
+            links.append(f"[:material-book: Documentation]({wiki}){{ .md-button }}")
+        if download and not download.startswith('#'):
+            links.append(f"[:material-download: Download]({download}){{ .md-button }}")
+        if github and not github.startswith('#'):
+            links.append(f"[:material-github: GitHub]({github}){{ .md-button }}")
+        if demo and not demo.startswith('#'):
+            links.append(f"[:material-monitor: Demo]({demo}){{ .md-button }}")
+        
+        if links:
+            markdown_content += '<div class="product-links" markdown>\n'
+            markdown_content += '\n'.join(links)
+            markdown_content += '\n</div>\n\n'
+        
+        # Add converted body
+        markdown_content += markdown_body
+        
+        # Ensure target directory exists
+        target_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Write target file
+        with open(target_file, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        
+        logger.info(f"Converted: {source_file} -> {target_file}")
+        
+        # Record URL mapping
+        old_url = f'/pages/products/{product_name}/index.html'
+        new_url = f'products/{product_name}/index.md'
+        self.url_mappings[old_url] = new_url
+        
+        return True
+    
+    def convert_all_products(self) -> int:
+        """Convert all product pages"""
+        products = ['opal', 'mica', 'agate', 'rock', 'amber', 'onyx', 'datashield']
+        converted = 0
+        
+        for product in products:
+            if self.convert_product_page(product):
+                converted += 1
+        
+        logger.info(f"Converted {converted} product pages")
+        return converted
 
 def main():
     """Main migration function"""
     logger.info("Starting Jekyll to MkDocs migration")
     converter = JekyllToMkDocsConverter()
-    logger.info("Migration script initialized")
+    
+    # Convert product pages
+    logger.info("Converting product pages...")
+    converter.convert_all_products()
+    
+    logger.info("Migration complete")
 
 if __name__ == '__main__':
     main()
