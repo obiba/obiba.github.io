@@ -29,6 +29,7 @@
             {% assign padding = 'obiba-no-left-padding' %}
         {% endunless %}
         {% assign item = site.data.news.data[index] %}
+        {% if index < count %}
         <div class="col-xs-6 {{margin}} {{padding}}">
             <ul class="obiba-news-list">
                 <li class="obiba-no-left">
@@ -39,6 +40,7 @@
                 </li>
             </ul>
         </div>
+        {% endif %}
     {% endfor %}
 </div>
 {% endfor %}
