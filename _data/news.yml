@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2026-09-18
+    title: Opal 6.0 Released
+    url: release/opal/6.0/
+    summary: New configuration database, project-internal databases, DataSHIELD quotas, OpenTelemetry
   - date: 2026-05-06
     title: Opal 5.7 Released
     url: release/opal/5.7/

@@ -1,0 +1,36 @@
+<p>We are pleased to announce that Opal 6.0 is now available. <a
+    href="https://www.obiba.org/pages/products/opal/">Opal</a> is OBiBa’s core data management application
+  for biobanks.</p>
+
+<p>This is a major release, with the following key changes:</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>New configuration database</strong>: Opal's own configuration (projects, permissions, users, registered databases...) is no longer stored in OrientDB but in an embedded H2 database, or optionally in PostgreSQL. The migration runs by itself at the first start of the new version and reports what it migrated in the startup log.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Project-internal database</strong>: a project can now be created with its own storage database, managed by Opal and deleted with the project. Users allowed to create projects no longer depend on a system administrator to provision storage.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>DataSHIELD usage quotas</strong>: R execution time and session time can be limited per user, group or system-wide, over a rolling window. Users can see their consumption on their profile page, and administrators on the DataSHIELD administration page.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>OpenTelemetry export</strong>: logs, DataSHIELD traces (one trace per session, with its R operations) and DataSHIELD metrics can be sent to an OpenTelemetry collector. Nothing is exported unless it is explicitly configured.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Storage safeguards</strong>: Opal watches the free disk space of the volumes it writes to, refuses large writes before the disk is full, and periodically forces the open H2 databases to disk.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Security improvements</strong>: "Import from Opal" now verifies the certificate and host name of the remote server, file access control is enforced on every read path, DataSHIELD symbol writes go through the restricted parser, and disabling another user's two-factor authentication requires a permission.
+    </li>
+  </ul>
+</p>
+
+<p>
+  The <a href="https://opaldoc.obiba.org/" target="_blank">Opal documentation <i class="fa fa-external-link-square"></i></a> has been updated accordingly. In particular, the <a href="https://opaldoc.obiba.org/en/latest/admin/installation.html#docker-image-installation" target="_blank">Docker installation <i class="fa fa-external-link-square"></i></a> section was rewritten: the Opal image no longer needs a database server to run, and the documented setups range from a standalone Opal with a DataSHIELD ready R server to complete stacks with data databases.
+</p>
+
+<p>
+  Upgrading from Opal 5.x requires some attention from the system administrator: back up your data before starting, decide where the configuration database will live, and review the trusted certificates of remote Opal servers. Please read the <a href="https://github.com/obiba/opal/blob/master/UPGRADE.md" target="_blank">Opal upgrade notes <i class="fa fa-external-link-square"></i></a> before upgrading.
+</p>
