@@ -1,6 +1,10 @@
 summary: 3
 data:
   - date: 2026-09-19
+    title: Mica 7.0 Released
+    url: release/mica2/7.0/
+    summary: 2FA sign-in feedback, open redirect closed, XSS hardening, credentials kept out of logs
+  - date: 2026-09-19
     title: Agate 5.0 Released
     url: release/agate/5.0/
     summary: Argon2id password hashing, 2FA and OAuth2 hardening, template auto-escaping
