@@ -1,0 +1,31 @@
+<p>We are pleased to announce that Agate 5.0 is now available. <a href="/pages/products/agate/">Agate</a> is OBiBa’s central user profile server.</p>
+
+<p>This is a security-focused major release, with the following key changes:</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Argon2id password hashing</strong>: user passwords and application keys are now hashed with Argon2id and a per-hash salt, replacing the shared-salt SHA hashing. Existing hashes are upgraded transparently on the next successful authentication of each user and application; no database migration runs at startup.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Two-factor authentication order</strong>: the password is now verified before the 2FA code is requested. A wrong password is refused right away and counts toward the login ban, and a wrong code keeps the 2FA step open with a dedicated message. Users of external realms (LDAP, Active Directory, SQL) with 2FA enforced can no longer sign in without a registered authenticator.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>OAuth2 hardening</strong>: authorization codes are single-use and short-lived (300 seconds by default), and redirect URIs are matched on their scheme, host, port and path components instead of a plain string prefix.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>HTML auto-escaping in templates</strong>: every interpolated value is now HTML-escaped in web pages and notification e-mails, protecting against injection through user-provided or identity-provider-provided values.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Other security improvements</strong>: the password policy is now also applied to the password reset and account confirmation flows.
+    </li>
+  </ul>
+</p>
+
+<p><strong>Breaking Change:</strong> If you have overridden Agate's page or e-mail templates, they must be revised because of the HTML auto-escaping: <code>libs/head.ftl</code> must be replaced with the new version, and interpolations inside <code>&lt;script&gt;</code> blocks or <code>on…</code> attributes need the <code>?js_string</code> built-in. Registered applications should also have their redirect URIs reviewed to match the new component-based matching.</p>
+
+<p>
+  Upgrading from Agate 4.x requires some attention from the system administrator: back up the MongoDB database before starting (a rollback to 4.2 requires restoring it), keep the existing <code>shiro.password</code> settings until all hashes have been upgraded, and warn your users about the 2FA changes. Please read the <a href="https://github.com/obiba/agate/blob/master/UPGRADE.md" target="_blank">Agate upgrade notes <i class="fa fa-external-link-square"></i></a> before upgrading. Agate should be upgraded before Mica 7.0 and Opal 6.0, whose sign-in pages assume the new 2FA order.
+</p>
+
+<p class="obiba-top-margin">See also <a href="https://agatedoc.obiba.org/" target="_blank">Agate documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>

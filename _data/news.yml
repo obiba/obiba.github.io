@@ -1,5 +1,9 @@
 summary: 3
 data:
+  - date: 2026-09-19
+    title: Agate 5.0 Released
+    url: release/agate/5.0/
+    summary: Argon2id password hashing, 2FA and OAuth2 hardening, template auto-escaping
   - date: 2026-09-18
     title: Opal 6.0 Released
     url: release/opal/6.0/
