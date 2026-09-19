@@ -1,0 +1,34 @@
+<p>We are pleased to announce that Mica 7.0 is now available. <a href="/pages/products/mica/">Mica</a> is OBiBa's data web portal for epidemiological studies and harmonization initiatives.</p>
+
+<p>This is a security-focused major release, with the following key changes:</p>
+
+<p>
+  <ul class="obiba-no-style-list">
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Two-factor authentication feedback</strong>: a wrong 2FA code now keeps the 2FA step open and shows a dedicated "Invalid or expired code" message, instead of sending the user back to the credentials form with a generic authentication failure.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Open redirect closed</strong>: the <code>redirect</code> parameter of the sign-in, sign-up and <code>/check</code> pages only accepts a path on the Mica server or a URL on the Agate server.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Credentials kept out of logs</strong>: the remote credentials used when importing studies from another Mica are sent in request headers instead of query parameters, and session IDs no longer appear in logs.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>XSS hardening</strong>: Mica now sends the <code>X-Content-Type-Options</code>, <code>Referrer-Policy</code> and (over TLS) <code>Strict-Transport-Security</code> response headers; Markdown descriptions are sanitized with DOMPurify; custom page names are restricted to a safe character set; and uploaded files are only displayed inline for PDF, raster images, plain text, CSV and TSV, any other type (SVG, HTML, XML...) being downloaded as an attachment.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Authorization on administration endpoints</strong>: changing the log levels and managing custom translations now require the <code>mica-administrator</code> role.
+    </li>
+    <li><i class="fa fa-caret-right obiba-small-right-margin"></i>
+      <strong>Roles mapping applied everywhere</strong>: when Agate groups are mapped to Mica roles through the <code>roles.&lt;role&gt;</code> settings, the mapped groups are now used when notifying data access officers, reviewers and editors, when listing users, when signing up users and when contacting the site, instead of the Mica role names. Only roles mapped to a single group are expanded, so that a role granted to the intersection of several groups does not leak notifications to every member of each group.
+    </li>
+  </ul>
+</p>
+
+<p><strong>Breaking Change:</strong> If you have overridden Mica's templates (<code>signin.ftl</code>, <code>libs/signin-scripts.ftl</code>, <code>libs/scripts.ftl</code>, <code>compare.ftl</code>, <code>dataset.ftl</code>, <code>variable.ftl</code>), they must be revised from the 7.0 versions; in particular <code>libs/scripts.ftl</code> must load DOMPurify, otherwise Markdown descriptions are displayed as escaped text. Custom page names, links redirecting to an absolute URL after sign-in, and scripts calling the study import or the administration endpoints mentioned above must also be reviewed.</p>
+
+<p>
+  Upgrading from Mica 6.x requires some attention from the system administrator: Agate must be upgraded to 5.0 first, as the new sign-in page assumes that Agate verifies the password before asking for the 2FA code. No database migration runs at startup. Please read the <a href="https://github.com/obiba/mica2/blob/master/UPGRADE.md" target="_blank">Mica upgrade notes <i class="fa fa-external-link-square"></i></a> before upgrading.
+</p>
+
+<p class="obiba-top-margin">See also <a href="https://micadoc.obiba.org/" target="_blank">Mica documentation <i class="fa fa-external-link-square"></i></a> for installation and operation instructions.</p>
