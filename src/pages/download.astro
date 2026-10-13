@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Mark from '../components/Mark.astro';
 
 const products = (await getCollection('products'))
   .filter((p) => p.body?.includes('## Download'))
@@ -27,7 +28,7 @@ const products = (await getCollection('products'))
       <div class="grid">
         {products.map((p) => (
           <a class="card" href={`/products/${p.id}/#download`}>
-            {p.data.icon && <img class="icon" src={p.data.icon} alt="" />}
+            <Mark product={p.id} size={36} class="icon" />
             <h3>Download {p.data.name}</h3>
             <p>{p.data.tagline}</p>
           </a>
