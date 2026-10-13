@@ -21,6 +21,9 @@ export default defineConfig({
     '/pages/publications': '/publications',
     '/pages/jobs': '/about',
     '/pages/jobs/java': '/about',
+    '/pages/documentation': '/#products',
+    '/pages/plugins': 'https://plugins.obiba.org/',
+    '/pages/integrated-suite': '/integrated-suite',
     // Legacy products, not ported.
     '/pages/products/mica1': '/products/mica',
     '/pages/products/onyx': 'https://github.com/obiba/onyx',
