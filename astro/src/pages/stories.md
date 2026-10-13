@@ -30,9 +30,9 @@ The CLSA data portal is powered by [Mica](/products/mica/).
 
 BioSHaRE shows how OBiBa software creates a federated database that enables advanced analysis without disclosing any individual-level data.
 
-BioSHaRE was a European project to standardize and harmonize data from some of the largest biobanks in Europe. More than 160 data elements from 13 European biobanks were harmonized by [Maelstrom Research](https://www.maelstrom-research.org/), and the harmonized datasets were stored on [Opal](/products/opal/) servers.
+[BioSHaRE](https://www.maelstrom-research.org/network/bioshare-eu) was a European project to standardize and harmonize data from some of the largest biobanks in Europe. More than 160 data elements from 13 European biobanks were harmonized by [Maelstrom Research](https://www.maelstrom-research.org/), and the harmonized datasets were stored on [Opal](/products/opal/) servers.
 
-The 13 databases were securely federated through a Mica-based website and the [DataSHIELD](/products/datashield/) R client, creating a distributed dataset on more than 650,000 European subjects. Authorized researchers can run distributed queries and statistical analyses on harmonized data hosted on geographically dispersed Opal servers:
+The 13 databases were securely federated through the [Mica-based BioSHaRE website](https://www.maelstrom-research.org/network/bioshare-eu) and the [DataSHIELD](/products/datashield/) R client, creating a distributed dataset on more than 650,000 European subjects. Authorized researchers can run distributed queries and statistical analyses on harmonized data hosted on geographically dispersed Opal servers:
 
 - **Mica queries** retrieve data summaries and descriptive statistics in real time for each biobank: counts, minimums, maximums, means, standard deviations, contingency tables.
 - **DataSHIELD** runs more advanced real-time analyses, such as generalized linear model fitting.
