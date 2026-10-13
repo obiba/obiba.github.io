@@ -21,6 +21,7 @@ for (const item of data) {
   const html = readFileSync(join(jekyll, '_includes', body), 'utf8')
     .replace(/<i class="fa [^"]*"><\/i>\s*/g, '') // font-awesome icons
     .replace(/ class="obiba-[^"]*"/g, '') // old theme classes
+    .replace(/\/assets\/themes\/bootstrap\/img\//g, '/img/') // images live in public/img
     .replace(/<p>\s*(<ul>[\s\S]*?<\/ul>)\s*<\/p>/g, '$1') // invalid <p><ul>
     .trim();
 
