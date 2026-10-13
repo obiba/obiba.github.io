@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Mark from '../components/Mark.astro';
+import NewsList from '../components/NewsList.astro';
+
+const products = (await getCollection('products')).sort((a, b) => a.data.order - b.data.order);
+const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 5);
+---
+<Base>
+  <a class="banner" href={`/news/${news[0].id}/`}>
+    <div class="container">
+      <strong>{news[0].data.title}</strong>
+      {news[0].data.summary && <span> · {news[0].data.summary}</span>} →
+    </div>
+  </a>
+  <section class="hero hero-home">
+    <div class="container hero-inner">
+      <div>
+        <h1>Open source software for epidemiology</h1>
+        <p>Collect, manage, analyze and share biobank and cohort study data, with privacy built in.</p>
+        <div class="actions">
+          <a class="btn" href="#products">Explore products</a>
+          <a class="btn ghost" href="https://github.com/obiba">GitHub</a>
+        </div>
+      </div>
+      <Mark size={220} class="hero-mark" />
+    </div>
+  </section>
+
+  <section id="products" class="alt">
+    <div class="container">
+      <h2>Products</h2>
+      <div class="grid">
+        {products.map((p) => (
+          <a class="card" href={`/products/${p.id}/`}>
+            <Mark product={p.id} size={36} class="icon" />
+            <h3>{p.data.name}</h3>
+            <p>{p.data.tagline}</p>
+          </a>
+        ))}
+      </div>
+      <p><a href="/integrated-suite/">How the applications work together →</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container prose">
+      <h2>Latest news</h2>
+      <NewsList items={news} />
+      <p><a href="/news/">All news →</a></p>
+    </div>
+  </section>
+</Base>
