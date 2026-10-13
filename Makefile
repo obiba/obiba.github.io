@@ -1,8 +1,14 @@
 prepare:
-	bundle install
+	cd astro && npm install
 
 run:
-	bundle exec jekyll serve
+	cd astro && npm run dev
+
+build:
+	cd astro && npm run build
+
+preview: build
+	cd astro && npm run preview
 
 clean:
-	rm -rf _site
+	rm -rf astro/dist astro/.astro
