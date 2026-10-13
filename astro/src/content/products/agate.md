@@ -37,8 +37,8 @@ Agate aims to be a lightweight but highly secure central authentication server: 
 
 Agate is a stand-alone Java web server application; it does not need a container such as Tomcat or Jetty. The Debian and RPM packages are strongly recommended, as they greatly simplify installation and upgrades.
 
-- **Debian / Ubuntu**: use the [Debian package repository](/pages/pkg/).
-- **Fedora / RHEL**: use the [RPM package repository](/pages/rpm/).
+- **Debian / Ubuntu**: use the [Debian package repository](/pkg/).
+- **Fedora / RHEL**: use the [RPM package repository](/rpm/).
 - **Other platforms**: download the zip distribution from the [GitHub releases](https://github.com/obiba/agate/releases).
 
 See the [installation guide](https://agatedoc.obiba.org/en/latest/admin/installation.html) and the [configuration guide](https://agatedoc.obiba.org/en/latest/admin/configuration.html).

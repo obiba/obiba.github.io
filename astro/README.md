@@ -33,5 +33,6 @@ One Markdown file per product in `src/content/products/`. Front matter schema: `
 
 - `npm run convert-news` regenerated `src/content/news/` from the Jekyll sources (`_data/news.yml` and the news partials). It's a one-off; edit the Markdown files directly from now on.
 - Old URLs `/pages/news/...` and `/pages/products/...` redirect to the new ones (see `astro.config.mjs`).
-- Not ported yet: download, support, about, license, infra, pkg, rpm, presentations, publications, stories, jobs.
+- Not ported yet: download, support, about, license, infra, presentations, publications, stories, jobs.
 - Deployment: `.github/workflows/astro.yml` (manual trigger until cutover).
+- `public/assets/obiba-pub.pem` and `public/assets/obiba-rpm.repo` must keep these URLs: servers fetch them in their apt/yum setup.

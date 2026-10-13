@@ -26,8 +26,8 @@ Being interoperable and reusable, Rock follows the [FAIR principles](https://www
 
 Rock is a Java application and runs on any platform with a Java virtual machine.
 
-- **Debian / Ubuntu**: use the [Debian package repository](/pages/pkg/).
-- **Fedora / RHEL**: use the [RPM package repository](/pages/rpm/).
+- **Debian / Ubuntu**: use the [Debian package repository](/pkg/).
+- **Fedora / RHEL**: use the [RPM package repository](/rpm/).
 - **Docker**: images give a reproducible R environment; see [Docker image installation](https://rockdoc.obiba.org/en/latest/admin/installation.html#docker-image-installation).
 
 Packages are also on the [GitHub releases](https://github.com/obiba/rock/releases) page. See the [installation guide](https://rockdoc.obiba.org/en/latest/admin/installation.html) and the [configuration guide](https://rockdoc.obiba.org/en/latest/admin/configuration.html).

@@ -8,5 +8,7 @@ export default defineConfig({
   redirects: {
     '/pages/news/[...id]': '/news/[...id]',
     '/pages/products/[id]': '/products/[id]',
+    '/pages/pkg': '/pkg',
+    '/pages/rpm': '/rpm',
   },
 });
