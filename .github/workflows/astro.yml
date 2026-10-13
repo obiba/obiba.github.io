@@ -1,9 +1,10 @@
-# Builds and deploys the Astro site in astro/ to GitHub Pages.
-# Manual only until cutover: then switch Settings > Pages > Source to "GitHub Actions"
-# and add a `push: branches: [master]` trigger.
+# Builds and deploys the site to GitHub Pages.
+# Requires Settings > Pages > Source set to "GitHub Actions".
 name: Deploy Astro site
 
 on:
+  push:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -21,8 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: withastro/action@v6
-        with:
-          path: astro
 
   deploy:
     needs: build

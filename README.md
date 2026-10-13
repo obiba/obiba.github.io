@@ -1,112 +1,43 @@
-# OBiBa Website
-#### Open Source Software for BioBanks
-### License [GPL3](http://www.gnu.org/copyleft/gpl.html#gnu-license)
+# OBiBa website
 
-## Website Structure
+Source of [www.obiba.org](https://www.obiba.org), built with [Astro](https://astro.build). License [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 
-In order to have clean URLs, each section of the site has its own directory under pages. For example the link to Opal
-page will be:
-
-    http://obiba.github.io/pages/products/opal
-
-Under each section folder there is an index.html file which serves as including sub-section templates. Here is Opal's
-index file:
-
-    ---
-    layout: product
-    wiki: http://opaldoc.obiba.org
-    download: http://download.obiba.org/opal/stable/
-    github: http://github.com/obiba/opal
-    demo: https://opal-demo.obiba.org
-    title: Store with Opal
-    ---
-    {% include JB/setup %}
-    {% include themes/bootstrap/section.html icon="fa-info-circle" sectionTitle="What is Opal?" sectionBody="themes/bootstrap/opal/what.html" %}
-    {% include themes/bootstrap/section.html icon="fa-cogs" sectionTitle="Features" sectionBody="themes/bootstrap/opal/features.html" %}
-
-The section between the three dashes is the page YAML configuration used by the corresponding template files:
-
-* **layout**: name of the page layout used by this page
-* **wiki**, **download**, **github**, **demo**: are the icons in each product page (aligned to the right)
-* **title**: The title on top of the page
-
-As an example, a template file such as *product.html* can access the download key as follows:
-
-    page.download
-
-The first include is useful if Jekyll Bootstrap functionality is required.
-The last two include files are actually including the content of the page.
-
-As a general rule, each main page uses templates (partials) to make the edition simpler and more organized. As it can be
-seen, the Opal's intro and feature pages are divided into two separate template files.
-
-All template files are under <strong>_includes/themes/bootstrap/</strong>, you can have a look at each to get some ideas how they use
-the YAML settings and the Liquid template codes.
-
-Currently there are four general layouts:
-
-* **default**: the main container layout
-* **page**: for all non-product pages
-* **product**: for product only pages
-* **post**: for posts that are not currently used
-
-All data files are placed under <strong>_data</strong> files:
-
-* **jobs**: list of job postings
-* **news**: list of news
-* **partners**: list of partners
-* **post**: list of sponsors
-
-## Website Development
-
-You need the following tools:
-
-* **ruby**
-* **ruby-dev**
-* **nodejs**
-* **grunt**
-* **jekyll**
-
-See [Installation](https://jekyllrb.com/docs/installation/ubuntu/) of Jekyll on Ubuntu
-
-> In case of errors you may want to install the following gem (see link above about .bashrc setting):
-```
-gem install github-pages
+```sh
+make prepare     # npm install (Node 22.12+)
+make run         # dev server at http://localhost:4321
+make build       # static site in dist/
+make preview     # serve dist/, e.g. to test redirects
 ```
 
-To start the development follow these steps:
+Pushing to `master` deploys the site with `.github/workflows/astro.yml`.
 
-* open two Terminal TABs or windows
-* in the first one run:
+## Adding a news item
 
+Create `src/content/news/release/<product>/<version>.md`:
 
-    $>grunt
+```md
+---
+title: Agate 5.0 Released
+date: 2026-09-19
+product: agate
+summary: One-line summary shown in lists and RSS
+---
 
-* in the second run:
-
-
-    $> jekyll serve -w
-
-To view the website locally go to [http://localhost:4000](http://localhost:4000)
-
-You can change the port alternativaly by adding a **--port <number>** to the **jekyll** commandline:
-
-```
-$>jekyll serve -w --port 4001
+Release notes in Markdown.
 ```
 
-Or
+It appears on the home page, the news page, the product page and in `/rss.xml`.
 
-```
-$>bundle exec jekyll serve -w --port 4001
-```
+## Products
 
-Building using Docker:
-```
-docker run --rm --volume="$PWD:/srv/jekyll:Z" --publish [::1]:4000:4000 jekyll/jekyll   jekyll serve
-```
+One Markdown file per product in `src/content/products/`. Front matter schema: `src/content.config.ts`.
 
+## Other pages
 
-## Website Issues
+Markdown files in `src/pages/` (layout `src/layouts/Page.astro`). Images go in `public/img/`.
 
-You can always log bugs and improvements using our [JIRA](http://jira.obiba.org/) under the project **OBiBa Website**
+## Notes
+
+- The site was migrated from Jekyll in October 2026 (see git history before that for the old sources). Old `/pages/...` URLs redirect to the new ones, see `redirects` in `astro.config.mjs`.
+- `public/assets/obiba-pub.pem` and `public/assets/obiba-rpm.repo` must keep these URLs: servers fetch them in their apt/yum setup.
+- `_graphics/` holds the source artwork (logos, illustrations).

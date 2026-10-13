@@ -1,14 +1,14 @@
 prepare:
-	cd astro && npm install
+	npm install
 
 run:
-	cd astro && npm run dev
+	npm run dev
 
 build:
-	cd astro && npm run build
+	npm run build
 
 preview: build
-	cd astro && npm run preview
+	npm run preview
 
 clean:
-	rm -rf astro/dist astro/.astro
+	rm -rf dist .astro
