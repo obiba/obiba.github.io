@@ -13,7 +13,7 @@ const news = (await getCollection('news', (n) => n.data.product === entry.id))
   .sort((a, b) => +b.data.date - +a.data.date)
   .slice(0, 5);
 ---
-<Base title={name} description={tagline}>
+<Base title={name} description={tagline} product={entry.id}>
   <section class="hero">
     <div class="container">
       <h1>{title}</h1>
