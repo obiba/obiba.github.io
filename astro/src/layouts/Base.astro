@@ -11,7 +11,17 @@ const fullTitle = title ? `${title} · OBiBa` : 'OBiBa · Open Source Software f
 const nav = [
   ['/#products', 'Products'],
   ['/news/', 'News'],
-  // ponytail: Download, Support, About, Documentation not ported yet; add pages then links.
+  ['/download/', 'Download'],
+  ['/support/', 'Support'],
+  ['/about/', 'About'],
+];
+const footerNav = [
+  ['/stories/', 'User stories'],
+  ['/publications/', 'Publications'],
+  ['/presentations/', 'Presentations'],
+  ['/infra/', 'Infrastructure'],
+  ['/pkg/', 'Debian packages'],
+  ['/rpm/', 'RPM packages'],
 ];
 const path = Astro.url.pathname;
 ---
@@ -43,7 +53,10 @@ const path = Astro.url.pathname;
     </main>
     <footer class="site-footer">
       <div class="container">
-        <p>© {new Date().getFullYear()} OBiBa · Open source under the GPL v3 · <a href="/rss.xml">RSS</a> · <a href="https://github.com/obiba">GitHub</a></p>
+        <nav aria-label="Footer">
+          {footerNav.map(([href, label]) => <a href={href}>{label}</a>)}
+        </nav>
+        <p>© {new Date().getFullYear()} OBiBa · Open source under the <a href="/about/#license">GPL v3</a> · <a href="/rss.xml">RSS</a> · <a href="https://github.com/obiba">GitHub</a></p>
       </div>
     </footer>
   </body>

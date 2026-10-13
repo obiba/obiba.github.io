@@ -76,3 +76,8 @@ a.card:hover { border-color: var(--accent); }
 .news-list time, .meta { color: var(--muted); font-size: 0.9rem; }
 .news-list a { font-weight: 600; text-decoration: none; }
 .tag { display: inline-block; font-size: 0.75rem; padding: 0.05rem 0.5rem; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); margin-left: 0.4rem; text-transform: capitalize; }
+
+/* Embedded slide decks */
+iframe.slides { width: 100%; aspect-ratio: 576 / 420; border: 0; border-radius: var(--radius); }
+.site-footer nav { margin-bottom: 0.5rem; }
+.site-footer nav a { color: var(--muted); font-weight: 400; }

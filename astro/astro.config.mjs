@@ -12,5 +12,17 @@ export default defineConfig({
     '/pages/rpm': '/rpm',
     '/pages/infra': '/infra',
     '/pages/stories': '/stories',
+    '/pages/news': '/news',
+    '/pages/download': '/download',
+    '/pages/support': '/support',
+    '/pages/about': '/about',
+    '/pages/license': '/about/#license',
+    '/pages/presentations': '/presentations',
+    '/pages/publications': '/publications',
+    '/pages/jobs': '/about',
+    '/pages/jobs/java': '/about',
+    // Legacy products, not ported.
+    '/pages/products/mica1': '/products/mica',
+    '/pages/products/onyx': 'https://github.com/obiba/onyx',
   },
 });

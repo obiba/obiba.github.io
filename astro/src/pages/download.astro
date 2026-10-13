@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const products = (await getCollection('products'))
+  .filter((p) => p.body?.includes('## Download'))
+  .sort((a, b) => a.data.order - b.data.order);
+---
+<Base title="Download" description="Download and install OBiBa software">
+  <section>
+    <div class="container prose">
+      <h1>Download</h1>
+      <p>
+        OBiBa software is open source and free of charge, available under the
+        <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL v3 license</a>. The source code is on
+        <a href="https://github.com/obiba">GitHub</a>.
+      </p>
+      <p>
+        On Linux, the recommended way to install and upgrade is the
+        <a href="/pkg/">Debian package repository</a> or the <a href="/rpm/">RPM package repository</a>.
+        Docker images are on <a href="https://hub.docker.com/u/obiba/">Docker Hub</a>.
+      </p>
+    </div>
+  </section>
+  <section class="alt">
+    <div class="container">
+      <div class="grid">
+        {products.map((p) => (
+          <a class="card" href={`/products/${p.id}/#download`}>
+            {p.data.icon && <img class="icon" src={p.data.icon} alt="" />}
+            <h3>Download {p.data.name}</h3>
+            <p>{p.data.tagline}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
