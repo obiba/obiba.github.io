@@ -21,4 +21,4 @@ summary: "Repositories, development pipeline"
 
 <p>As a consequence <b>system administrators must update Debian and/or RPM package repositories references</b>: see the <a href="/pkg/">Debian repository</a> and <a href="/rpm/">RPM repository</a> instructions.</a>
 
-<p>See also the <a href="/pages/infra">Infrastructure description</a> for more details.</p>
+<p>See also the <a href="/infra/">Infrastructure description</a> for more details.</p>

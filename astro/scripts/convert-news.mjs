@@ -22,7 +22,7 @@ for (const item of data) {
     .replace(/<i class="fa [^"]*"><\/i>\s*/g, '') // font-awesome icons
     .replace(/ class="obiba-[^"]*"/g, '') // old theme classes
     .replace(/\/assets\/themes\/bootstrap\/img\//g, '/img/') // images live in public/img
-    .replace(/href="\/pages\/(pkg|rpm)\/?"/g, 'href="/$1/"') // ported pages
+    .replace(/href="\/pages\/(pkg|rpm|infra|stories)\/?"/g, 'href="/$1/"') // ported pages
     .replace(/<p>\s*(<ul>[\s\S]*?<\/ul>)\s*<\/p>/g, '$1') // invalid <p><ul>
     .trim();
 

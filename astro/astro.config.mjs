@@ -10,5 +10,7 @@ export default defineConfig({
     '/pages/products/[id]': '/products/[id]',
     '/pages/pkg': '/pkg',
     '/pages/rpm': '/rpm',
+    '/pages/infra': '/infra',
+    '/pages/stories': '/stories',
   },
 });

@@ -24,4 +24,4 @@ With DataSHIELD in Opal, studies can:
 - Set fine-grained user permissions on the tables and variables available for DataSHIELD analysis.
 - Set up authentication certificates between DataSHIELD clients and Opal.
 
-A real deployment is described in the [BioSHaRE user story](/pages/stories/).
+A real deployment is described in the [BioSHaRE user story](/stories/).
