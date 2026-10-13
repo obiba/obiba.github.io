@@ -7,6 +7,12 @@ const products = (await getCollection('products')).sort((a, b) => a.data.order -
 const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date).slice(0, 5);
 ---
 <Base>
+  <a class="banner" href={`/news/${news[0].id}/`}>
+    <div class="container">
+      <strong>{news[0].data.title}</strong>
+      {news[0].data.summary && <span> · {news[0].data.summary}</span>} →
+    </div>
+  </a>
   <section class="hero">
     <div class="container">
       <h1>Open source software for epidemiology</h1>

@@ -81,3 +81,7 @@ a.card:hover { border-color: var(--accent); }
 iframe.slides { width: 100%; aspect-ratio: 576 / 420; border: 0; border-radius: var(--radius); }
 .site-footer nav { margin-bottom: 0.5rem; }
 .site-footer nav a { color: var(--muted); font-weight: 400; }
+
+/* Latest news banner (home page) */
+.banner { display: block; background: var(--accent); color: var(--accent-fg); text-align: center; text-decoration: none; padding: 0.6rem 0; font-size: 0.95rem; }
+.banner:hover strong { text-decoration: underline; }
