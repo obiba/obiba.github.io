@@ -38,8 +38,9 @@ sudo service rock restart
 Opal Python client:
 
 ```sh
-sudo apt-get install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-opal
+sudo apt-get install pipx
+pipx ensurepath
+pipx install obiba-opal
 ```
 
 See the [Opal documentation](https://opaldoc.obiba.org).
@@ -53,8 +54,9 @@ sudo apt-get install mica2
 Mica Python client:
 
 ```sh
-sudo apt-get install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-mica
+sudo apt-get install pipx
+pipx ensurepath
+pipx install obiba-mica
 ```
 
 See the [Mica documentation](https://micadoc.obiba.org).
@@ -68,8 +70,9 @@ sudo apt-get install agate
 Agate Python client:
 
 ```sh
-sudo apt-get install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-agate
+sudo apt-get install pipx
+pipx ensurepath
+pipx install obiba-agate
 ```
 
 See the [Agate documentation](https://agatedoc.obiba.org).

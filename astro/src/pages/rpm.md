@@ -35,8 +35,9 @@ sudo service rock restart
 Opal Python client:
 
 ```sh
-sudo yum install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-opal
+sudo yum install pipx
+pipx ensurepath
+pipx install obiba-opal
 ```
 
 See the [Opal documentation](https://opaldoc.obiba.org).
@@ -50,8 +51,9 @@ sudo yum install mica2
 Mica Python client:
 
 ```sh
-sudo yum install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-mica
+sudo yum install pipx
+pipx ensurepath
+pipx install obiba-mica
 ```
 
 See the [Mica documentation](https://micadoc.obiba.org).
@@ -65,8 +67,9 @@ sudo yum install agate
 Agate Python client:
 
 ```sh
-sudo yum install python3-pip libcurl4-openssl-dev libssl-dev
-sudo pip install obiba-agate
+sudo yum install pipx
+pipx ensurepath
+pipx install obiba-agate
 ```
 
 See the [Agate documentation](https://agatedoc.obiba.org).
