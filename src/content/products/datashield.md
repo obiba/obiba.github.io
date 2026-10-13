@@ -4,7 +4,9 @@ title: Analyze with DataSHIELD
 tagline: "Federated analysis across studies without sharing individual-level data."
 order: 4
 icon: /img/icon-datashield.png
-docs: https://datashield.ac.uk/
+docs: https://datashield.org/
+github: https://github.com/datashield
+demo: https://www.obiba.org/webDS
 ---
 
 ## What is DataSHIELD?
