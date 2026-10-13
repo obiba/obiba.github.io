@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import NewsList from '../../components/NewsList.astro';
+
+const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data.date);
+---
+<Base title="News" description="OBiBa releases and events">
+  <section>
+    <div class="container prose">
+      <h1>News</h1>
+      <p class="muted">Releases and events. Also available as <a href="/rss.xml">RSS</a>.</p>
+      <NewsList items={news} />
+    </div>
+  </section>
+</Base>
