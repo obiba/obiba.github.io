@@ -32,11 +32,15 @@ Opal is OBiBa's core data management application. This server application provid
 
 ## Download
 
-Opal is a stand-alone Java web server application; it does not need a container such as Tomcat or Jetty.
+Opal is a stand-alone Java web server application.
 
-- **Debian / Ubuntu**: use the [Debian package repository](/pkg/).
-- **Fedora / RHEL**: use the [RPM package repository](/rpm/).
-- **Other platforms**: download the zip distribution from the [GitHub releases](https://github.com/obiba/opal/releases).
+- System packages
+  - **Debian / Ubuntu**: use the [Debian package repository](/pkg/).
+  - **Fedora / RHEL**: use the [RPM package repository](/rpm/).
+  - **Other platforms**: download the zip distribution from the [GitHub releases](https://github.com/obiba/opal/releases).
+- Containers
+  - **Docker**: use image from [Docker hub repository](https://hub.docker.com/r/obiba/opal)
+  - **Helm charts**: use [OBiBa Helm charts](https://github.com/obiba/helm-charts) 
 
 See the [installation guide](https://opaldoc.obiba.org/en/latest/admin/installation.html) and the [configuration guide](https://opaldoc.obiba.org/en/latest/admin/configuration.html).
 

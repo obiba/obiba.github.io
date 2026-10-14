@@ -22,7 +22,7 @@ In collaboration with the DataSHIELD team at Newcastle University, OBiBa built t
 With DataSHIELD in Opal, studies can:
 
 - Create large virtual pooled datasets from multiple harmonized study datasets and run analyses such as linear regressions.
-- Install and manage DataSHIELD R packages from the [OBiBa CRAN repository](https://cran.obiba.org).
+- Install and manage DataSHIELD R packages from the [CRAN repository](https://cran.r-project.org/).
 - Set fine-grained user permissions on the tables and variables available for DataSHIELD analysis.
 - Set up authentication certificates between DataSHIELD clients and Opal.
 

@@ -94,6 +94,12 @@ Amber Server is a stand-alone [Node.js](https://nodejs.org) web server. Amber St
 
 For a quick start, the [Amber template](https://github.com/obiba/amber-template/) project can be built and tested right away; see its README ([download the latest .zip](https://github.com/obiba/amber-template/archive/refs/heads/master.zip)). Then follow the [configuration documentation](https://amberdoc.obiba.org/en/latest/admin/configuration.html).
 
+- Containers
+  - **Amber**: use image from [Docker hub repository](https://hub.docker.com/r/obiba/amber)
+  - **Studio**: use image from [Docker hub repository](https://hub.docker.com/r/obiba/amber-studio)
+  - **Collect**: use image from [Docker hub repository](https://hub.docker.com/r/obiba/amber-collect)
+  - **Visit**: use image from [Docker hub repository](https://hub.docker.com/r/obiba/amber-visit)
+
 ## Try Amber
 
 The demo configuration shows some of the features; most parts of Amber are configurable, so your deployment can look completely different. Try [Amber Studio](https://amber-demo.obiba.org/studio), [Amber Collect](https://amber-demo.obiba.org/collect) and [Amber Visit](https://amber-demo.obiba.org/visit) with:

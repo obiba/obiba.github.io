@@ -25,10 +25,11 @@ Debian, RPM and zip packages can also be downloaded from the GitHub releases pag
 
 Other distribution channels:
 
-- **R packages**: on [CRAN](https://cran.r-project.org/); DataSHIELD packages also on the [OBiBa CRAN repository](https://cran.obiba.org).
+- **R packages**: on [CRAN](https://cran.r-project.org/).
 - **Python packages**: on [PyPI](https://pypi.org/search/?q=obiba), e.g. [obiba-opal](https://pypi.org/project/obiba-opal/).
 - **Plugins**: the plugins index and service plugin interfaces (SPI) are in the [plugins repository](https://plugins.obiba.org/).
 - **Docker images**: on [Docker Hub](https://hub.docker.com/u/obiba/).
+- **Helm charts**: on [OBiBa Helm Charts repository](https://github.com/obiba/helm-charts)
 
 ## Documentation
 
