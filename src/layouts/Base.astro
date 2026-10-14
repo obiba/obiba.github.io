@@ -28,6 +28,7 @@ const footerNav = [
   ['/rpm/', 'RPM packages'],
 ];
 const path = Astro.url.pathname;
+const THEME: Record<string, string> = { opal: '#00615C', rock: '#46525C', mica: '#2F5DA8', datashield: '#5A45B0', agate: '#9C2F63', amber: '#C25A0E' };
 ---
 <!doctype html>
 <html lang="en">
@@ -36,16 +37,22 @@ const path = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#00615C" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/img/obiba-favicon.png" sizes="32x32" />
+    <meta name="theme-color" content={product ? THEME[product] ?? '#00615C' : '#00615C'} />
+    {product ? <>
+      <link rel="icon" href={`/img/products/${product}/favicon.ico`} sizes="any" />
+      <link rel="icon" href={`/img/products/${product}/favicon.svg`} type="image/svg+xml" />
+      <link rel="apple-touch-icon" href={`/img/products/${product}/apple-touch-icon.png`} />
+    </> : <>
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      <link rel="icon" href="/img/obiba-favicon.png" sizes="32x32" />
+    </>}
     <link rel="alternate" type="application/rss+xml" title="OBiBa news" href="/rss.xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="brand" aria-label="OBiBa home">
+        <a href="/" class="brand" data-product={product} aria-label="OBiBa home">
           <Mark product={product} size={30} />
           <span class="brand-name">obiba</span>
           {product && <><span class="brand-sep">/</span><span class="brand-product">{product}</span></>}

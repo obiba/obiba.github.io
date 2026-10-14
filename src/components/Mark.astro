@@ -1,16 +1,17 @@
 ---
 // OBiBa freezer-rack mark: 8 samples in a ring, one highlighted.
-// Each product highlights a different slot so the family stays together.
-const SLOTS: Record<string, number> = { obiba: 0, opal: 0, amber: 6, rock: 1, datashield: 3, mica: 2, agate: 4 };
+// OBiBa master: teal ring + saffron sample. Products: tint ring + sample in the product color
+// (colors come from [data-product] rules in global.css).
+const SLOTS: Record<string, number> = { obiba: 0, opal: 0, rock: 1, mica: 2, datashield: 3, agate: 4, amber: 6 };
 interface Props { product?: string; size?: number; class?: string; title?: string }
 const { product = 'obiba', size = 32, class: cls, title } = Astro.props;
 const accent = SLOTS[product] ?? 0;
 const dots = Array.from({ length: 8 }, (_, k) => {
   const a = -Math.PI / 2 + (k * Math.PI) / 4;
-  return { x: (20 + 15 * Math.cos(a)).toFixed(2), y: (20 + 15 * Math.sin(a)).toFixed(2), on: k === accent };
+  return { x: (20 + 15 * Math.cos(a)).toFixed(3), y: (20 + 15 * Math.sin(a)).toFixed(3), on: k === accent };
 });
 ---
-<svg class:list={['mark', cls]} width={size} height={size} viewBox="0 0 40 40"
+<svg class:list={['mark', cls]} data-product={product === 'obiba' ? undefined : product} width={size} height={size} viewBox="0 0 40 40"
   role={title ? 'img' : undefined} aria-hidden={title ? undefined : 'true'}>
   {title && <title>{title}</title>}
   {dots.map((d) => <circle cx={d.x} cy={d.y} r="4.2" class={d.on ? 'mark-accent' : 'mark-dot'} />)}

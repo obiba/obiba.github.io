@@ -1,5 +1,6 @@
 /* OBiBa theme · freezer-rack identity
    Teal #00615C · Saffron #F5B700 · Deep teal #062F2D · Mint #7FD3CB
+   Products: Opal teal, Rock graphite, Mica blue, DataSHIELD violet, Agate berry, Amber orange
    Fonts: Sora (display), Instrument Sans (text), both SIL OFL via Fontsource. */
 :root {
   --teal: #00615C;
@@ -68,10 +69,26 @@ blockquote { margin: 1.5rem 0; padding: 0.25rem 0 0.25rem 1.25rem; border-left: 
 section { padding: 3.5rem 0; }
 .alt { background: var(--bg-alt); }
 
+/* Product colors: color / tint / light (on dark) */
+[data-product="opal"] { --p: #00615C; --p-tint: #B9E3DF; --p-light: #7FD3CB; }
+[data-product="rock"] { --p: #46525C; --p-tint: #CDD4DA; --p-light: #A9B6C1; }
+[data-product="mica"] { --p: #2F5DA8; --p-tint: #C3D3EE; --p-light: #8EAEE3; }
+[data-product="datashield"] { --p: #5A45B0; --p-tint: #D3CCF0; --p-light: #AFA2EA; }
+[data-product="agate"] { --p: #9C2F63; --p-tint: #EDC6D7; --p-light: #E597BC; }
+[data-product="amber"] { --p: #C25A0E; --p-tint: #F6D3B3; --p-light: #F2A867; }
+
 /* Mark */
 .mark { display: block; flex: none; }
 .mark-dot { fill: var(--mark); }
 .mark-accent { fill: var(--saffron); }
+.mark[data-product] .mark-dot { fill: var(--p-tint); }
+.mark[data-product] .mark-accent { fill: var(--p); }
+.site-footer .mark[data-product] .mark-dot { fill: var(--p-light); }
+.site-footer .mark[data-product] .mark-accent { fill: #fff; }
+@media (prefers-color-scheme: dark) {
+  .mark[data-product] .mark-dot { fill: var(--p-light); }
+  .mark[data-product] .mark-accent { fill: #fff; }
+}
 
 /* Header & footer */
 .site-header { border-bottom: 1px solid var(--border); position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: saturate(1.4) blur(8px); z-index: 10; }
@@ -79,7 +96,9 @@ section { padding: 3.5rem 0; }
 .brand { display: flex; align-items: center; gap: 0.55rem; text-decoration: none; font-family: var(--font-display); font-size: 1.45rem; letter-spacing: -0.05em; line-height: 1; }
 .brand-name { font-weight: 600; color: var(--fg); }
 .brand-sep { font-weight: 300; color: var(--mint); }
-.brand-product { font-weight: 400; color: var(--accent); }
+.brand-product { font-weight: 400; color: var(--p, var(--accent)); }
+.brand[data-product] .brand-sep { color: var(--p-tint); }
+@media (prefers-color-scheme: dark) { .brand[data-product] .brand-product { color: var(--p-light); } .brand[data-product] .brand-sep { color: var(--p); } }
 .brand-sm { font-size: 1.1rem; gap: 0.4rem; }
 nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 nav a { color: var(--fg); text-decoration: none; font-weight: 500; }
@@ -111,8 +130,9 @@ nav a[aria-current] { box-shadow: inset 0 -2px 0 var(--saffron); }
 /* Cards */
 .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); margin-bottom: 1.5rem; }
 .card { display: flex; flex-direction: column; gap: 0.35rem; border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; background: var(--bg); color: inherit; text-decoration: none; transition: border-color .15s; }
-a.card:hover { border-color: var(--accent); }
-a.card:hover h3 { color: var(--accent); }
+a.card:hover { border-color: var(--p, var(--accent)); }
+a.card:hover h3 { color: var(--p, var(--accent)); }
+@media (prefers-color-scheme: dark) { a.card[data-product]:hover { border-color: var(--p-light); } a.card[data-product]:hover h3 { color: var(--p-light); } }
 .card h3 { margin: 0.5rem 0 0; }
 .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
 .card .icon { width: 36px; height: 36px; }

@@ -33,7 +33,7 @@ const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data
       <h2>Products</h2>
       <div class="grid">
         {products.map((p) => (
-          <a class="card" href={`/products/${p.id}/`}>
+          <a class="card" data-product={p.id} href={`/products/${p.id}/`}>
             <Mark product={p.id} size={36} class="icon" />
             <h3>{p.data.name}</h3>
             <p>{p.data.tagline}</p>
