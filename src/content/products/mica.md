@@ -30,7 +30,7 @@ Mica gives studies scientifically robust data visibility and a web presence with
 - Faceted variable search.
 - Detailed dataset descriptions, with a comprehensive dictionary of the variables.
 
-Mica does not store any record-level data. For studies using [Opal](/products/opal/) as their secured database, a distributed query engine gives authorized researchers real-time aggregated reports on the number of participants with specific characteristics, and summary statistics on each variable. No individual-level data passes through Mica, yet researchers can assess whether a dataset suits their needs.
+Mica does not store any record-level data. For studies using [Opal](/applications/opal/) as their secured database, a distributed query engine gives authorized researchers real-time aggregated reports on the number of participants with specific characteristics, and summary statistics on each variable. No individual-level data passes through Mica, yet researchers can assess whether a dataset suits their needs.
 
 **Data access management.** Editable forms to handle access requests electronically:
 

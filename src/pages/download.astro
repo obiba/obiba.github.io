@@ -27,7 +27,7 @@ const products = (await getCollection('products'))
     <div class="container">
       <div class="grid">
         {products.map((p) => (
-          <a class="card" data-product={p.id} href={`/products/${p.id}/#download`}>
+          <a class="card" data-product={p.id} href={`/applications/${p.id}/#download`}>
             <Mark product={p.id} size={36} class="icon" />
             <h3>Download {p.data.name}</h3>
             <p>{p.data.tagline}</p>

@@ -20,7 +20,7 @@ const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data
         <h1>Open source software for epidemiology</h1>
         <p>Collect, manage, analyze and share biobank and cohort study data, with privacy built in.</p>
         <div class="actions">
-          <a class="btn" href="#products">Explore products</a>
+          <a class="btn" href="#applications">Explore applications</a>
           <a class="btn ghost" href="https://github.com/obiba">GitHub</a>
         </div>
       </div>
@@ -28,12 +28,12 @@ const news = (await getCollection('news')).sort((a, b) => +b.data.date - +a.data
     </div>
   </section>
 
-  <section id="products" class="alt">
+  <section id="applications" class="alt">
     <div class="container">
-      <h2>Products</h2>
+      <h2>Applications</h2>
       <div class="grid">
         {products.map((p) => (
-          <a class="card" data-product={p.id} href={`/products/${p.id}/`}>
+          <a class="card" data-product={p.id} href={`/applications/${p.id}/`}>
             <Mark product={p.id} size={36} class="icon" />
             <h3>{p.data.name}</h3>
             <p>{p.data.tagline}</p>

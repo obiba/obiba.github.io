@@ -13,7 +13,7 @@ const { title, description = 'Open source software for epidemiology', product } 
 const fullTitle = title ? `${title} · OBiBa` : 'OBiBa · Open Source Software for Epidemiology';
 
 const nav = [
-  ['/#products', 'Products'],
+  ['/#applications', 'Applications'],
   ['/news/', 'News'],
   ['/download/', 'Download'],
   ['/support/', 'Support'],
@@ -57,7 +57,7 @@ const THEME: Record<string, string> = { opal: '#00615C', rock: '#46525C', mica: 
         </a>
         <nav aria-label="Main">
           {nav.map(([href, label]) => (
-            <a href={href} aria-current={path.startsWith(href) && href !== '/#products' ? 'page' : undefined}>{label}</a>
+            <a href={href} aria-current={path.startsWith(href) && href !== '/#applications' ? 'page' : undefined}>{label}</a>
           ))}
           <a href="https://github.com/obiba" class="gh">GitHub</a>
         </nav>

@@ -11,7 +11,7 @@ demo: https://agate-demo.obiba.org
 
 ## What is Agate?
 
-Agate provides user services to the OBiBa software stack: authentication, user profile management and notifications, for the declared applications such as [Opal](/products/opal/) and [Mica](/products/mica/).
+Agate provides user services to the OBiBa software stack: authentication, user profile management and notifications, for the declared applications such as [Opal](/applications/opal/) and [Mica](/applications/mica/).
 
 Agate aims to be a lightweight but highly secure central authentication server: simple to install, administer and integrate with OBiBa applications.
 

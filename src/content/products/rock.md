@@ -9,7 +9,7 @@ github: https://github.com/obiba/rock
 
 ## What is Rock?
 
-Rock is OBiBa's [R](https://www.r-project.org/) analysis server. It manages R server analysis sessions and is the computation engine of [Opal](/products/opal/).
+Rock is OBiBa's [R](https://www.r-project.org/) analysis server. It manages R server analysis sessions and is the computation engine of [Opal](/applications/opal/).
 
 ## Features
 

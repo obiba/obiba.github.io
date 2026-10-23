@@ -7,7 +7,8 @@ export default defineConfig({
   // Keep the old Jekyll URLs alive (external sites link to them).
   redirects: {
     '/pages/news/[...id]': '/news/[...id]',
-    '/pages/products/[id]': '/products/[id]',
+    '/pages/products/[id]': '/applications/[id]',
+    '/products/[id]': '/applications/[id]',
     '/pages/pkg': '/pkg',
     '/pages/rpm': '/rpm',
     '/pages/infra': '/infra',
@@ -21,12 +22,12 @@ export default defineConfig({
     '/pages/publications': '/publications',
     '/pages/jobs': '/about',
     '/pages/jobs/java': '/about',
-    '/pages/documentation': '/#products',
+    '/pages/documentation': '/#applications',
     '/pages/plugins': 'https://plugins.obiba.org/',
     '/pages/integrated-suite': '/integrated-suite',
     '/node/62': '/about/#license',
     // Legacy products, not ported.
-    '/pages/products/mica1': '/products/mica',
+    '/pages/products/mica1': '/applications/mica',
     '/pages/products/onyx': 'https://github.com/obiba/onyx',
   },
 });

@@ -26,9 +26,9 @@ summary: One-line summary shown in lists and RSS
 Release notes in Markdown.
 ```
 
-It appears on the home page, the news page, the product page and in `/rss.xml`.
+It appears on the home page, the news page, the application page and in `/rss.xml`.
 
-## Products
+## Applications
 
 One Markdown file per product in `src/content/products/`. Front matter schema: `src/content.config.ts`.
 

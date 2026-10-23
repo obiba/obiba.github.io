@@ -13,9 +13,9 @@ demo: https://opal-demo.obiba.org
 
 Opal is OBiBa's core data management application. This server application provides all the necessary tools to import, transform and describe data. Subject identifiers can also be managed at data import and export time.
 
-**Analysis.** Thanks to its integration with [R](https://www.r-project.org/), complex statistical analysis and reports can be performed. The implementation of [DataSHIELD](/products/datashield/) allows advanced statistical analysis across multiple studies *without sharing or disclosing any individual-level data*.
+**Analysis.** Thanks to its integration with [R](https://www.r-project.org/), complex statistical analysis and reports can be performed. The implementation of [DataSHIELD](/applications/datashield/) allows advanced statistical analysis across multiple studies *without sharing or disclosing any individual-level data*.
 
-**Integration.** Studies using Opal can securely import data collected with [Amber](/products/amber/), and build web data portals with [Mica](/products/mica/) that query Opal for real-time aggregated reports. Secured REST web services allow automating server management (Python command line tools) and accessing data from R, Python or any web-capable tool.
+**Integration.** Studies using Opal can securely import data collected with [Amber](/applications/amber/), and build web data portals with [Mica](/applications/mica/) that query Opal for real-time aggregated reports. Secured REST web services allow automating server management (Python command line tools) and accessing data from R, Python or any web-capable tool.
 
 ![Opal federated analysis](/img/opal-federated.png)
 
