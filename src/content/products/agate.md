@@ -13,25 +13,29 @@ demo: https://agate-demo.obiba.org
 
 Agate provides user services to the OBiBa software stack: authentication, user profile management and notifications, for the declared applications such as [Opal](/applications/opal/) and [Mica](/applications/mica/).
 
-Agate aims to be a lightweight but highly secure central authentication server: simple to install, administer and integrate with OBiBa applications.
+Agate aims to be a lightweight but highly secure central authentication server: simple to install, administer and integrate with OBiBa applications, and able to delegate authentication to your institution's identity provider.
 
 ![From Agate, an administrator manages users, groups and applications](/img/agate-server-home.png)
 
 ## Features
 
-**Applications.** Declared applications use Agate as their user registry and notification service. Each application authenticates with a secret key (see each application's documentation to register one). An identified application can authenticate a user, get their profile, and email all users or a group of users with access to it.
+**Applications.** Declared applications use Agate as their user registry and notification service. Each application authenticates with a secret key. An identified application can authenticate a user, get their profile, and email all users or a group of users with access to it. Applications' requests on a user are tracked as tickets.
 
-**Groups.** Users can belong to one or more groups. Application access can be granted per group: members inherit the group's application access.
+**Single sign-on.** Agate is an [OAuth2 and OpenID Connect provider](https://agatedoc.obiba.org/en/latest/oauth2-api/index.html): OBiBa applications and any third-party client can sign users in through Agate, with authorization code, resource owner password and OpenID Connect flows.
 
-**Users.** A user is authenticated and receives notification emails. A user can be added by an Agate administrator, or submit a join request from the Agate web interface or the Mica sign-up page (protected by [Google reCAPTCHA](https://www.google.com/recaptcha)). Users manage their personal information from Agate or from their Mica profile page. Passwords (first password and recovery) are handled by email between the user and Agate, with no administrator action.
+**Realms.** Authentication can be delegated to external identity providers while the user profile stays in Agate: OpenID Connect (Keycloak, institutional providers...), LDAP, Active Directory and SQL databases. Groups can be mapped from the identity provider's claims at each sign-in.
 
-**Email templates.** Notifications are HTML templates, so you can fully customize links, style and site policies.
+**Users and groups.** Users belong to groups, and application access is granted per user or per group. A user can be added by an administrator, or submit a join request from Agate or the Mica sign-up page (protected by [Google reCAPTCHA](https://www.google.com/recaptcha)), reviewed by an administrator. Passwords (first password and recovery) are handled by email between the user and Agate, with no administrator action. The user profile attributes can be extended.
 
-**Administration.**
+**Security.**
 
-- Extend user profile attributes (applied to the join request form).
-- Manage users, groups and applications.
-- Manage user sessions: timeouts and activity tracking.
+- Two-factor authentication with an authenticator app, that can be enforced for all users, including those of external realms.
+- Argon2id password hashing, configurable password policy, login ban after repeated failures, and re-authentication for sensitive operations.
+- Encryption keys and certificates managed from the administration pages.
+
+**Notifications.** Emails (account confirmation, password reset, two-factor code, registration review, and the applications' own notifications) are HTML [FreeMarker](https://freemarker.apache.org/) templates, edited and previewed from the web interface, localized per language, with fallback templates shared between applications.
+
+**Automation.** The [obiba-agate](https://pypi.org/project/obiba-agate/) Python client and the REST web services allow scripting user, group and application management.
 
 ## Download
 
