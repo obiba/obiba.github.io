@@ -13,33 +13,37 @@ demo: https://mica-demo.obiba.org
 
 Mica creates data web portals for large-scale epidemiological studies and multiple-study consortia.
 
-Mica gives studies scientifically robust data visibility and a web presence without significant IT effort: structured descriptions of consortia and studies, annotated and searchable data dictionaries, and data access request management.
+Mica gives studies scientifically robust data visibility and a web presence without significant IT effort: structured descriptions of networks, studies and harmonization initiatives, annotated and searchable data dictionaries, and data access request management. Mica stores no record-level data: it works with [Opal](/applications/opal/) for the data dictionaries and summary statistics, and with [Agate](/applications/agate/) for the users.
 
 ## Features
 
-**Network identification and listing.** A standardized way to describe networks and the studies that constitute them.
+**Catalogue.** Documents specific to the epidemiological domain, with their relationships:
 
-**Study catalogue.**
+- Networks of studies.
+- Individual studies, with populations and data collection events, and harmonization initiatives.
+- Collected datasets and harmonization protocols, with their variables, data schema and harmonized variables.
+- Research projects conducted with the data.
 
-- Default study description characteristics, customizable to specific requirements.
-- Longitudinal study designs, with data collection events, sub-populations and recruitment timelines.
+The description forms are customizable, and documents are annotated with taxonomies (such as the [Maelstrom Research](https://www.maelstrom-research.org/) classification), either manually or inferred from their variables.
 
-**Datasets.**
+**Search.** A faceted search engine, that combines criteria across document types: for instance, variables about alcohol in studies that collected biosamples and belong to a network. Variables, studies and networks can be collected in a cart, compared, and downloaded as CSV.
 
-- A standard menu for data resources.
-- Faceted variable search.
-- Detailed dataset descriptions, with a comprehensive dictionary of the variables.
+**Data summaries.** For studies using Opal as their secured database, a distributed query engine gives authorized researchers real-time aggregated reports on the number of participants with specific characteristics, and summary statistics on each variable. No individual-level data passes through Mica. Data dictionaries can also be provided as Excel or SPSS files, without an Opal server.
 
-Mica does not store any record-level data. For studies using [Opal](/applications/opal/) as their secured database, a distributed query engine gives authorized researchers real-time aggregated reports on the number of participants with specific characteristics, and summary statistics on each variable. No individual-level data passes through Mica, yet researchers can assess whether a dataset suits their needs.
+**Data access management.** Electronic handling of access requests, from submission to approval:
 
-**Data access management.** Editable forms to handle access requests electronically:
+- Forms designed by the administrator: main application, preliminary, feasibility, amendment and end-user agreement forms, with attached files and a selection of requested variables.
+- Configurable workflow (review and conditional approval steps), with email notifications at each status change.
+- Collaborators, private comments for the data access committee, and a history of each request.
+- Research projects reporting what was done with the data.
 
-- Present the data access policy.
-- Manage data access requests from submission to approval.
-- Extend the default request form.
-- Present the data access committee members.
+**Publication flow.** Every document and file goes through draft, review and publication states, with permissions separating editors from reviewers, revision history and comments.
 
-**Administration.** Administer the portal from the website itself, and define permissions on any kind of content.
+**Web portal.** The public pages are [FreeMarker](https://freemarker.apache.org/) templates that can be customized, extended or overridden, with a theme based on [AdminLTE](https://adminlte.io/), custom pages, translations and multilingual content.
+
+**Security.** Authentication delegated to Agate (two-factor authentication, OpenID Connect realms, roles mapped from Agate groups), permissions on any document, sign-up protected by [Google reCAPTCHA](https://www.google.com/recaptcha).
+
+**Automation.** The [micar](https://cran.r-project.org/package=micar) R package, the [obiba-mica](https://pypi.org/project/obiba-mica/) Python client and the REST web services allow exploring the published content and scripting administration tasks. Search engines (Elasticsearch, OpenSearch), table and taxonomy sources are plugins.
 
 ## Download
 
