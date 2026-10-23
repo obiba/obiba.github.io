@@ -16,6 +16,8 @@ Amber is a web-based system that collects case report data based on forms. It is
 
 **What Amber can do for you.** Amber collects data in an automated, efficient and secure way, to minimize human errors. Forms can be designed, internationalized and revised without programming skills.
 
+**Integration.** Collected case reports and interviews, with their files, can be imported directly into [Opal](/applications/opal/) with an API key, and analyzed from R with the [amberr](https://cran.r-project.org/package=amberr) package.
+
 **Highly customizable.** Amber's look and feel can be adapted to your institution's needs, and additional features can be developed and maintained in the long term with community support. Read the [Amber documentation](https://amberdoc.obiba.org/) or write to [info@obiba.org](mailto:info@obiba.org) to learn how Amber could be adapted to your needs.
 
 ## Features
@@ -42,22 +44,24 @@ The web application for managing Amber content:
 
 ![Amber Studio dashboard and users management](/img/amber-studio-dashboard-users.png)
 
-- **Form builder**: create forms with a user-friendly interface and minimal programming. Multiple languages and right-to-left support. Rich items: choices, open text, dropdowns, image selection, autocomplete, sliders, ratings, geographic features (points, lines, polygons) and more. Complex forms with skip logic, data validation and computed fields.
+- **Form builder**: create forms with a user-friendly interface and minimal programming, in the [JSON Forms](https://jsonforms.io/) format: a JSON Schema for the data and a UI schema for the layouts (groups, sections, grids, tabs, stepper). Multiple languages and right-to-left support. Rich items: choices, open text, markdown, dropdowns, autocomplete, sliders, ranges, ratings, dates, files, geographic features (points, lines, polygons) and more. Complex forms with visibility and enabling rules, data validation and computed values.
 - **Form version control**: modify forms without interfering with on-going data collection. Each record is associated with the form revision used. Safely revert to a previous revision.
-- **Form import/export**: export a complete form design and import it in another Amber system.
+- **Form import/export**: export a complete form design as JSON and import it in another Amber system.
 
 ![Amber Studio form builder with item preview and live testing](/img/amber-studio-form-builder.png)
 
 - **Case report form access control**: enable a form and restrict its access to specific users or groups.
-- **Case report records**: filter records by date, form and revision, view and modify them. Export as CSV, Excel or JSON, including the full data dictionary derived from the form.
+- **Case report records**: filter records by date, form and revision, view and modify them, download their files. Export as CSV, Excel or JSON, including the full data dictionary derived from the form.
 
 ![Amber Studio case report records](/img/amber-studio-records.png)
 
 - **Interview design**: an interview is a sequence of interdependent forms with logical rules: completing one form can enable or disable later steps.
-- **Participant management**: participants are grouped in campaigns managed by investigators. Eligibility can be controlled by date range and status. Progress is followed with a dashboard and automated periodic reports.
+- **Participant management**: participants are grouped in campaigns managed by investigators, and identified by a personal code (walk-in participants can also be accepted). Interviews are self-administered or conducted by an interviewer. Eligibility is controlled by date range and status; investigators receive activation lists, reminders and progress summaries by email.
 - **Interview records**: filter records by date, campaign and participant, view and modify them. Export as CSV, Excel or JSON, including the full data dictionary.
 
 ![Amber Studio interview campaign and participants management](/img/amber-studio-campaigns-participants.png)
+
+- **API keys and audit**: API keys let external applications such as Opal extract the data of selected studies, with an expiry date. Every data extraction and file download, by a user or an API key, is audited.
 
 ### Amber Collect
 
@@ -66,7 +70,7 @@ The web application for collecting case reports:
 - **Secure**: authentication required, authorizations apply, two-factor authentication supported.
 - **Efficient**: a deliberately minimal interface, focused on data collection.
 - **Multiple languages**: switch language at any time; character set and right-to-left layout are applied automatically.
-- **Offline first**: without network, collected data is stored encrypted locally and sent to Amber Server when the connection is restored.
+- **Offline first**: without network, collected data and files are stored encrypted locally and sent to Amber Server when the connection is restored.
 - **Progressive web app**: installable on mobile devices without an app store. See [What are Progressive Web Apps?](https://web.dev/what-are-pwas/)
 - **Themes**: your institution or study name, logo and colors.
 
@@ -74,7 +78,7 @@ The web application for collecting case reports:
 
 ### Amber Visit
 
-The web application for conducting participant interviews, with the same security, multi-language, offline-first and theming features as Amber Collect.
+The web application for conducting participant interviews, with the same security, multi-language, offline-first and theming features as Amber Collect. Participants log in with their code or a direct link, interviewers with their Amber credentials. Steps can be paused and resumed, and a completed interview can be reopened from Amber Studio.
 
 ![Amber Visit: login and home pages](/img/amber-visit-mobile-screenshot.png)
 
